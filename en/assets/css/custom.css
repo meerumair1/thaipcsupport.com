@@ -804,3 +804,71 @@ body {
     padding-top: 9px;
     border-radius: 10px 0px 0px 10px;
 }
+/* contact us */
+.contact-us-card {
+    background-color: #f8f8f8;
+    padding: 50px 30px 150px 30px;
+    box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.11);
+    position: relative;
+    overflow: hidden;
+    max-width: 430px;
+}
+.contact-us-card h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    letter-spacing: 1px;
+}
+.contact-us-card h2:after {
+    content: '';
+    display: inline-block;
+    background-color: #086ad8;
+    height: 4px;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+}
+.contact-us-card h2 span {
+    display: block;
+    font-size: 17px;
+    line-height: 10px;
+    color: #333;
+    /* text-transform: uppercase; */
+}
+.contact-us-card ul.contact-icon li {
+    font-size: 18px;
+    padding: 22px 0px 22px 50px;
+    position: relative;
+    line-height: 29px;
+    min-height: 40px;
+    border-bottom: dashed 2px #efefef;
+    color: #2d2d2d;
+}
+.contact-us-card ul.contact-icon li:last-child {
+    border-bottom: none;
+}
+.contact-us-card ul.contact-icon li span {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    font-size: 30px;
+    color: #086ad8;
+    width: 40px;
+    text-align: center;
+}
+.contact-us-card .ht-social-networks {
+    bottom: 23px;
+    position: absolute;
+    width: 85%;
+}
+.line-qr {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.line-qr img {
+    width: 110px;
+    opacity: .8;
+}
