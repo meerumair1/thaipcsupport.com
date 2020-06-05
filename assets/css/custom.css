@@ -41,13 +41,7 @@
 	font-display: swap
 }
 
-@font-face {
-	font-family: Sarabun;
-	src: url(font/yo-Bold.woff) format('woff'));
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap
-}
+
 
 @font-face {
 	font-family: Sarabun;
@@ -65,13 +59,7 @@
 	font-display: swap
 }
 
-@font-face {
-	font-family: Sarabun;
-	src: url(font/yo-SemiBold.woff) format('woff');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap
-}
+
 
 @font-face {
 	font-family: Sarabun;
@@ -124,8 +112,8 @@
 	
 .a-th {
     font-family: TTNormsPro, 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
-	text-decoration: none !important!important;
-	    font-weight: 600 !important!important;
+	text-decoration: none !important;
+	    font-weight: 600 !important;
 }		
 
 .text-th {
