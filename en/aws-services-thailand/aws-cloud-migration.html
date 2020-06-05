@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+<script type="text/javascript">
+
+window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||"document"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);
+
+;NREUM.loader_config={accountID:"1620288",trustKey:"1620288",agentID:"535694066",licenseKey:"d1c51ea680",applicationID:"535694066"}
+
+;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"d1c51ea680",applicationID:"535694066",sa:1}
+
+</script>
+<meta http-equiv="content-language" content="en-us" />
+   <meta charset="utf-8">
+       <title>บริการ IT Support, IT Outsource, IT Service ครบวงจร ประสบการณ์กว่า 20 ปี</title>
+      <meta name="description" content="IT Support, IT outsource - ให้คุณมั่นใจบริการ IT Support ครบวงจรจากเรา พร้อมด้วยทีมงานมืออาชีพคนไทยและต่างชาติ ลดต้นทุนการจ้างพนักงานประจำ ทดลองบริการฟรี!!!" />
+	<meta name="keywords" content="บริการ ดูแล ระบบ คอมพิวเตอร์, ดูแลระบบserver, บริการด้านไอที, ดูแลคอมพิวเตอร์, ดูแลระบบไอที, ที่ ปรึกษา it, computer outsourcing, it infrastructure outsourcing, รับเดินสายแลน, ติดตั้งสาย LAN, รับดูแลระบบคอมพิวเตอร์ราคาถูก, บริการ it support, รับวางระบบ network, รับเดินสาย lan, เช่าคอม, เช่าคอมพิวเตอร์สํานักงาน, business computer services, บริษัท ดูแลระบบคอมพิวเตอร์, รับดูแลระบบ server, บริษัท outsource it ในไทย,it consulting, เดินสายแลน, +ดูแลระบบคอมพิวเตอร์ +รายเดือน, ราคาเดินสาย lan, เช่าคอมพิวเตอร์" />
+	  <meta name="author" content="ThaiPcSupport">
+	
+	<meta name="robots" content="noindex, nofollow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.thaipcsupport.com/" />
+<meta property="og:locale" content="th_TH" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="บริการ IT Support, IT Outsource, IT Service ครบวงจร ประสบการณ์กว่า 20 ปี" />
+<meta property="og:description" content="IT Support, IT outsource - ให้คุณมั่นใจบริการ IT Support ครบวงจรจากเรา พร้อมด้วยทีมงานมืออาชีพคนไทยและต่างชาติ ลดต้นทุนการจ้างพนักงานประจำ ทดลองบริการฟรี!!!" />
+<meta property="og:url" content="https://www.thaipcsupport.com/" />
+<meta property="og:site_name" content="ThaiPC Support" />
+<meta property="article:publisher" content="https://www.facebook.com/ThaiPCSupport" />
+<meta property="article:author" content="https://www.facebook.com/thaipcsupport/" />
+<meta property="article:modified_time" content="2020-03-24T10:32:14+00:00" />
+<meta property="og:image" content="https://www.thaipcsupport.com/en/assets/images/mtag/IT-5.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.thaipcsupport.com/en/assets/images/mtag/IT-5.png" />
+<meta name="twitter:creator" content="@https://twitter.com/thaipcsupport" />
+<meta name="twitter:site" content="@ThaiPC_Support" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Favicon -->
+   <link rel="icon" href="/en/assets/images/favicon.png">
+   <!-- CSS
+      ============================================ --> 
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />  
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="/en/assets/css/vendor/fontawesome-all.min.css">
+<!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+   <!-- Animate CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+   <!-- Swiper slider CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+   <!-- Light gallery CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+   <!-- animate-text CSS -->
+   <link rel="stylesheet" href="/en/assets/css/plugins/animate-text.css">
+   <!-- Font Family CSS -->
+   <link rel="stylesheet" href="/en/assets/css/vendor/cerebrisans.css"> 
+   <!-- custom CSS -->
+   <link rel="stylesheet" href="/en/assets/css/custom.css">
+   <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+   <!--
+      <link rel="stylesheet" href="/en/assets/css/vendor/vendor.min.css">
+      <link rel="stylesheet" href="/en/assets/css/plugins/plugins.min.css">
+      -->
+   <!-- Main Style CSS -->
+   <link rel="stylesheet" href="/en/assets/css/style.css">
+   <link href="https://www.thaipcsupport.com/" hreflang="th-th" rel="alternate">
+   <link href="https://www.thaipcsupport.com/en/" hreflang="en-us" rel="alternate">
+	 
+</head>
+
+
+<body>
+
+<div id="line-thaipc" class="">
+        <div class="inner">
+            <img class="line-add-qrcode" src="/en/assets/images/line@thaipcsupport.png">
+            <a href="https://line.me/R/ti/p/%40thaipcsupport" target="_new">
+                <img class="line-add-link" src="/en/assets/images/line-add.png">
+                <span>ติดต่อเจ้าหน้าที่<br>ผ่านช่องทาง Line@<br>Line ID : @Thaipcsupport</span>
+            </a>
+        </div>
+        <a href="javascript:void(0);" onclick="( document.getElementById('line-thaipc').className == '' ? document.getElementById('line-thaipc').className = 'is-active' : document.getElementById('line-thaipc').className = '' )"> L<br>I<br>N<br>E</a>
+    </div>
+
+  <!--====================  header area ====================-->
+  <div class="header-area header-sticky only-mobile-sticky">
+     <!-- Header Top Wrap Start -->
+     <div class="header-top-wrap border-bottom">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-3">
+                 <!-- brand logo -->
+                 <div class="header__logo">
+                    <a href="/en/index.html">
+                    <img src="/en/assets/images/logo/logo-itsupportthailand.png" class="img-fluid" width="333" height="43" title="it support thailand" alt="it support thailand">
+                    </a>
+                 </div>
+              </div>
+              <div class="col-lg-6">
+                 <p class="text-center top-message mt-1"><a href="/en/it-support-thailand/it-support.html">IT Support Thailand:</a> Complete Managed IT Support and IT Helpdesk in Thailand</p>
+              </div>
+              <div class="col-lg-3 text-right">
+                 <a href="#" class="ht-btn ht-btn-md eme-btn"><span class="blink">Emergency Support</span> </a>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Header Top Wrap End -->
+     <!-- Header Bottom Wrap Start -->
+     <div class="header-bottom-wrap header-sticky">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-12">
+                 <div class="header default-menu-style position-relative">
+                    <a href="#" class="ht-btn ht-btn-md mobile-eme-btn"><span class="blink">Emergency Support</span> </a>
+                    <!-- header midle box  -->
+                    <div class="header-midle-box">
+                       <div class="header-bottom-wrap d-md-block d-none">
+                          <div class="header-bottom-inner">
+                             <div class="header-bottom-left-wrap">
+                                <!-- navigation menu -->
+                                <div class="header__navigation d-none d-xl-block">
+                                   <nav class="navigation-menu primary--menu">
+                                      <ul>
+                                         <li class="">
+                                            <a href="/en/index.html"><span>Home</span></a>
+                                         </li>
+                                         <li class="has-children">
+                                            <a href="#"><span>IT Solution</span></a>
+                                            <!-- mega menu -->
+                                            <ul class="megamenu megamenu--mega">
+                                               <li>
+                                                  <a href="/en/it-support-thailand/it-support.html" class="min-line-height">
+                                                     <i class="fas fa-headset megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">IT Support</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Complete IT Support Model, Providing Monitoring and Consultanting for 100% uptime</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                   <a href="/en/it-support-helpdesk/it-support-helpdesk-thailand.html" class="min-line-height">
+                                                     <i class="fas fa-hands-helping megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">IT Outsource</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">On time Helpdesk Services Managed by IT Profressionals Daily / Weekly / Monthly</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/lan-wire-wireless/lan-wire-wireless-thailand.html" class="min-line-height">
+                                                     <i class="fas fa-ethernet megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">LAN Wire Setup</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Setup LAN Wire with proper hardware to ensure maximum speed capcity </span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html" class="min-line-height">
+                                                     <i class="far fa-building megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none ">New Office Setup</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Moving all Hardwares and Software to ensure smooth transition to new location</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/audit-software-thailand/audit-software.html" class="min-line-height">
+                                                     <i class="fas fa-calculator megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Audit Software </h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Complete Detailed scan of application to ensure it comply with company policy</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/firewall-fortigate/firewall-fortigate-cisco.html" class="min-line-height">
+                                                     <i class="fas fa-fire megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Firewall </h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Keep your Network and Data safe with Enterprise grade security system</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/electronic-ewaste-thailand/ewaste-thailand.html" class="min-line-height">
+                                                     <i class="fas fa-recycle megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">E-waste</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Disposing your Hardwares in most effective way to ensure it is safe for enviroment</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/rental-computer-thailand/rental-computer.html" class="min-line-height">
+                                                     <i class="fas fa-laptop megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Rental Computer</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Rental of PC / Laptop OR Networking devices on Daily / Monthly / Yearly basis</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html" class="min-line-height">
+                                                     <i class="fas fa-tools megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">New IT Infrastructure</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Setting complete Hardware and Software with Data center for Ready to use</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/software-hardware-sales.html" class="min-line-height">
+                                                     <i class="fas fa-memory megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Hardware Procurement</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Dealing with Hardware, Software & ISP vendors to provide the firm with best price</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/cloud-backup-thailand/arconic-backup-thailand.html" class="min-line-height">
+                                                     <i class="fas fa-server megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Data Recovery & Restore</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Secure Office data to ensure no Data Loss with quick Restore system</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/nas-storage/qnap-synology.html" class="min-line-height">
+                                                     <i class="fas fa-share-alt-square megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">NAS / File Sharing</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Setting up File Permission on site or Cloud with users in Office based on Company policy </span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                            </ul>
+                                         </li>
+                                         <li class="">
+                                            <a href="/en/it-helpdesk-support/it-helpdesk-thailand.html"><span>IT Helpdesk</span></a>
+                                         </li>  <li class="has-children">
+                                            <a href="#"><span>Cloud Solution</span></a>
+                                            <!-- mega menu -->
+                                            <ul class="megamenu megamenu--mega">
+                                               <li>
+                                                  <a href="/en/aws-services-thailand/aws-web-services.html" class="min-line-height">
+                                                     <i class="fas fa-poll-h megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Amazon AWS</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Building, Designing, Managing Workload on Amazon aws Servers with 24/7/365 Support</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/microsoft-azure-services/active-directory-thailand.html" class="min-line-height">
+                                                     <i class="fab fa-microsoft megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Microsoft Azure</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Buidling, Designing, technical guidance on implementing Azure with 24/7/365 Support</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/contact-it-support.html" class="min-line-height">
+                                                     <i class="fab fa-google megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">G Suite Google Mail</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Business Class Company Gmail Email System to ensure no downtime and no SPAM</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/office365-thailand/office365.html" class="min-line-height">
+                                                     <i class="fas fa-file-excel megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none ">Microsoft Office 365</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Complete Office365 and Microsoft Team Management Implementation for Offices</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/cloudflare-dns-thailand/cloudflare-dns.html" class="min-line-height">
+                                                     <i class="fas fa-cloud megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Cloudflare</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Enterprise Grade Managed DNS, Web Security, Anti DDos and Global CDN </span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/cdn-cloudflare-akamai/web-optimisation-thailand.html" class="min-line-height">
+                                                     <i class="fas fa-project-diagram megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Web Speed Optimization</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Website speed optimization to ensure improved SEO and Search Engine Friendly</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/devops-services-thailand/devops-services.html" class="min-line-height">
+                                                     <i class="fas fa-user-secret megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">DevOps as a Services 24x7 </h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Specialist providing IT developers with best possible IT server infrasture & Software solutions</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/cloud-backup-thailand/acronics.html" class="min-line-height">
+                                                     <i class="fas fa-server megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Cloud Backup</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Enterprise Grade Arconics Backup system providing Real Time backup & Restore </span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/cloud-backup-thailand/acronis-true-image-backup.html" class="min-line-height">
+                                                     <i class="fas fa-server megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Windows PC Backup</h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Automated Windows Backup system ensuring quick backup on cloud</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                               <li>
+                                                  <a href="/en/database-services-thailand/mysql-workbench.html" class="min-line-height">
+                                                     <i class="fas fa-database megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">MySQL Consulting </h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">MySQL, MongoDB & Redis Implementation, 24/7 Monitoring with Database Consultancy</span></li>
+                                                     </ul>
+                                                  </a>
+                                                  <br><br>
+                                                  <a href="/en/firewall-fortigate/firewall-fortigate-cisco.html" class="min-line-height">
+                                                     <i class="fas fa-network-wired megamenu-icon"></i>
+                                                     <h2 class="page-list-title margin-none">Network Security </h2>
+                                                     <ul>
+                                                        <li><span class="mega-menu-text">Monitoring Network system to ensure no threats acoress your phyical site network</span></li>
+                                                     </ul>
+                                                  </a>
+                                               </li>
+                                            </ul>
+                                         </li>
+                                         <li class="">
+                                            <a href="/en/clients.html"><span>Clients </span></a>
+                                         </li>
+                                         <li class="has-children has-children--multilevel-submenu">
+                                            <a href="#"><span>About Us</span></a>
+                                            <!-- multilevel submenu -->
+                                            <ul class="submenu">
+                                               <li><a href="/en/about-thaipcsupport.html"><span>Company</span></a></li>
+                                               <li><a href="/en/vision.html"><span>Vision</span></a></li>
+                                               <li><a href="/en/it-support-faq.html"><span>Why Choose us</span></a></li>
+                                               
+                                               <li><a href="/en/jobthai-it-support/job-it-support.html"><span>Career </span></a></li>
+                                            </ul>
+                                         </li>
+                                         <li class="">
+                                            <a href="/en/contact-it-support.html"><span>Contact Us </span></a>
+                                         </li>
+                                      </ul>
+                                   </nav>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <!-- header right box -->
+                    <div class="header-right-box">
+                       <div class="header-right-inner" id="hidden-icon-wrapper">
+                          <!-- language-menu -->
+                          <div class="language-umi">
+                             <ul>
+<li>
+<a href="/บริการ-aws-cloud-aws/ย้ายข้อมูลไปยังระบบคลาวด์-aws.html" class="thai">
+<img class="ls-flag" width="35" height="23" src="/en/assets/images/flags/th.png"  alt="it support thailand" title="Thai">
+</a>
+</li>
+<li>
+<a href="/en/aws-services-thailand/aws-cloud-migration.html" class="eng">
+<img class="ls-flag" width="35" height="23" src="/en/assets/images/flags/en.png"  alt="it support thailand" title="English">
+</a>
+</li>
+</ul>
+                          </div>
+                          <ul>
+                             <li>
+                                <a href="https://line.me/R/ti/p/%40thaipcsupport"><span class="social-icon fab fa-line"> </span></a><span class="phone-num text-right">Have any questions?<br><span><a href="tel:0650088330" class="pt-1"><b>+66 65 008 8330</b></a></span></span>
+                             </li>
+                          </ul>
+                          <!-- header-search-form -->
+                       </div>
+                       <!-- mobile menu -->
+                       <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
+                          <i></i>
+                       </div>
+                       <!-- hidden icons menu -->
+                       <div class="hidden-icons-menu d-block d-md-none" id="hidden-icon-trigger">
+                          <a href="javascript:void(0)">
+                          <i class="far fa-ellipsis-h-alt"></i>
+                          </a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Header Bottom Wrap End -->
+  </div>
+  <!--====================  End of header area  ====================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="site-wrapper-reveal">
+		
+		
+		
+		
+		
+		
+		
+		
+        
+        
+        <!--===========  feature-images-wrapper  Start =============-->
+        <div class="feature-images-wrapper bg-gray section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">AWS MIGRATION<span class="text-color-primary"> SERVICE</span></h3>
+							<p>Expert AWS migration service to help you achieve your goals.</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div></div></div>
+				
+				
+				
+				<div class=" space-umi-2 section-space--mb_40">
+            <div class="container">
+                <div class="row">
+					
+					<div class="col-12">
+					<div class="col-4 umi-image-center">
+						 <div class="imgwrapper-2">
+						 <img class="umi-responsive" src="/en/assets/images/aws/aws-logo.png" alt="">
+					</div></div></div>
+					
+					
+					
+                    <div class="col-12 text-center">
+                        <div class="computing-info-box">
+							
+                            
+                            <div class="section-under-heading mt-10"><p>Whatever you want to achieve in the AWS Cloud, it’s likely we’ve already helped other customers to achieve it.</p><p>Our team of certified AWS experts are ready to help you begin your journey to the AWS cloud. Big or small, simple or complex – Thaipcsupport have the experience to ensure a swift and painless migration so that your business can reap the benefits of the AWS Cloud.</p></div>
+							
+							
+							
+							
+                        </div>
+                    </div>
+					
+					
+					 
+					
+					
+					
+                </div>
+            </div>
+        </div>
+				
+				
+				
+				
+				
+				
+				<div class="feature-images-wrapper bg-gray  section-space--ptb_100">
+<div class="container">
+                <div class="row">
+                    <div class="col-12">
+						
+						<div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">BENEFITS OF MIGRATING TO AWS:</h3>
+							
+                        </div>
+						
+						
+                        <div class="feature-images__four">
+                            <div class=" row">
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-piggy-bank"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">ASSESSMENT</h5>
+                                                <div class="text">Identify goals, prioritize applications for migration.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-clipboard-list"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">DESIGN & BUILD</h5>
+                                                <div class="text">Design & build an AWS landing zone that meets your specific requirements.</div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-percent"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">MIGRATION</h5>
+                                                <div class="text">Securely migrate your on premises workloads to the AWS cloud.</div>
+                                            </div>
+                                        </div>
+                                </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                </div>
+							 </div>
+
+						</div>
+                </div>
+            </div>
+        </div>
+        <!--===========  feature-images-wrapper  End =============-->
+		
+		
+		<div class="feature-images-wrapper section-space--ptb_100">
+<div class="container">
+                <div class="row">
+                    <div class="col-12">
+						
+						<div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">OUR AWS MIGRATION SERVICE INCLUDES:</span></h3>
+							
+                        </div>
+						
+						
+                        <div class="feature-images__four">
+                            <div class=" row">
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-clipboard-list"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">LOWER COSTS</h5>
+                                                <div class="text">On average, businesses reduce IT Infrastructure costs by 31% when migrating to AWS.</div>
+                                            </div>
+                                        </div>
+                                   </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-running"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">INCREASED BUSINESS AGILITY </h5>
+                                                <div class="text">Free up valuable resources to focus on delivering business value. Access new cloud services to help you innovate.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image umi-icon text-center">
+                                                <i aria-hidden="true" class="fas fa-suitcase"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">IMPROVED APPLICATION UPTIME</h5>
+                                                <div class="text">Reduce business risk by increasing application uptime - on average businesses migrating to AWS see a 94% reduction in downtime.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                </div>
+							 </div>
+
+						</div>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="tabs-wrapper bg-gray section-space--ptb_60">
+            <div class="container">
+				<div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">ASSESSMENT</h3>
+							<p>We help you lay the foundations for a successful migration to the cloud.
+
+</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">ESTABLISH GOALS</h5>
+						<li class="list-item">We analyze your on premise workloads and forecast run costs in the AWS cloud. We help to identify your specific security, compliance and budget requirements.
+
+</li>
+												</ul> 
+											
+											<ul class="check-list section-space--mb_40">
+												<h5 class="heading">IDENTIFY APPLICATION DEPENDENCIES</h5>
+						<li class="list-item">We group applications together to help identify candidates for migration proof of concept, and ensure continuity of service during the migration.</li>
+												</ul> 
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										
+										
+										<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid img-border-yellow" src="/en/assets/images/aws/tco-comparison.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			<div class="container section-space--ptb_60">
+				<div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">DESIGN & BUILD</h3>
+							<p>Our skilled & experienced Cloud Architects will design an AWS environment in accordance with best practice, leaving you and your team to focus on innovation.
+
+</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+										
+										
+										<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid img-border-yellow" src="/en/assets/images/aws/Landing-Zone.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										
+                                        
+                                        <div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">DESIGN A REFERENCE ACRHITECTURE</h5>
+						<li class="list-item">Thaipcsupport cloud experts will design an AWS reference architecture for your application environment.
+
+</li>
+												</ul> 
+											
+											<ul class="check-list section-space--mb_40">
+												<h5 class="heading">SECURITY & COMPLIANCE CONTROLS
+</h5>
+						<li class="list-item">Our team will implement all required security and compliance controls identified during the assessment phase.</li>
+												</ul>
+												
+												
+												<ul class="check-list section-space--mb_40">
+												<h5 class="heading">INTEGRATE 3RD PARTY TOOLING
+</h5>
+						<li class="list-item">Any third party tools required to operate your cloud environment will be integrated and configured.</li>
+												</ul>
+												
+												
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										
+										
+										
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			
+			
+			<div class="container section-space--ptb_60">
+				<div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">MIGRATION</h3>
+							<p>Once your AWS Cloud environment is ready to receive workloads, ThaiPCSupport Engineers  will execute the migration plan with minimal disruption to your business operations.
+
+</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+										
+										
+										
+										
+										
+                                        
+                                        <div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">EXECUTE MIGRATION</h5>
+						<li class="list-item">We leverage AWS CloudEndure software or AWS Server Migration Service to replicate your applications to AWS without interruption to service.</li>
+												</ul> 
+											
+											<ul class="check-list section-space--mb_40">
+												<h5 class="heading">TEST AND REFINE
+</h5>
+						<li class="list-item">At all stages we work seamlessly with your team to ensure there is zero downtime and that all applications are functioning as expected in your new AWS cloud environment.</li>
+												</ul> 
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid img-border-yellow" src="/en/assets/images/aws/AWS-CloudEndure.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			
+			
+			<div class="container section-space--ptb_60">
+				<div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">Accelerate Your AWS Cloud Migration</h3>
+							<p>ThaiPCSupport has helped 350+ customers accelerate migration, avoid common pitfalls, and meet security and compliance requirements. We’re an AWS Premier Consulting Partner with 25+ years of experience.
+
+</p>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+										
+									<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid" src="/en/assets/images/aws/1_cloud_assessment_illustration500x500.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										<div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">Step 1: Assess</h5>
+													<br>
+						<li>Our Cloud Architects will analyze your existing architecture, understand your business needs, and perform a TCO Analysis.</li>	<br>
+													
+													<li class="list-item">Understand your team’s goals and technical limitations</li>
+													<li class="list-item">TCO Analysis</li>
+													<li class="list-item">Identify security and compliance goals</li>
+													<li class="list-item">Choose the right cloud platform</li>
+													<li class="list-item">Identify pilot applications for POCs</li>
+													<li class="list-item">Prioritize applications, dependencies, and risks</li>
+													<li class="list-item">Align stakeholders on roadmap and resources required</li>
+												</ul> 
+											
+											
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="container section-space--ptb_60">
+				<hr>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+										
+									
+										
+										<div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">Step 2: Design & Build</h5>
+													<br>
+													<li>We’ll design and build a custom AWS environment that meets your security, compliance, agility, and cost-efficiency requirements.</li>
+													<br>
+							                            <li class="list-item">Design secure, compliant AWS reference architecture</li>                
+														<li class="list-item">Develop and build a Minimum Viable Cloud</li>
+														<li class="list-item">Implement security and compliance controls</li>
+														<li class="list-item">Install 3rd party tools</li>
+														<li class="list-item">Integrate your CI/CD pipeline with our infrastructure automation</li>
+														<li class="list-item">Use templates to prepare your cloud to scale</li>
+													
+												</ul> 
+											
+											
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										
+										
+										<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid" src="/en/assets/images/aws/7_Cloud_planning_500x500.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			<div class="container section-space--ptb_60">
+					<hr>
+
+                <div class="row">
+                    <div class="col-lg-12 ht-tab-wrap">
+                        
+
+                        <div class="tab-content ht-tab__content">
+
+                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
+                                <div class="tab-history-wrap section-space--mt_40">
+                                    <div class="row">
+										
+									<div class="col-lg-6 ">
+                                            <div class="tab-history-image video-popup mt-30">
+                                                
+                                                    <div class="single-popup-wrap">
+                                                        <img class="img-fluid" src="/en/assets/images/aws/9_Cloud_Migration_illustration_500x500.png" alt="">
+                                                       
+                                                    </div>
+                                               
+                                            </div>
+                                        </div>
+										
+										
+										<div class="col-lg-5 offset-lg-1 ">
+                                            <div class="tab-content-inner  mt-30">
+												
+                                                <ul class="check-list section-space--mb_40">
+													<h5 class="heading">Step 3: Migrate</h5>
+													<br>
+													<li>Get the keys to a production-ready cloud environment and go live on AWS.</li><br>
+						<li class="list-item">Test and refine your application on AWS</li>
+													
+													<li class="list-item">Knowledge transfer and training</li>
+														<li class="list-item">Choose the right AWS-native or 3rd party tool for data migration</li>
+														<li class="list-item">For large migration projects, we will build Migration Factory to migrate applications to AWS in waves</li>
+														<li class="list-item">Executive presentation and hand-off</li>
+												</ul> 
+											
+											
+
+                                                    
+                                                </div>
+                                            </div>
+										
+										
+										
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                   
+
+                              
+
+                            </div>
+                        </div>
+                    </div>
+				
+                </div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+            </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="feature-images-wrapper section-space--ptb_100">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- section-title-wrap Start -->
+                        <div class="section-title-wrap text-center section-space--mb_30">
+                            <h3 class="heading">Why choose</h3>
+							<div class="section-under-heading mt-10"><h4 class="heading font-weight--light">AWS Managed Services with Thaipcsupport?</h4></div>
+                        </div>
+                        <!-- section-title-wrap Start -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="feature-images__four">
+                            <div class=" row">
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="/en/assets/images/aws/server.png" alt="" width="20%">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Individual Attention</h5>
+                                                <div class="text">Our AWS Certified Experts extend dedicated support and end to end managed services from cost optimization to automated infrastructure deployment.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="/en/assets/images/aws/tech-support.png" width="20%" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Tailored Solutions</h5>
+                                                <div class="text">Thaipcsupport solutions add value to your business by tailoring services based on your IT needs, organizational requirements and budget.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="single-item col-lg-4 col-md-6 mt-30 wow move-up">
+                                    <!-- ht-box-icon Start -->
+                                    <a href="#" class="ht-box-images style-04">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <img class="img-fulid" src="/en/assets/images/aws/reliable.png" width="20%" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="heading">Reliable Partnership</h5>
+                                                <div class="text">We manage your billing, management portals and support through one consolidated, easy to system so you can focus on your business.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                
+                               
+                               
+								
+								
+								
+								
+								
+								
+								
+								
+								
+                            </div>
+							
+							
+							
+							
+							
+							
+							
+                        </div>
+
+						
+						
+						
+						
+						
+						
+						
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--===========  feature-images-wrapper  End =============-->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        
+		
+		
+		
+		
+	
+       
+       
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        
+          <!--============ Contact Us Area Start =================-->
+            <div class="contact-us-area appointment-contact-bg section-space--ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="contact-title section-space--mb_50">
+                                <h3 class="mb-20">Connect with us Now ... </h3>
+                                <p class="sub-title">Reach out to us and our Thai or International team will reach out to you within an hour. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact-form-wrap">
+                                <form id="contact-form" action="https://hasthemes.com/file/mail.php" method="post">
+                                    <div class="contact-form__two">
+                                        <div class="contact-input">
+                                            <div class="contact-inner">
+                                                <input name="con_name" type="text" placeholder="Name *">
+                                            </div>
+                                            <div class="contact-inner">
+                                                <input name="con_email" type="email" placeholder="Email *">
+                                            </div>
+                                        </div>
+                                        <div class="contact-select">
+                                            <div class="form-item contact-inner">
+                                                <span class="inquiry">
+                                        <select name="inquiry" class="select-item">
+                                            <option value="Your inquiry about">Your inquiry about</option>
+                                            <option value="General Information Request">General Information Request</option>
+                                            <option value="Partner Relations">Partner Relations</option>
+                                            <option value="Careers">Careers</option>
+                                            <option value="Software Licencing">Software Licencing</option>
+                                        </select>
+                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="contact-inner contact-message">
+                                            <textarea name="con_message" placeholder="Please describe what you need."></textarea>
+                                        </div>
+                                        <div class="comment-submit-btn">
+                                            <button class="ht-btn ht-btn-md" type="submit">Get a free consultation</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 ml-auto">
+                            <div class="contact-info-three text-left">
+                                <h6 class="heading font-weight--reguler">Reach out now!</h6>
+                                <h3 class="call-us"><a href="#">(+66) 65 008 8330</a></h3>
+                                <div class="text">Start the collaboration with us while figuring out the best solution based on your needs.</div>
+                                <div class="location-button mt-20">
+                                    <a href="#" class="location-text-button"><span class="button-icon"></span> <span class="button-text">View on Google map</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--============ Contact Us Area End =================-->
+        </div>
+
+        <!--====================  footer area ====================-->
+        <div class="footer-area-wrapper bg-gray">
+            <div class="footer-area section-space--ptb_80">
+                <div class="container">
+                    <div class="row footer-widget-wrapper">
+                        <div class="col-lg-4 col-md-6 col-sm-6 footer-widget">
+                            <div class="footer-widget__logo mb-30">
+                                <a href="/en/index.html"><img src="/en/assets/images/logo/logo-itsupportthailand.png" class="img-fluid" title="it support thailand" width="333" height="43" alt="it support thailand"></a>
+                            </div>
+                            <ul class="footer-widget__list">
+                            <li>1 The Empire Tower, River Wing, Sathorn Road, Bangkok 10120, Thailand</li>
+								<li><b>Tel : </b><a href="tel:+6621147310" class="hover-style-link text-black font-weight--bold">+662 1147310</a>, <a href="tel:+66650088330" class="hover-style-link text-black font-weight--bold">+66 65 008 8330</a></li>
+                            <li><b>Sales : </b><a href="mailto:sales@thaipcsupport.com" class="hover-style-link">Sales@thaipcsupport.com</a></li>
+							<li><b>Partners : </b><a href="mailto:partners@thaipcsupport.com" class="hover-style-link">Partners@thaipcsupport.com</a></li>
+                            
+								
+						<li class="mt-10"><a href="https://www.thaipcsupport.com/" class="hover-style-link text-color-primary">www.thaipcsupport.com</a></li>
+						 </ul>
+                        
+                            <ul class="list ht-social-networks">
+
+
+                                <li class="item">
+                                    <a href="https://line.me/R/ti/p/%40thaipcsupport" target="_blank" aria-label="Line" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-line link-icon" style="font-size: 38px; color:#43c606;"></i>
+                                    </a>
+                                </li>
+								<li class="item">
+                                    <a href="https://wa.me/66650088330" target="_blank" aria-label="Whatsapp" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-whatsapp link-icon" style="font-size: 38px; color:#28a71a;"></i>
+                                    </a>
+                                </li>
+								<li class="item">
+                                    <a href="skype:aquaorange.thailand" target="_blank" aria-label="Skype" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-skype link-icon" style="font-size: 38px; color:#3394d2;"></i>
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+
+                       
+							
+
+						<div class="mt-10 ml-2"><img class="img-fluid" src="/en/assets/images/qr.png" alt=""></div>
+
+						
+
+						
+
+
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">IT Solution</h6>
+                            <ul class="footer-widget__list circle-list">
+                                <li><a href="/en/it-support-thailand/it-support.html" class="hover-style-link list-item">IT Support</a></li>
+                                <li><a href="/en/it-helpdesk-support/it-helpdesk-thailand.html" class="hover-style-link list-item">IT Helpdesk</a></li>
+                                <li><a href="/en/lan-wire-wireless/lan-wire-wireless-thailand.html" class="hover-style-link list-item">LAN Wire Setup</a></li>
+                                <li><a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html" class="hover-style-link list-item">New Office Setup</a></li>
+                                <li><a href="/en/audit-software-thailand/audit-software.html" class="hover-style-link list-item">Audit Software</a></li>
+								<li><a href="/en/firewall-fortigate/firewall-fortigate-cisco.html" class="hover-style-link list-item">Firewall</a></li>
+								<li><a href="/en/electronic-ewaste-thailand/ewaste-thailand.html" class="hover-style-link list-item">E-waste</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                           
+                            <ul class="footer-widget__list circle-list">
+
+								<li><a href="/en/rental-computer-thailand/rental-computer.html" class="hover-style-link list-item">Rental Computer</a></li>
+								<li><a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html" class="hover-style-link list-item">New IT Infrastructure</a></li>
+								<li><a href="/en/software-hardware-sales.html" class="hover-style-link list-item">Hardware Procurement</a></li>
+								<li><a href="/en/cloud-backup-thailand/arconic-backup-thailand.html" class="hover-style-link list-item">Data Recovery & Restore</a></li>
+								<li><a href="/en/nas-storage/qnap-synology.html" class="hover-style-link list-item">NAS & File Sharing</a></li>
+								<li><a href="/en/it-support-helpdesk/it-support-helpdesk-thailand.html" class="hover-style-link list-item">IT Outsource</a></li>
+                            </ul>
+
+
+
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">Cloud Solution</h6>
+                            <ul class="footer-widget__list circle-list">
+                                <li><a href="/en/aws-services-thailand/aws-web-services.html" class="hover-style-link list-item">Amazon AWS</a></li>
+                                <li><a href="/en/microsoft-azure-services/active-directory-thailand.html" class="hover-style-link list-item">Microsoft Azure</a></li>
+                                <li><a href="/en/contact-it-support.html" class="hover-style-link list-item">G Suite Google Mail</a></li>
+                                <li><a href="/en/office365-thailand/office365.html" class="hover-style-link list-item">Microsoft Office 365</a></li>
+                                <li><a href="/en/cloudflare-dns-thailand/cloudflare-dns.html" class="hover-style-link list-item">Cloudflare</a></li>
+								<li><a href="/en/cdn-cloudflare-akamai/web-optimisation-thailand.html" class="hover-style-link list-item">Web Speed Optimization</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            
+                            <ul class="footer-widget__list circle-list">
+                                <li><a href="/en/devops-services-thailand/devops-services.html" class="hover-style-link list-item">DevOps as a Services 24x7 </a></li>
+								<li><a href="/en/cloud-backup-thailand/acronics.html" class="hover-style-link list-item">Cloud Backup</a></li>
+								<li><a href="/en/cloud-backup-thailand/acronis-true-image-backup.html" class="hover-style-link list-item">Windows PC Backup</a></li>
+								<li><a href="/en/database-services-thailand/mysql-workbench.html" class="hover-style-link list-item">MySQL Consulting</a></li>
+								<li><a href="/en/firewall-fortigate/firewall-fortigate-cisco.html" class="hover-style-link list-item">Network Security</a></li>
+
+
+                            </ul>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-area section-space--pb_30">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-left">
+							
+
+                            <span class="copyright-text">&copy; 2020 Thaipcsupport. <a href="#">All Rights Reserved.</a></span>
+                        </div>
+						
+						
+						
+						<div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-center">
+						<ul class="list ht-social-networks solid-rounded-icon mt-10">
+
+
+                                <li class="item">
+                                    <a href="https://www.facebook.com/thaipcsupport/" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-facebook-f link-icon" style="font-size: 22px;"></i>
+                                    </a>
+                                </li>
+								<li class="item">
+                                    <a href="https://www.instagram.com/thaipcsupport/" target="_blank" aria-label="Instagram" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-instagram link-icon" style="font-size: 22px;"></i>
+                                    </a>
+                                </li>
+								<li class="item">
+                                    <a href="https://www.linkedin.com/company/aquaorange-software-co-ltd" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary">
+                                        <i class="fab fa-linkedin-in" style="font-size: 22px;"></i>
+                                    </a>
+                                </li>
+
+
+
+                            </ul></div>
+						
+						
+						
+						
+						
+                        <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-right">
+                          
+							   
+						   <ul class="footer-widget__list footer-umi-inline">
+                                <li><a href="/en/about-thaipcsupport.html" class="hover-style-link">About Us </a></li>
+								<li><a href="company.html" class="hover-style-link">Company</a></li>
+								<li><a href="/en/vision.html" class="hover-style-link">Vision</a></li>
+								<li><a href="/en/contact-it-support.html" class="hover-style-link">Contact Us</a></li>
+                            </ul>
+
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of footer area  ====================-->
+
+
+
+
+
+
+
+
+        <!--====================  scroll top ====================-->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!--====================  End of scroll top  ====================-->
+
+
+       <!--====================  mobile menu overlay ====================-->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-overlay__inner">
+                <div class="mobile-menu-overlay__header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-8">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="index.html">
+                                         <img src="/en/assets/images/logo/logo-itsupportthailand.png" class="img-fluid" title="it support thailand" alt="it support thailand" width="333" height="43">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-4">
+                                <!-- mobile menu content -->
+                                <div class="mobile-menu-content text-right">
+                                    <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-overlay__body">
+                    <nav class="offcanvas-navigation">
+                        <ul>
+                            <li class="has-children">
+                                <a href="/en/index.html">Home</a>
+
+                            </li>
+                            <li class="has-children">
+                                <a href="#">IT Solution</a>
+                                <ul class="sub-menu">
+
+											<li><a href="/en/it-support-thailand/it-support.html"><span>IT Support</span></a></li>
+                                            <li><a href="/en/it-helpdesk-support/it-helpdesk-thailand.html"><span>IT Helpdesk</span></a></li>
+                                            <li><a href="/en/lan-wire-wireless/lan-wire-wireless-thailand.html"><span>LAN Wire Setup</span></a></li>
+
+													<li><a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html"><span>New Office Setup</span></a></li>
+
+                                                    <li><a href="/en/audit-software-thailand/audit-software.html"><span>Audit Software </span></a></li>
+									                <li><a href="/en/firewall-fortigate/firewall-fortigate-cisco.html"><span>Firewall  </span></a></li>
+                                                    <li><a href="/en/electronic-ewaste-thailand/ewaste-thailand.html"><span>E-waste </span></a></li>
+													<li><a href="/en/cloud-backup-thailand/arconic-backup-thailand.html"><span>Data Recovery & Restore </span></a></li>
+													<li><a href="/en/it-infrastructure-thailand/setup-offfice-infrastructure.html"><span>New IT Infrastructure Setup </span></a></li>
+													<li><a href="/en/software-hardware-sales.html"><span>Hardware Procurement </span></a></li>
+									<li><a href="/en/rental-computer-thailand/rental-computer.html"><span>Rental Computer </span></a></li>
+                  	<li><a href="/en/nas-storage/qnap-synology.html">NAS / File Sharing</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="/en/it-support-helpdesk/it-support-helpdesk-thailand.html">IT Outsource</a>
+
+                            </li>
+
+
+							<li class="has-children">
+                                <a href="#">Cloud Solution</a>
+                                <ul class="sub-menu">
+
+											<li><a href="/en/aws-services-thailand/aws-web-services.html"><span>AWS</span></a></li>
+                                            <li><a href="/en/microsoft-azure-services/active-directory-thailand.html"><span>Azure</span></a></li>
+                                            <li><a href="/en/contact-it-support.html"><span>Gsuite Email</span></a></li>
+
+													<li><a href="/en/office365-thailand/office365.html"><span>o365</span></a></li>
+                                                    <li><a href="/en/cloudflare-dns-thailand/cloudflare-dns.html"><span>Cloudflare </span></a></li>
+                                                    <li><a href="/en/cdn-cloudflare-akamai/web-optimisation-thailand.html"><span>Web Speed Optimization </span></a></li>
+                                                    <li><a href="/en/devops-services-thailand/devops-services.html"><span>DevOps as a Services 24x7  </span></a></li>
+													<li><a href="backup.hmtl"><span>Cloud Backup</span></a></li>
+													<li><a href="/en/cloud-backup-thailand/acronis-true-image-backup.html"><span>Windows Pc Backup</span></a></li>
+									<li><a href="/en/database-services-thailand/mysql-workbench.html"><span>MySQL Consulting  </span></a></li>
+									<li><a href="/en/firewall-fortigate/firewall-fortigate-cisco.html.html"><span>Network Security  </span></a></li>
+
+
+
+                                </ul>
+                            </li>
+
+
+
+                            <li class="has-children">
+                                <a href="/en/clients.html">Client</a>
+
+                            </li>
+                            <li class="has-children">
+                                <a href="javascript:void(0)">About Us</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/en/about-thaipcsupport.html"><span>Company</span></a></li>
+
+                                    <li><a href="/en/vision.html"><span>Vision</span></a></li>
+									<li><a href="/en/it-support-faq.html"><span>Why Choose us</span></a></li>
+									
+
+									<li><a href="/en/jobthai-it-support/job-it-support.html"><span>Career </span></a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="/en/contact-it-support.html">Contact Us </a>
+
+                            </li>
+
+							<li class="has-children">
+                                <a href="index.html">Languge</a>
+                                <ul class="sub-menu"><li>
+<a href="/บริการ-aws-cloud-aws/ย้ายข้อมูลไปยังระบบคลาวด์-aws.html">
+<img class="ls-flag" width="35" height="23" src="/en/assets/images/flags/th.png" alt="it support thailand" title="Thai">
+<span> Thai</span>
+</a>
+</li>
+<li>
+<a href="/en/aws-services-thailand/aws-cloud-migration.html">
+<img class="ls-flag" width="35" height="23" src="/en/assets/images/flags/en.png" alt="it support thailand" title="English">
+<span> English</span></a>
+</li>
+
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of mobile menu overlay  ====================-->
+
+
+
+
+
+
+
+        <!--====================  search overlay ====================-->
+        <div class="search-overlay" id="search-overlay">
+
+            <div class="search-overlay__header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 ml-auto col-4">
+                            <!-- search content -->
+                            <div class="search-content text-right">
+                                <span class="mobile-navigation-close-icon" id="search-close-trigger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-overlay__inner">
+                <div class="search-overlay__body">
+                    <div class="search-overlay__form">
+                        <form action="#">
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  End of search overlay  ====================-->
+
+        <!-- JS
+    ============================================ -->
+        <!-- Modernizer JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        <!-- jQuery JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Swiper Slider JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+        <!-- Light gallery JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery.min.js"></script>
+
+        <!-- Waypoints JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+        <!-- Counter down JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+
+        <!-- Isotope JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+        <!-- Masonry JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+        <!-- ImagesLoaded JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+
+               <!-- circle progress JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+        <!-- counterup JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+        <!-- wow JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>   
+
+        <!-- Vivus JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>     
+
+        <!-- Wavify JS -->
+        <script src="/en/assets/js/plugins/wavify.js"></script>
+
+        <!-- jQuery Wavify JS -->
+        <script src="/en/assets/js/plugins/jquery.wavify.js"></script>
+
+       <!-- animation text JS -->
+       <script src="/en/assets/js/plugins/animation-text.min.js"></script>
+
+       <!-- Some plugins JS -->
+        <script src="/en/assets/js/plugins/some-plugins.js"></script>
+
+       <!-- Main JS -->
+        <script src="/en/assets/js/main.js"></script>
+
+
+        <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+        <!--
+        <script src="/en/assets/js/plugins/plugins.min.js"></script>
+        -->
+
+        
+
+
+
+<div id="fb-root"></div>
+<script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v7.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+
+<div class="fb-customerchat" attribution=setup_tool page_id="4509366412431781" theme_color="#fa3c4c">
+</div>
+
+
+</body>
+
+</html>

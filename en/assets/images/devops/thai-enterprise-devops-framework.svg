@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Enterprise DevOps Framework@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="94.8796267%" y1="0%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F8A626" offset="0%"></stop>
+            <stop stop-color="#DA660F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Enterprise-DevOps-Framework" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(41.336170, 44.276596)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="-7.10542736e-15" y="-3.55271368e-14" width="64.6808511" height="17.583144"></rect>
+            <rect id="Rectangle-Copy" fill="#FFBD7E" x="-7.10542736e-15" y="22.0525908" width="64.6808511" height="17.583144"></rect>
+            <rect id="Rectangle-Copy-2" fill="#FFBD7E" x="-7.10542736e-15" y="44.1051816" width="64.6808511" height="17.583144"></rect>
+        </g>
+        <circle id="Oval" fill="#FFFFFF" cx="95.9914894" cy="53.6553191" r="4.85106383"></circle>
+        <circle id="Oval-Copy-10" fill="#D35400" cx="95.9914894" cy="75.6468085" r="4.85106383"></circle>
+        <circle id="Oval-Copy-11" fill="#D35400" cx="95.9914894" cy="97.6382979" r="4.85106383"></circle>
+        <circle id="Oval-Copy-9" stroke="#FFBD7E" stroke-width="8" transform="translate(75.595745, 76.595745) rotate(64.000000) translate(-75.595745, -76.595745) " cx="75.5957447" cy="76.5957447" r="60.5957447"></circle>
+        <path d="M80,138.595745 L80,138.595745 C111.256967,138.595745 136.595745,113.256967 136.595745,82" id="Path" stroke="#D35400" stroke-width="17"></path>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Continuous Delivery</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Continuous-Delivery" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M75,19.2095467 C102.614237,19.2095467 125,41.5953092 125,69.2095467 C125,96.8237842 102.614237,119.209547 75,119.209547 C47.3857625,119.209547 25,96.8237842 25,69.2095467 C25,41.5953092 47.3857625,19.2095467 75,19.2095467 Z M75,24.2095467 C50.1471863,24.2095467 30,44.356733 30,69.2095467 C30,94.0623605 50.1471863,114.209547 75,114.209547 C99.8528137,114.209547 120,94.0623605 120,69.2095467 C120,44.356733 99.8528137,24.2095467 75,24.2095467 Z" id="Combined-Shape" fill="#D2DAE1"></path>
+        <polygon id="Triangle" fill="#355AA4" transform="translate(79.157367, 22.000000) rotate(-270.000000) translate(-79.157367, -22.000000) " points="79.1573671 16.5 88.1573671 27.5 70.1573671 27.5"></polygon>
+        <polygon id="Triangle-Copy" fill="#355AA4" transform="translate(122.634688, 67.859257) rotate(-181.000000) translate(-122.634688, -67.859257) " points="122.634688 62.3592571 131.634688 73.3592571 113.634688 73.3592571"></polygon>
+        <polygon id="Triangle-Copy-2" fill="#355AA4" transform="translate(28.000000, 67.859257) scale(1, -1) rotate(-181.000000) translate(-28.000000, -67.859257) " points="28 62.3592571 37 73.3592571 19 73.3592571"></polygon>
+        <polygon id="Rectangle" fill="#4179E8" points="33.7806999 80.4819954 75.5 59.2095467 117.2193 80.4819954 75.5 101.754444"></polygon>
+        <polygon id="Path-60" fill="#355AA4" points="75.5 101.709547 117 80.7095467 117 123.709547 75.5 144.709547"></polygon>
+        <polygon id="Path-60-Copy" fill="#98BBFF" transform="translate(54.750000, 112.709547) scale(-1, 1) translate(-54.750000, -112.709547) " points="34 101.709547 75.5 80.7095467 75.5 123.709547 34 144.709547"></polygon>
+    </g>
+</svg>
