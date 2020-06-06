@@ -56,6 +56,21 @@ h6 {
 				opacity: 0;
 		}
 }
+.top-promotion {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.top-promotion strong {
+    font-weight: 200;
+    font-size: 19px;
+}
+
+.top-promotion .warning {
+    margin-right: 5px;
+    color: #FFC107;
+}
 .btn--secondary {
 		background-color: #ff973b
 }
