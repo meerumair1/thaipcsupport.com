@@ -51,6 +51,3 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-
-RewriteEngine On
- RewriteRule ^(.*)/index([\.html]*)$ /$1 [R=302,L] 
