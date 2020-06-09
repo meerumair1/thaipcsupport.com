@@ -1046,3 +1046,11 @@ body {
     width: 110px;
     opacity: .8;
 }
+.num-for-mob{
+	display:none !important;
+}
+@media (min-width: 100px) and (max-width: 767px) {
+	.num-for-mob{
+	display:inherit !important;
+}
+}
