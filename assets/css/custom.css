@@ -135,7 +135,44 @@
 }
 .lf-text-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
 
+.appointment-hero-bg-1 {
+    background-image: url(../images/itsupport-thailand.jpg);
+    background-repeat: no-repeat;
+    background-position: 45%;
+    background-size: contain;
+    background-color: #3776ab;
+    }
+.business-solution-form-wrap {
+    background: rgba(255, 255, 255, 0.87);
+}
 
+h1.slide-header {
+    font-size: 60px;
+    line-height: 60px;
+    /* padding-left: 58px; */
+    font-weight: 500;
+    /* margin-bottom: 31px; */
+    position: relative;
+}
+h1.slide-header:after {
+    /* content: '\f085 '; */
+    font-family: "Font Awesome 5 Pro";
+    display: block;
+    position: absolute;
+    left: 0;
+    font-size: 42px;
+    top: 6px;
+}
+h2.slide-header {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 50px;
+}
+h5.slide-header {
+    font-size: 23px;
+    font-weight: 300;
+}
 @media only screen and (max-width: 1199px) {
 
 }
@@ -887,7 +924,7 @@ body {
 }
 #line-thaipc {
     position: fixed;
-    right: -304px;
+    right: -297px;
     top: 50%;
     padding: 10px 10px 10px 40px;
     background-color: #ffffff;
@@ -896,7 +933,7 @@ body {
     line-height: 22px;
     transition: right 0.5s;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.28);
-	z-index: 1 !important;
+    z-index: 1 !important;
 }
 #line-thaipc .inner img.line-add-qrcode {
     width: 110px;
