@@ -173,6 +173,13 @@ h5.slide-header {
     font-size: 23px;
     font-weight: 300;
 }
+.thank-tou-page {
+       background-position: 70%;
+}
+.thank-tou-page .align-items-center {
+    min-height: 250px;
+ 
+}
 @media only screen and (max-width: 1199px) {
 
 }
