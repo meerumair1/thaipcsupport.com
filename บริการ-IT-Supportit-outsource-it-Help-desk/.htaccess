@@ -51,3 +51,4 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
+RewriteRule ^(.*)$ index.php/$1 [L]
