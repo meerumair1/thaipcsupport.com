@@ -51,8 +51,3 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www.)?thaipcsupport.com$
-RewriteRule ^(/)?$ subdirectory/index.html [L]
-</IfModule>
