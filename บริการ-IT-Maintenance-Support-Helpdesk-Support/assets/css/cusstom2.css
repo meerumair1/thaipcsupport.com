@@ -279,7 +279,9 @@ a.hot-link {
 }
 
 .business-solution-form-wrap h4 {
-    color: #fff;
+    color: #ff973b;
+    line-height: 25px;
+    text-shadow: 1px 1px 5px rgba(210, 98, 0, 0.65);
 }
 
 .bg-blue {
