@@ -261,12 +261,12 @@ a.hot-link {
 .business-solution-form-wrap:after {
     content: '';
     display: block;
-    height: 230px;
+    height: 263px;
     width: 100%;
-    background-image: url(../images/pc-setup.png);
+    background-image: url(../images/it-support-1.png);
     background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: -25px -76px;
+    background-size: 396px;
+    background-position: center 3px;
     position: absolute;
     bottom: 0;
     left: 0;
