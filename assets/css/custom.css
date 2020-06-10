@@ -1057,5 +1057,7 @@ body {
 @media (max-width: 991px){
     .header__logo {
     text-align: center;
-    display: block !important;}
+    display: block !important;
+    margin-bottom: -30px;
+    }
 }

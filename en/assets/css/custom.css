@@ -918,3 +918,10 @@ body {
 	display:inherit !important;
 }
 }
+@media (max-width: 991px){
+    .header__logo {
+    text-align: center;
+    display: block !important;
+    margin-bottom: -30px;
+    }
+}
