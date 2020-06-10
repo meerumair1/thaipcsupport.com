@@ -614,7 +614,6 @@ border: 1px solid #d5dbdb;
 /* index page page */
 
 
-
 .appointment-hero-bg {
     background-color: transparent;
     background-repeat: no-repeat;
@@ -1073,4 +1072,75 @@ body {
     margin-bottom: -10px;
     }
     .top-message {display: none}
+}
+.top-heading h1 {
+    font-size: 30px;
+    color: #fff;
+}
+.top-heading p {
+    color: #fff;
+}
+.appointment-hero-bg-thank-you {
+    background-image: url(../images/bg5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.call-center-bg:after {
+		content: '';
+		display: block;
+		width: 500px;
+		height: 400px;
+		background-repeat: no-repeat;
+		background-position: center 35px;
+		background-image: url(../images/callcenter.png);
+		bottom: 0;
+		left: 15%;
+		position: absolute;
+}
+.call-center-bg {
+		min-height: 600px;
+		position: relative;
+}
+.top-heading.call-center-box {
+		font-size: 20px;
+		display: block;
+		background-color: #3ace00;
+		box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.22);
+		max-width: 590px;
+		padding: 35px 20px;
+		margin-right: auto;
+		margin-left: auto;
+}
+@media only screen and (max-width: 500px) {
+		.call-center-bg:after {
+				left: -96px;
+				width: 100%;
+				background-size: 340px;
+				background-position: 24px 119px;
+		}
+}
+@media only screen and (max-width: 990px) {
+		.header-top-wrap.border-bottom .row div {
+				text-align: center !important;
+		}
+		.list-social {
+				/* padding: 0 */
+		}
+		.hide-mb {
+				display: none
+		}
+		.modern-grid--8 {
+				grid-row-gap: 30px;
+				grid-template-columns: repeat(6, 1fr);
+		}
+		.call-center-bg:after {
+				left: -15px;
+		}
+}
+@media only screen and (max-width: 1400px) {
+		.call-center-bg:after {
+				left: -50px;
+		}
 }
