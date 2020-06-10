@@ -200,7 +200,10 @@ body {
 img.umi-responsive {
     width: 100%;
 	}
-
+.breadcrumb-area {
+        padding-top: 90px;
+    padding-bottom: 95px;
+}
 @media (min-width: 100px) and (max-width: 766px) {
 .imgwrapper {
    width: 50% !important;
