@@ -814,7 +814,7 @@ body {
     display: block;
 }
 #line-thaipc .inner img.line-add-link {
-    width: 150px;
+    max-width: 130px;
     margin-bottom: 5px;
     display: block;
 }
