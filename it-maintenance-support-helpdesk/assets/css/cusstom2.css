@@ -443,7 +443,8 @@ ul.tree-list li:last-child:before {
     line-height: 22px;
     transition: right 0.5s;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.28);
-    z-index: 9999
+    z-index: 9999;
+    max-height: 130px;
 }
 
 #line-thaipc .inner img.line-add-qrcode {
