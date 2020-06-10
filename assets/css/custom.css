@@ -984,7 +984,7 @@ body {
 }
 /* contact us */
 .contact-us-card {
-    background-color: #f8f8f8;
+    background-color: #086ad8;
     padding: 50px 30px 150px 30px;
     box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.11);
     position: relative;
@@ -1001,7 +1001,7 @@ body {
 .contact-us-card h2:after {
     content: '';
     display: inline-block;
-    background-color: #086ad8;
+    background-color: #ffffff;
     height: 4px;
     width: 20px;
     position: absolute;
@@ -1012,7 +1012,7 @@ body {
     display: block;
     font-size: 17px;
     line-height: 10px;
-    color: #333;
+    color: #fff;
     /* text-transform: uppercase; */
 }
 .contact-us-card ul.contact-icon li {
@@ -1022,7 +1022,7 @@ body {
     line-height: 29px;
     min-height: 40px;
     border-bottom: dashed 2px #efefef;
-    color: #2d2d2d;
+    color: #ffffff;
 }
 .contact-us-card ul.contact-icon li:last-child {
     border-bottom: none;
@@ -1032,7 +1032,7 @@ body {
     top: 22px;
     left: 0;
     font-size: 30px;
-    color: #086ad8;
+    color: #ffffff;
     width: 40px;
     text-align: center;
 }
@@ -1041,6 +1041,14 @@ body {
     position: absolute;
     width: 85%;
 }
+.contact-us-card .text-white a:hover {
+    color: #fff;
+}
+.contact-us-card .ht-social-networks.solid-rounded-icon .social-link {
+    background: 0 0;
+    border: 1px solid #ffffff;
+    color: #fff;
+}
 .line-qr {
     position: absolute;
     right: 10px;
@@ -1048,7 +1056,7 @@ body {
 }
 .line-qr img {
     width: 110px;
-    opacity: .8;
+    opacity: 1;
 }
 .num-for-mob{
 	display:none !important;
