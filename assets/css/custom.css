@@ -1070,6 +1070,7 @@ body {
     .header__logo {
     text-align: center;
     display: block !important;
-    margin-bottom: -30px;
+    margin-bottom: -10px;
     }
+    .top-message {display: none}
 }
