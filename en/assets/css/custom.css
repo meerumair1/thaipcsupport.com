@@ -749,6 +749,10 @@ body {
 .num-for-mob {
     display: none !important;
 }
+@media only screen and (max-width: 500px) {
+    .appointment-hero-bg-1 {background-size:0}
+}
+
 @media (min-width: 100px) and (max-width: 767px) {
     .num-for-mob {
         display: inherit !important;

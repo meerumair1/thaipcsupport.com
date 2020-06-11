@@ -1120,6 +1120,7 @@ body {
 				background-size: 340px;
 				background-position: 24px 119px;
 		}
+    .appointment-hero-bg-1 {background-size:0}
 }
 @media only screen and (max-width: 990px) {
 		.header-top-wrap.border-bottom .row div {
