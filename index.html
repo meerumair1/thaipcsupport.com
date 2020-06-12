@@ -486,15 +486,14 @@
                                 <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
                                 <div class="contact-form__two">
                                     <div class="contact-inner">
-                                        <input name="Last Name" type="text" placeholder="ชื่อ *">
+                                        <input name="Last Name" type="text" placeholder="ชื่อ - สกุล *">
                                     </div>
                                     <div class="contact-inner">
                                         <input name="Email" type="email" placeholder="อีเมล *">
                                     </div>
                                     <div class="contact-inner">
-                                        <input name="Phone" type="Phone" placeholder="เบอร์โทรศัพท์ *">
+                                        <input name="Phone" type="Phone" placeholder="โทรศัพท์ *">
                                     </div>
-                                    
                                     <div style="display: none;">
                                         <select style='width:100%;box-sizing:border-box;' name='LEADCF1'>
                                             <option value='-None-'>-None-</option>
@@ -538,7 +537,7 @@
                                         </select>
                                     </div>
                                     <div class="comment-submit-btn text-center">
-                                        <input class="ht-btn ht-btn-md" type="submit" value="ส่งข้อความ"></input>
+                                        <input class="ht-btn ht-btn-md" type="submit" value="Submit"></input>
                                     </div>
                                 </div>
                                 <script>
@@ -546,6 +545,7 @@
                                     var fldLangVal = new Array('Last Name', 'Email');
                                     var name = '';
                                     var email = '';
+
                                     function checkMandatory2525354000007409051() {
                                         for (i = 0; i < mndFileds.length; i++) {
                                             var fieldObj = document.forms['WebToLeads2525354000007409051'][mndFileds[i]];
@@ -581,6 +581,7 @@
                                         }
                                         document.getElementById('formsubmit').disabled = true;
                                     }
+
                                 </script>
                             </form>
                         </div>
