@@ -768,3 +768,25 @@ body {
         display: none
     }
 }
+
+.pricing-table-one .pricing-table__image {
+    width: 220px !important;
+    height: 200px !important;
+}
+.red-num{
+	color:#ff0000 !important;
+}
+
+.rental-icon {
+    font-size: 18px;
+    color: #3394d2;
+    float: left;
+    line-height: 1.4;
+    margin-right: 20px;
+	margin-left: 20px;
+}
+
+.pricing-table-one .pricing-table__feature-mark {
+  
+    background: #ff0000 !important;
+}
