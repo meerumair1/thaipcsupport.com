@@ -1214,7 +1214,7 @@ body {
 		transform: rotate(45deg);
 		width: 140px;
 }
-.business-solution-form-wrap {
+.business-solution-form-wrap.landing-form {
 		-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 		-moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 		box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
@@ -1223,15 +1223,8 @@ body {
 		position: relative;
     overflow: hidden;
 }
-.business-solution-form-wrap .comment-submit-btn {
+.business-solution-form-wrap.landing-form .comment-submit-btn {
 		background: rgba(255, 151, 59, 1);
 		font-size: 20px;
 		font-weight: 300;
-}
-.business-solution-form-wrap input {
-		font-size: 16px;
-		font-weight: 200;
-}
-.bg-blue {
-		background-color: #b1e5f3;
 }
