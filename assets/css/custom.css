@@ -1164,3 +1164,74 @@ body {
   
     background: #ff0000 !important;
 }
+
+
+/*rental-computer*/
+.appointment-hero-rental {
+    background-image: url(../images/landing/bg5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.ht-box-icon.style-04 {
+		color: #a8d7ff;
+		text-shadow: 1px 1px 15px #737373;
+}
+.ht-box-icon.style-04 .icon-box-wrap {
+		padding-left: 50px;
+		position: relative;
+		margin-bottom: 15px;
+}
+.ht-box-icon.style-04 .icon-box-wrap .icon {
+		position: absolute;
+		left: 0;
+		top: -8px;
+		font-size: 35px;
+}
+.marker-quetation {
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		width: 0;
+		height: 0;
+		border-top: 110px solid #F44336;
+		border-bottom: 110px solid transparent;
+		border-left: 110px solid transparent;
+}
+.marker-quetation span {
+		position: absolute;
+		top: -92px;
+		right: -35px;
+		text-align: center;
+		font-size: 19px;
+		font-weight: 300;
+		line-height: 1.19;
+		display: block;
+		color: #fff;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		width: 140px;
+}
+.business-solution-form-wrap {
+		-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+		border-radius: 0;
+		background-color: rgba(255, 255, 255, 0.84);
+		position: relative;
+    overflow: hidden;
+}
+.business-solution-form-wrap .comment-submit-btn {
+		background: rgba(255, 151, 59, 1);
+		font-size: 20px;
+		font-weight: 300;
+}
+.business-solution-form-wrap input {
+		font-size: 16px;
+		font-weight: 200;
+}
+.bg-blue {
+		background-color: #b1e5f3;
+}
