@@ -1145,3 +1145,22 @@ body {
 				left: -50px;
 		}
 }
+
+
+.red-num{
+	color:#ff0000 !important;
+}
+
+.rental-icon {
+    font-size: 18px;
+    color: #3394d2;
+    float: left;
+    line-height: 1.4;
+    margin-right: 20px;
+	margin-left: 20px;
+}
+
+.pricing-table-one .pricing-table__feature-mark {
+  
+    background: #ff0000 !important;
+}
