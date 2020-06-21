@@ -893,3 +893,29 @@ body {
 		font-size: 20px;
 		font-weight: 300;
 }
+
+/*stibo*/
+.image-box-wrap-umi{
+	justify-content: right !important;
+	
+}
+
+.image-box-wrap-stibo{
+background:none !important;	
+padding: 0px 0px !important;	
+
+}
+.umi-icon-stibo {
+    fill: #fff;
+    color: #fff;
+    border-color: #fff;
+    font-size: 100px;
+		
+}
+
+.heading-stibo {
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0;
+}
+/*stibo*/
