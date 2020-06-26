@@ -51,3 +51,9 @@ ExpiresDefault "access 1 month"
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
+<IfModule mod_rewrite.c>
+    RewriteEngine On 
+    RewriteBase /
+    Redirect 301 /en/contact-us/ /en/contact-it-support.html
+    </IfModule>
+
