@@ -233,6 +233,10 @@
     <loc>https://www.thaipcsupport.com/en/firewall-fortigate/firewall-fortigate-cisco.html</loc>
     <changefreq>daily</changefreq>
   </url>
+   <url>
+    <loc>https://www.thaipcsupport.com/en/stibo.html</loc>
+    <changefreq>daily</changefreq>
+  </url>
   <url>
     <loc>https://www.thaipcsupport.com/devops-services-thailand/devops-aws-thailand.html</loc>
     <changefreq>daily</changefreq>
