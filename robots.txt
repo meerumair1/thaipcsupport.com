@@ -33,3 +33,5 @@ allow: /
 User-agent: *
 allow: /
 Disallow: /cgi-bin/
+Sitemap: https://www.thaipcsupport.com/sitemap.xml
+Sitemap: https://www.thaipcsupport.com/sitemap_index.xml
