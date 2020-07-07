@@ -922,3 +922,10 @@ padding: 0px 0px !important;
 .h1-logo{
 	line-height:0px !important;
 }
+.picing-rental-pc{
+	background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+	line-height: 55px;
+}
