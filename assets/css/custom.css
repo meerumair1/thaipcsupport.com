@@ -1272,10 +1272,10 @@ body {
 .fas.fa-server.server-um {
     color: #001f4c;
 }
-.fas.fa-database .database-um {
+.fas.fa-database.database-um {
     color: #42769d;
 }
-.fas.fa-network-wired .wired-um {
+.fas.fa-network-wired.wired-um {
     color: #029402;
 }
 
