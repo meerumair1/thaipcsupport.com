@@ -268,7 +268,10 @@ h2.page-list-title.margin-none {
     font-weight: 600;
 
 }
-
+h2.page-list-title.margin-none.double {
+    padding-top: 0px !important;
+    line-height: 17px !important;
+}
 .mega-menu-text {
 	float: left !important;
 
