@@ -88,8 +88,8 @@ a.min-line-height:hover {
     -webkit-flex-basis: 22%;
     -ms-flex-preferred-size: 22%;
     flex-basis: 22%;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    /*padding-left: 0px !important;
+    padding-right: 0px !important; */
 }
 .submenu > li > a {
     color: #000 !important;
