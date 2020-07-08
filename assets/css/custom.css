@@ -1241,3 +1241,9 @@ body {
     font-size: 40px;
 	line-height: 55px;
 }
+.min-line-height {
+    line-height: 20px;
+    padding: 4px 2px 4px 6px !important;
+    height: 130px !important;
+    margin-bottom: 20px !important;
+}
