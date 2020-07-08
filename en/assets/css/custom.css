@@ -939,106 +939,109 @@ padding: 0px 0px !important;
     height: 130px !important;
     margin-bottom: 20px !important;
 }
-.fas.fa-poll-h {
+.fas.fa-poll-h.poll-um {
     color: #f89500;
 }
-.fab.fa-microsoft {
+.fab.fa-microsoft.microsoft-um {
     color: #0055d8;
 }
-.fab.fa-google {
+.fab.fa-google.google-um {
     color: #e44034;
 }
-.fas.fa-file-excel {
+.fas.fa-file-excel.excel-um {
     color: #026f38;
 }
-.fas.fa-cloud {
+.fas.fa-cloud.cloud-um {
     color: #ed7e1f;
 }
-.fas.fa-project-diagram {
+.fas.fa-project-diagram.diagram-um {
     color: #1d0388;
 }
-.fas.fa-user-secret {
+.fas.fa-user-secret.secret-um {
     color: #585fc9;
 }
-.fas.fa-server {
+.fas.fa-server.server-um {
     color: #001f4c;
 }
-.fas.fa-database {
+.fas.fa-database .database-um {
     color: #42769d;
 }
-.fas.fa-network-wired {
+.fas.fa-network-wired .wired-um {
     color: #029402;
 }
 
 
 
 
-.fas.fa-headset {
+.fas.fa-headset.headset-um {
     color: #f89500;
 }
 
-.fas.fa-hands-helping {
+.fas.fa-hands-helping.helping-um {
     color: #0055d8;
 }
-.fas.fa-ethernet {
+.fas.fa-ethernet.ethernet-um {
     color: #e44034;
 }
-.far.fa-building {
+.far.fa-building.building-um {
     color: #026f38;
 }
-.fas.fa-calculator {
+.fas.fa-calculator.calculator-um {
     color: #ed7e1f;
 }
-.fas.fa-fire {
+.fas.fa-fire.fa-fire-um {
     color: #ff4600;
 }
-.fas.fa-recycle {
+.fas.fa-recycle.fa-recycle-um {
     color: #ed7e1f;
 }
-.fas.fa-laptop {
+.fas.fa-laptop.fa-laptop-um {
     color: #585fc9;
 }
-.fas.fa-tools {
+.fas.fa-tools.fa-tools-um {
     color: #001f4c;
 }
-.fas.fa-memory {
+.fas.fa-memory.fa-memory-um {
     color: #017109;
 }
-.fas.fa-share-alt-square {
+.fas.fa-share-alt-square.square-um {
     color: #f3a800;
 }
 
-.fab.fa-aws {
+.fab.fa-aws.aws-um {
     color: #f89500;
 }
-.fab.fa-dev {
+.fab.fa-dev.dev-um {
     color: #585fc9;
 }
 
-.fas.fa-folder-open {
+.fas.fa-folder-open.open-um {
     color: #d9d205;
 }
-.fas.fa-share-alt {
+.fas.fa-share-alt.share-alt-um {
     color: #f3a800;
 }
-.fas.fa-ambulance {
+.fas.fa-ambulance.ambulance-um {
     color: #fc0023;
 }
-.fas.fa-radiation-alt {
+.fas.fa-radiation-alt.radiation-alt-um {
     color: #feb207;
 }
-.fas.fa-code {
+.fas.fa-code.code-um {
     color: #1768af;
 }
-.fas.fa-hdd {
+.fas.fa-hdd.hdd-um {
     color: #a15d35;
 }
-.fas.fa-tasks {
+.fas.fa-tasks.tasks-um {
     color: #03c003;
 }
-.fas.fa-laptop-code {
+.fas.fa-laptop-code.code-um {
     color: #0a0822;
 }
-.fas.fa-microchip {
+.fas.fa-microchip.microchip-um {
     color: #cf7020;
 }
+
+
+
