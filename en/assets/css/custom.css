@@ -939,3 +939,71 @@ padding: 0px 0px !important;
     height: 130px !important;
     margin-bottom: 20px !important;
 }
+.fas.fa-poll-h {
+    color: #f89500;
+}
+.fab.fa-microsoft {
+    color: #0055d8;
+}
+.fab.fa-google {
+    color: #e44034;
+}
+.fas.fa-file-excel {
+    color: #026f38;
+}
+.fas.fa-cloud {
+    color: #ed7e1f;
+}
+.fas.fa-project-diagram {
+    color: #1d0388;
+}
+.fas.fa-user-secret {
+    color: #585fc9;
+}
+.fas.fa-server {
+    color: #001f4c;
+}
+.fas.fa-database {
+    color: #42769d;
+}
+.fas.fa-network-wired {
+    color: #029402;
+}
+
+
+
+
+.fas.fa-headset {
+    color: #f89500;
+}
+
+.fas.fa-hands-helping {
+    color: #0055d8;
+}
+.fas.fa-ethernet {
+    color: #e44034;
+}
+.far.fa-building {
+    color: #026f38;
+}
+.fas.fa-calculator {
+    color: #ed7e1f;
+}
+.fas.fa-fire {
+    color: #ff4600;
+}
+.fas.fa-recycle {
+    color: #ed7e1f;
+}
+.fas.fa-laptop {
+    color: #585fc9;
+}
+.fas.fa-tools {
+    color: #001f4c;
+}
+.fas.fa-memory {
+    color: #017109;
+}
+.fas.fa-share-alt-square {
+    color: #f3a800;
+}
