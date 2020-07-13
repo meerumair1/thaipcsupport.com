@@ -1351,3 +1351,90 @@ body {
 .fas.fa-microchip.microchip-um {
     color: #cf7020;
 }
+
+
+
+/*rental*/
+.rental-heading{
+	 border: 0px solid #dee2e6 !important;
+	 border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.rental-heading td {
+    border: 0px solid #dee2e6 !important;
+    border-top: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.rental-heading th {
+   border: 0px solid #dee2e6 !important;
+    border-top: 0px solid #dee2e6 !important;
+	text-align: center !important;
+	vertical-align: middle;
+}
+
+.btn-blu1-clr {
+    color: #fff;
+    background: #408de4;
+    transition: all .3s ease-in-out;
+}
+.xyz12-btn {
+    display: inline-block;
+	    padding: 10px 40px;
+    border-radius: 3px;
+
+   
+}
+
+.btn-blu1-clr:hover {
+    color: #fff !important;
+    background: #286ebc !important;
+    transition: all .3s ease-in-out !important;
+}
+
+.table-rental-scroll{
+	overflow-x: auto;
+	
+}
+td.border-left-table {
+    border-left: 1px solid #dee2e6 !important;
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+td.border-right-table {
+    border-right: 1px solid #dee2e6 !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.xyz12-pric-new {
+        font-size: 19px;
+}
+.lapi {
+    background: #2492f0;
+    color: #fff;
+    font-weight: 800;
+}
+.deski {
+    background: #8a2be2;
+    color: #fff;
+    font-weight: 800;
+}
+
+td.xyz12-pric.xyz12-pric-new {
+    background: #c0dcf4;
+    font-size: 20px;
+    font-weight: 800;
+    border-right: 1px solid #ffffff !important;
+}
+td.xyz12-pric2.xyz12-pric-new2 {
+    background: #dbc6ee;
+    font-size: 20px;
+    font-weight: 800;
+    border-right: 1px solid #ffffff !important;
+}
+
+/*end rental*/
