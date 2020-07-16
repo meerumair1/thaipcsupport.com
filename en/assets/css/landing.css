@@ -130,13 +130,13 @@ a.btn.btn--secondary.btn-two {
 		font-weight: 700;
 		letter-spacing: -1px;
 }
-.social-icon {
+/*.social-icon {
 		width: 35px;
 		height: 35px;
 		background: url(../images/social-icon.png);
 		background-repeat: no-repeat;
 		background-size: auto 35px;
-}
+}*/
 .social-icon.facebook {
 		background-position: -140px;
 }
