@@ -1445,3 +1445,11 @@ td.xyz12-pric2.xyz12-pric-new2 {
     font-size: 20px  !important;
 }
 /*End-Phone-number*/
+
+.btn-height-cloud {
+    font-size: 15px  !important;
+    font-weight: 500  !important;
+    letter-spacing: 0  !important;
+    line-height: 30px  !important;
+    height: 154px  !important;
+}
