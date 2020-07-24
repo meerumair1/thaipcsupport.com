@@ -61,6 +61,12 @@ a.btn.btn--secondary.btn-two {
 		background-repeat: no-repeat;
 		background-position: center top;
 }
+.appointment-hero-bg-aws {
+		background-image: url(../images/landing/aws-bg.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center top;
+}
 
 .logo-heading {
 		margin-left: auto;
