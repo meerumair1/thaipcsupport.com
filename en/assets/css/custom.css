@@ -1150,3 +1150,10 @@ td.xyz12-pric2.xyz12-pric-new2 {
     line-height: 30px  !important;
     height: 154px  !important;
 }
+.h1 {
+    font-size: 56px;
+}
+.top-heading .h1 {
+    font-size: 30px;
+    color: #fff;
+}
