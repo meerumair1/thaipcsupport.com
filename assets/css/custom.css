@@ -1457,3 +1457,10 @@ td.xyz12-pric2.xyz12-pric-new2 {
 .btn-height-cloud span {
     margin-bottom: 15px;
 }
+.h1 {
+    font-size: 56px;
+}
+.top-heading .h1 {
+    font-size: 30px;
+    color: #fff;
+}
