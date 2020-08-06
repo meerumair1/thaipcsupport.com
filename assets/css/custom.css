@@ -184,7 +184,7 @@ h2.page-list-title.margin-none.double {
 }
 .mega-menu-text {
 	float: left !important;
-
+    font-size: 14px;
 }
 
 .megamenu-icon{
@@ -211,13 +211,12 @@ a.min-line-height:hover {
 
 
 .megamenu--mega > li {
-    -webkit-flex-basis: 22%;
-    -ms-flex-preferred-size: 22%;
-    flex-basis: 22%;
-     /*padding-left: 0px !important;
-     padding-right: 0px !important; */
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    border-right: solid 1px #eaeaea;
 }
-
+.megamenu--mega > li:last-child {border: none}
 .submenu > li > a {
 
     color: #000 !important;
@@ -1154,9 +1153,9 @@ body {
 }
 .min-line-height {
     line-height: 20px;
-    padding: 4px 2px 4px 6px !important;
-    height: 130px !important;
-    margin-bottom: 20px !important;
+    padding: 4px 2px 4px 6px;
+    min-height: 120px;
+    margin-bottom: 10px;
 }
 
 .fas.fa-poll-h.poll-um {
