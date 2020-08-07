@@ -167,12 +167,34 @@
         }
 
     </style>
-    
+
     <style>
-        .powerby {margin-top: -6px;}
-        .powerby img {margin-left: auto;margin-right: auto;display: block;width: 260px;}
-        .footer-copyright-area {border-top: solid 1px #eaeaea;}
-        
+        div#Certificate-banners,
+        .powerby {
+            /* width: 40%; */
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .powerby img {
+            width: 134px;
+        }
+
+        div#Certificate-banners:after {
+    content: '';
+    height: 40px;
+    width: 1px;
+    display: inline-block;
+    background-color: #cccccc;
+    position: absolute;
+    top: 8px;
+    right: 51%;
+}
+
+        .footer-copyright-area {
+            border-top: solid 1px #eaeaea;
+        }
+
     </style>
 
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
@@ -2248,7 +2270,7 @@
                                 </a>
                             </li>
                         </ul>
-                        
+
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
                         <h6 class="footer-widget__title mb-20">IT Solution</h6>
@@ -2302,12 +2324,13 @@
                         <span class="copyright-text">&copy; 2020 Thaipcsupport. All Rights Reserved.</span>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-center">
-                        
-                        <div id="Certificate-banners"></div>
-                       
-                        <!--<div class="powerby">
-                        <img src="https://www.aquacrmsoftware.com/wp-content/uploads/2015/02/AquaCRM-logo4.png"/>
-                        </div>-->
+                        <div class="credit-footer">
+                            <div id="Certificate-banners"></div>
+
+                            <div class="powerby">
+                                <a href="#" target="_blank" title="AquaOrange Software"><img src="https://www.aquacrmsoftware.com/wp-content/uploads/2015/02/AquaCRM-logo4.png" /></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-right">
                         <ul class="footer-widget__list footer-umi-inline">
@@ -2500,7 +2523,7 @@
         -->
     <script src="https://www.trustmarkthai.com/callbackData/initialize.js?t=a4a35-20-5-b32000db58e574c59759d48b9e73f333f5878973" id="dbd-init"></script>
     <div class="line-icon-button"><a class="line" title="Line@thaipcsupport" href="https://line.me/R/ti/p/%40thaipcsupport" target="_blank"><i class="fab fa-line link-icon"></i></a></div>
-    
+
 </body>
 
 </html>
