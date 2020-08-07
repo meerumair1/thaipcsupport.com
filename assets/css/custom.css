@@ -209,7 +209,17 @@ a.min-line-height:hover {
 	color:#696969 !important;
 }
 
-
+.megamenu,.submenu {
+    -webkit-transition: all .2s cubic-bezier(.645,.045,.355,1);
+    -o-transition: all .2s cubic-bezier(.645,.045,.355,1);
+    transition: all .2s cubic-bezier(.645,.045,.355,1);
+    -webkit-transition-delay: .1s;
+    -o-transition-delay: .1s;
+    transition-delay: .1s;
+    -webkit-transition-duration: .1s;
+    -o-transition-duration: .1s;
+    transition-duration: .1s;
+}
 .megamenu--mega > li {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
