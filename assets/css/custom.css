@@ -1398,6 +1398,7 @@ td.xyz12-pric2.xyz12-pric-new2 {
     text-align: center;
     color: #00c300;
     box-shadow: 0px 0px 14px 3px rgb(40 167 69 / 50%);
+    line-height: 1;
 }
 .line-icon-button:before {
     display: block;
