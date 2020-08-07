@@ -99,13 +99,14 @@ a.min-line-height:hover {
     -o-transition-duration: .1s;
     transition-duration: .1s;
 }
+
 .megamenu--mega > li {
-    -webkit-flex-basis: 22%;
-    -ms-flex-preferred-size: 22%;
-    flex-basis: 22%;
-    /*padding-left: 0px !important;
-    padding-right: 0px !important; */
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    border-right: solid 1px #eaeaea;
 }
+.megamenu--mega > li:last-child {border: none}
 .submenu > li > a {
     color: #000 !important;
 }
