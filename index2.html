@@ -170,21 +170,35 @@
 
     <style>
      .company-groups {
-    font-size: 14px;
+    font-size: 13px;
     background-color: #fff;
     /* border: solid 1px #f1f1f1; */
     padding: 10px 24px;
-    min-width: 243px;
+    /* min-width: 243px; */
     display: inline-block;
     text-align: center;
     border-radius: 5px;
     color: #faa742;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    -o-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
 }
-        .company-groups img {
+.company-groups:hover {
+    color: #4c4c4c;
+    background-color: #faa742;
+}
+   .company-groups img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 140px;
+    width: 122px;
+}
+       .appointment-hero-bg-3 {
+    background-image: url(assets/images/banner-01.png);
+    background-repeat: no-repeat;
+    background-position: 22% 100%;
+    background-size: auto;
+    background-color: #00446f;
 }
 
     </style>
@@ -582,16 +596,13 @@
     </div>
     <!--====================  End of header area  ====================-->
     <div class="site-wrapper-reveal">
-        <div class="appointment-hero-wrapper appointment-hero-bg-1 section-space--ptb_60">
+        <div class="appointment-hero-wrapper appointment-hero-bg-3 section-space--ptb_60">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="appointment-hero-wrap wow move-up">
                             <div class="appointment-hero-text">
-                                <h6 class="text-white h6-th">ผู้นำด้านไอทีและความปลอดภัย </h6>
-                                <div class="h1 text-whitefont-weight--reguler text-white mb-30 h1-th slide-header">บริการ</div>
-                                <h2 class="text-white slide-header mb-30">IT Support <br>IT Outsource <br>IT Service </h2>
-                                <h5 class="text-white slide-header">ดูแลโดยทีมงานมืออาชีพ </h5>
+                                
                             </div>
                         </div>
                     </div>
@@ -2262,7 +2273,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="company-groups">
+                        <div class="company-groups mt-10">
                            <img src="assets/images/AquaCRM-logo4.png">
                             AquaOrange Group Company
                         </div>
