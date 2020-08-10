@@ -1222,3 +1222,14 @@ div#Certificate-banners:after {
 .footer-copyright-area {
     border-top: solid 1px #eaeaea;
 }
+
+.gsuite_price{
+    margin: 29px auto 0;
+    max-width: 270px;
+}
+
+.gsuite_price li {
+    position: relative;
+    display: block;
+    padding: 7px 0 18px 8px;
+}
