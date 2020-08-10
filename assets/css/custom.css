@@ -1414,25 +1414,6 @@ td.xyz12-pric2.xyz12-pric-new2 {
 .line-icon-button a:hover {
     color: #00c300;
 }
-div#Certificate-banners,.powerby {
-    /* width: 40%; */
-    display: inline-block;
-    padding: 0 10px;
-}
-.powerby img {
-    width: 134px;
-}
-
-div#Certificate-banners:after {
-    content: '';
-    height: 40px;
-    width: 1px;
-    display: inline-block;
-    background-color: #cccccc;
-    position: absolute;
-    top: 8px;
-    right: 51%;
-}
 
 .footer-copyright-area {
     border-top: solid 1px #eaeaea;
