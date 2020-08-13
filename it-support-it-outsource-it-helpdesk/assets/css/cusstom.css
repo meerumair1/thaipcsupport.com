@@ -396,6 +396,7 @@ a.hot-link {
     background-color: rgba(255, 255, 255, 0.84);
     position: relative;
     overflow: hidden;
+    padding: 25px 25px 25px;
 }
 
 .business-solution-form-wrap .comment-submit-btn {
@@ -403,12 +404,13 @@ a.hot-link {
     font-size: 20px;
     font-weight: 300;
 }
-
-.business-solution-form-wrap input {
+.business-solution-form-wrap input, .business-solution-form-wrap textarea {
     font-size: 16px;
     font-weight: 200;
 }
-
+.contact-inner textarea {
+    max-height: 85px;
+}
 .bg-blue {
     background-color: #b1e5f3;
 }
