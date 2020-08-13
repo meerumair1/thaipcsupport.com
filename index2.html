@@ -169,59 +169,68 @@
     </style>
 
     <style>
-     .company-groups {
-    font-size: 13px;
-    background-color: #fff;
-    /* border: solid 1px #f1f1f1; */
-    padding: 10px 24px;
-    /* min-width: 243px; */
-    display: inline-block;
-    text-align: center;
-    border-radius: 5px;
-    color: #faa742;
-    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
-    -o-transition: all .3s cubic-bezier(.645,.045,.355,1);
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
-}
-.company-groups:hover {
-    color: #4c4c4c;
-    background-color: #faa742;
-}
-   .company-groups img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 122px;
-}
-       .appointment-hero-bg-3 {
-    background-image: url(assets/images/banner-01.png);
+        .company-groups {
+            font-size: 13px;
+            background-color: #fff;
+            /* border: solid 1px #f1f1f1; */
+            padding: 10px 24px;
+            /* min-width: 243px; */
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            color: #faa742;
+            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        }
+
+        .company-groups:hover {
+            color: #4c4c4c;
+            background-color: #faa742;
+        }
+
+        .company-groups img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 122px;
+        }
+
+        .appointment-hero-bg-3 {
+    background-image: url(assets/images/banner001.png);
     background-repeat: no-repeat;
-    background-position: 22% 100%;
+    background-position: -5% 100%;
     background-size: auto;
     background-color: #00446f;
 }
-.aws-banner {
-    background-color: #f6f2ed;
-    background-image: url(assets/images/aws-box.png);
-    background-repeat: no-repeat;
-    background-position: 84% 113%;
-    background-size: 500px;
-}
-.aws-banner .aws.text-color-primary {
+
+        .aws-banner {
+            background-color: #f6f2ed;
+            background-image: url(assets/images/aws-box.png);
+            background-repeat: no-repeat;
+            background-position: 84% 113%;
+            background-size: 500px;
+        }
+
+        .aws-banner .aws.text-color-primary {
             color: #ff9900
         }
-    a.aws.btn.btn--white.btn-one {
-    background-color: #f90;
-}
-    .acronis-banner {
-    background-color: #14234c;
-    background-image: url(assets/images/acronis-banner.jpg);
-    background-repeat: no-repeat;
-    background-position: 45% center;
-}
+
+        a.aws.btn.btn--white.btn-one {
+            background-color: #f90;
+        }
+
+        .acronis-banner {
+            background-color: #14234c;
+            background-image: url(assets/images/acronis-banner.jpg);
+            background-repeat: no-repeat;
+            background-position: 45% center;
+        }
+
         .acronis-banner .acronis.text-color-primary {
             color: #1dadec;
         }
+
     </style>
 
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
@@ -283,21 +292,66 @@
         }
 
     </script>
-<!-- Start VWO Async Smartcode -->
-<script type='text/javascript'>
-window._vwo_code = window._vwo_code || (function(){
-var account_id=517310,
-settings_tolerance=2000,
-library_tolerance=2500,
-use_existing_jquery=false,
-is_spa=1,
-hide_element='body',
+    <!-- Start VWO Async Smartcode -->
+    <script type='text/javascript'>
+        window._vwo_code = window._vwo_code || (function() {
+            var account_id = 517310,
+                settings_tolerance = 2000,
+                library_tolerance = 2500,
+                use_existing_jquery = false,
+                is_spa = 1,
+                hide_element = 'body',
 
-/* DO NOT EDIT BELOW THIS LINE */
-f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
-</script>
-<!-- End VWO Async Smartcode -->
+                /* DO NOT EDIT BELOW THIS LINE */
+                f = false,
+                d = document,
+                code = {
+                    use_existing_jquery: function() {
+                        return use_existing_jquery;
+                    },
+                    library_tolerance: function() {
+                        return library_tolerance;
+                    },
+                    finish: function() {
+                        if (!f) {
+                            f = true;
+                            var a = d.getElementById('_vis_opt_path_hides');
+                            if (a) a.parentNode.removeChild(a);
+                        }
+                    },
+                    finished: function() {
+                        return f;
+                    },
+                    load: function(a) {
+                        var b = d.createElement('script');
+                        b.src = a;
+                        b.type = 'text/javascript';
+                        b.innerText;
+                        b.onerror = function() {
+                            _vwo_code.finish();
+                        };
+                        d.getElementsByTagName('head')[0].appendChild(b);
+                    },
+                    init: function() {
+                        window.settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance);
+                        var a = d.createElement('style'),
+                            b = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '',
+                            h = d.getElementsByTagName('head')[0];
+                        a.setAttribute('id', '_vis_opt_path_hides');
+                        a.setAttribute('type', 'text/css');
+                        if (a.styleSheet) a.styleSheet.cssText = b;
+                        else a.appendChild(d.createTextNode(b));
+                        h.appendChild(a);
+                        this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + (+is_spa) + '&r=' + Math.random());
+                        return settings_timer;
+                    }
+                };
+            window._vwo_settings_timer = code.init();
+            return code;
+        }());
+
+    </script>
+    <!-- End VWO Async Smartcode -->
 </head>
 
 <body class="body-th">
@@ -636,11 +690,6 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
-                        <div class="appointment-hero-wrap wow move-up">
-                            <div class="appointment-hero-text">
-                                
-                            </div>
-                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="business-solution-form-wrap">
@@ -1760,7 +1809,7 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                 <div class="row align-items-center">
                     <div class="col-lg-12 text-center">
                         <div class="text-center mb-10 text-white">
-                            <h3 class="heading text-white">ระบบ  <span class="acronis text-color-primary"> Acronis</span> </h3>
+                            <h3 class="heading text-white">ระบบ <span class="acronis text-color-primary"> Acronis</span> </h3>
                             <p class="text-th">Backup & Recovery ด้วย Acronis Backup<br>แก้ไขปัญหาระบบล่ม ไม่เสถียร ไม่ปลอดภัย ทำให้ธุรกิจสามารถทำงานได้อย่างต่อเนื่อง <br>ลดความเสี่ยงในการเกิด Downtime</p>
                         </div>
                         <div class="cta-button-group--two text-center">
@@ -2309,7 +2358,7 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                             </li>
                         </ul>
                         <div class="company-groups mt-10">
-                           <img src="assets/images/AquaCRM-logo4.png">
+                            <img src="assets/images/AquaCRM-logo4.png">
                             AquaOrange Group Company
                         </div>
 
@@ -2517,7 +2566,8 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
     <!--====================  End of search overlay  ====================-->
     <!-- JS
     ============================================ -->
-    <!-- Modernizer JS --> <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>-->
+    <!-- Modernizer JS -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>-->
     <!-- jQuery JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
