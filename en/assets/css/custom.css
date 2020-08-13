@@ -346,6 +346,10 @@ h5.slide-header {
     background: none !important;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom: solid 1px #f7f7f7;
+}
+.faq-wrapper .card-body p {
+    line-height: 22px;
 }
 .faq-wrapper .card-header h5 .umi-tog {
     font-size: 17px !important;
