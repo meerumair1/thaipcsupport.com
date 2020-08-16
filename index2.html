@@ -219,7 +219,23 @@
         .acronis-banner .acronis.text-color-primary {
             color: #1dadec;
         }
-
+        .custom-icon {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-image: url(assets/images/home-icon.png);
+             background-repeat: no-repeat;
+                font-size: 0;
+        }
+        .custom-icon.it-support {
+            background-position: 0px 0px
+        }
+        .custom-icon.firewall {
+            background-position: 0px -100px;
+        }
+        .custom-icon.nas-file-server {
+            background-position: 0px -200px
+        }
         @media (max-width: 1574px) and (min-width:1350px) {
             .appointment-hero-bg-3 {
                 background-position: 5% center;
@@ -835,11 +851,11 @@
                                     <!-- ht-box-icon Start -->
                                     <div class="ht-box-images style-04 border-gray">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                                <i class="fas fa-headset" style="font-size: 68px; font-weight:100; color:#333333;"></i>
+                                            <div class="box-image text-center custom-icon it-support">
+                                                IT Support
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ IT Support </h6>
+                                                <h5 class="heading text-center h6-th">บริการ IT Support </h5>
                                                 <ul class="check-list section-space--mb_10">
                                                     <li class="list-item section-space--mt_20 li-th">รูปแบบบริการ รายครั้ง/รายเดือน/รายปี
                                                     </li>
@@ -863,11 +879,11 @@
                                     <!-- ht-box-icon Start -->
                                     <div class="ht-box-images style-04 border-gray">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                                <i class="fas fa-shield-alt" style="font-size: 68px; font-weight:100; color:#333333;"></i>
+                                            <div class="box-image text-center custom-icon firewall">
+                                                Firewall & Security
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ Firewall & Security </h6>
+                                                <h5 class="heading text-center h6-th">บริการ Firewall & Security </h5>
                                                 <ul class="check-list section-space--mb_10">
                                                     <li class="list-item section-space--mt_20 li-th">บริการติดตั้งและดูแล Firewall
                                                     </li>
@@ -889,11 +905,11 @@
                                     <!-- ht-box-icon Start -->
                                     <div class="ht-box-images style-04 border-gray">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                                <i class="fas fa-server" style="font-size: 68px; font-weight:100; color:#333333;"></i>
+                                            <div class="box-image text-center custom-icon nas-file-server">
+                                                NAS & File Server
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ NAS & File Server </h6>
+                                                <h5 class="heading text-center h6-th">บริการ NAS & File Server </h5>
                                                 <ul class="check-list section-space--mb_10 li-th">
                                                     <li class="list-item section-space--mt_20 li-th">บริการติดตั้งและกำหนดสิทธิ์การเข้าถึง
                                                     </li>
@@ -912,6 +928,11 @@
                                     <!-- ht-box-icon End -->
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-30">
+                        <div class="tab-button text-center">
+                            <a href="it-support-thailand/it-support.html" class="ht-btn ht-btn-md">ข้อมูลเพิ่มเติม</a>
                         </div>
                     </div>
                 </div>
