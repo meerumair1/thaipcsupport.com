@@ -1,17 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-
-.h1-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
-		.h2-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
-		.h3-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
-		.h4-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
-		.h5-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
-		.h6-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
+.h1-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
+		.h2-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
+		.h3-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
+		.h4-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
+		.h5-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
+		.h6-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
 .p-th {
-    font-family: TTNormsPro, 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
+    font-family:'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
     line-height: 28px!important;
    font-weight: 500!important;
 	font-size: 18px!important;
@@ -21,13 +18,13 @@
 }
 	
 .a-th {
-    font-family: TTNormsPro, 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
 	text-decoration: none !important;
 	    font-weight: 600 !important;
 }		
 
 .text-th {
-    font-family: TTNormsPro, 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC',sans-serif !important;
     line-height: 28px!important;
    font-weight: 500!important;
 	font-size: 18px!important;
@@ -43,7 +40,7 @@
     margin-left: 22px!important;
     display: block!important;
 }
-.lf-text-th{font-family:TTNormsPro,'Sukhumvit Tadmai',sans-serif!important;}
+.lf-text-th{font-family:'Sukhumvit Tadmai',sans-serif!important;}
 
 .appointment-hero-bg-1 {
     background-image: url(../images/itsupport-thailand.jpg);
