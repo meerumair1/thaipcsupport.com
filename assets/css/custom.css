@@ -1432,3 +1432,119 @@ td.xyz12-pric2.xyz12-pric-new2 {
     display: block;
     padding: 7px 0 18px 8px;
 }
+
+.company-groups {
+            font-size: 13px;
+            background-color: #fff;
+            /* border: solid 1px #f1f1f1; */
+            padding: 10px 24px;
+            /* min-width: 243px; */
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            color: #faa742;
+            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        }
+
+        .company-groups:hover {
+            color: #4c4c4c;
+            background-color: #faa742;
+        }
+
+        .company-groups img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 122px;
+        }
+
+        .appointment-hero-bg-3 {
+            background-image: url(/assets/images/banner005.jpg);
+            background-repeat: no-repeat;
+            background-position: 29% center;
+            background-size: auto;
+            background-color: #00345e;
+        }
+    .appointment-hero-text {
+        display: none;
+    }
+        .aws-banner {
+            background-color: #f6f2ed;
+            background-image: url(/assets/images/aws-box.png);
+            background-repeat: no-repeat;
+            background-position: 84% 113%;
+            background-size: 500px;
+        }
+
+        .aws-banner .aws.text-color-primary {
+            color: #ff9900
+        }
+
+        a.aws.btn.btn--white.btn-one {
+            background-color: #f90;
+        }
+
+        .acronis-banner {
+            background-color: #14234c;
+            background-image: url(/assets/images/acronis-banner.jpg);
+            background-repeat: no-repeat;
+            background-position: 45% center;
+        }
+
+        .acronis-banner .acronis.text-color-primary {
+            color: #1dadec;
+        }
+        .ht-box-images.style-04.custom-home {
+            box-shadow: 0 0 30px rgb(128 128 128 / 24%);
+            border-radius: 10px;
+            padding: 34px 30px 34px;
+            min-height: 400px;
+        }
+        .custom-icon {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-image: url(/assets/images/home-icon.png);
+             background-repeat: no-repeat;
+                font-size: 0;
+        }
+        .custom-icon.it-support {
+            background-position: 0px 0px
+        }
+        .custom-icon.firewall {
+            background-position: 0px -100px;
+        }
+        .custom-icon.nas-file-server {
+            background-position: 0px -200px
+        }
+        @media (max-width: 1574px) and (min-width:1350px) {
+            .appointment-hero-bg-3 {
+                background-position: 5% center;
+                background-size: 86%;
+            }
+        }
+
+        @media (max-width: 1349px) and (min-width:912px) {
+            .appointment-hero-bg-3 {
+                background-position: 160% center;
+                background-size: 107%;
+            }
+        }
+
+        @media (max-width: 911px) and (min-width:766px) {
+            .appointment-hero-bg-3 {
+                background-position: 116% center;
+                background-size: 140%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .appointment-hero-bg-3 {
+                background-size: 0%
+            }
+            .appointment-hero-text {
+                display: inherit;
+            }
+        }
