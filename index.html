@@ -277,7 +277,9 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
             background-size: auto;
             background-color: #00345e;
         }
-
+    .appointment-hero-text {
+        display: none;
+    }
         .aws-banner {
             background-color: #f6f2ed;
             background-image: url(assets/images/aws-box.png);
@@ -304,7 +306,29 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
         .acronis-banner .acronis.text-color-primary {
             color: #1dadec;
         }
-
+        .ht-box-images.style-04 {
+            box-shadow: 0 0 30px rgb(128 128 128 / 24%);
+            border-radius: 10px;
+            padding: 34px 30px 34px;
+            min-height: 400px;
+        }
+        .custom-icon {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            background-image: url(assets/images/home-icon.png);
+             background-repeat: no-repeat;
+                font-size: 0;
+        }
+        .custom-icon.it-support {
+            background-position: 0px 0px
+        }
+        .custom-icon.firewall {
+            background-position: 0px -100px;
+        }
+        .custom-icon.nas-file-server {
+            background-position: 0px -200px
+        }
         @media (max-width: 1574px) and (min-width:1350px) {
             .appointment-hero-bg-3 {
                 background-position: 5% center;
@@ -329,6 +353,9 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
         @media (max-width: 767px) {
             .appointment-hero-bg-3 {
                 background-size: 0%
+            }
+            .appointment-hero-text {
+                display: inherit;
             }
         }
 
@@ -672,7 +699,12 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
-                        
+                        <div class="appointment-hero-text">
+                            <h6 class="text-white h6-th">ผู้นำด้านไอทีและความปลอดภัย </h6>
+                            <div class="h1 text-whitefont-weight--reguler text-white mb-30 h1-th slide-header">บริการ</div>
+                            <h2 class="text-white slide-header mb-30">IT Support <br>IT Outsource <br>IT Service </h2>
+                            <h5 class="text-white slide-header">ดูแลโดยทีมงานมืออาชีพ </h5>
+                            </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="business-solution-form-wrap">
@@ -797,16 +829,16 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                 <div class="row">
                     <div class="col-12">
                         <div class="feature-images__four">
-                            <div class="row">
+                            <div class=" row">
                                 <div class="single-item col-lg-4 col-md-6 wow move-up">
                                     <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-04 border-gray">
+                                    <div class="ht-box-images style-04">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                               <img src="/en/assets/images/home/1.gif">
+                                            <div class="box-image text-center custom-icon it-support">
+                                                IT Support
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ IT Support </h6>
+                                                <h5 class="heading text-center h6-th">บริการ IT Support </h5>
                                                 <ul class="check-list section-space--mb_10">
                                                     <li class="list-item section-space--mt_20 li-th">รูปแบบบริการ รายครั้ง/รายเดือน/รายปี
                                                     </li>
@@ -828,13 +860,13 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                                 </div>
                                 <div class="single-item col-lg-4 col-md-6  wow move-up">
                                     <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-04 border-gray">
+                                    <div class="ht-box-images style-04">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                                <img src="/en/assets/images/home/2.gif">
+                                            <div class="box-image text-center custom-icon firewall">
+                                                Firewall & Security
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ Firewall & Security </h6>
+                                                <h5 class="heading text-center h6-th">บริการ Firewall & Security </h5>
                                                 <ul class="check-list section-space--mb_10">
                                                     <li class="list-item section-space--mt_20 li-th">บริการติดตั้งและดูแล Firewall
                                                     </li>
@@ -854,13 +886,13 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                                 </div>
                                 <div class="single-item col-lg-4 col-md-6 wow move-up">
                                     <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-04 border-gray">
+                                    <div class="ht-box-images style-04">
                                         <div class="image-box-wrap">
-                                            <div class="box-image umi-icon text-center">
-                                                <img src="/en/assets/images/home/3.gif">
+                                            <div class="box-image text-center custom-icon nas-file-server">
+                                                NAS & File Server
                                             </div>
                                             <div class="content">
-                                                <h6 class="heading text-center h6-th">บริการ NAS & File Server </h6>
+                                                <h5 class="heading text-center h6-th">บริการ NAS & File Server </h5>
                                                 <ul class="check-list section-space--mb_10 li-th">
                                                     <li class="list-item section-space--mt_20 li-th">บริการติดตั้งและกำหนดสิทธิ์การเข้าถึง
                                                     </li>
@@ -881,13 +913,11 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center mt-30 text-white">
-                            <a href="/it-support-thailand/it-support.html" class="ht-btn ht-btn-md"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span> ขอ้มูลเพิ่มเติม</a>
-                        
+                    <div class="col-12 mt-30">
+                        <div class="tab-button text-center">
+                            <a href="it-support-thailand/it-support.html" class="ht-btn ht-btn-md">ข้อมูลเพิ่มเติม</a>
+                        </div>
                     </div>
-                            
                 </div>
             </div>
         </div>
@@ -1824,19 +1854,19 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                                             <div class="content text-left">
                                                 <div class="heading">
                                                     <ul class="check-list circle-list">
-                                                        <li class="list-item li-th">สัญญาบริการไอที รายเดือน/รายปี</li>
-                                                        <li class="list-item mt-15 li-th">บริการ On-Site & Remote Support</li>
-                                                        <li class="list-item mt-15 li-th">บริการ IT Helpdesk (Part time & Full Time)</li>
-                                                        <li class="list-item mt-15 li-th">บริการบำรุงรักษา PC / Laptop </li>
-                                                        <li class="list-item mt-15 li-th">IT Consulting </li>
-                                                        <li class="list-item mt-15 li-th">บริการบำรุงรักษา Windows Server</li>
-                                                        <li class="list-item mt-15 li-th">แชร์ไฟล์และ Permission</li>
-                                                        <li class="list-item mt-15 li-th">บริการ NAS (Synopology & QNAP) </li>
-                                                        <li class="list-item mt-15 li-th">บริการตรวจสอบดูแลฮาร์ดแวร์และซอฟต์แวร์</li>
-                                                        <li class="list-item mt-15 li-th">เน็ตเวิร์กและประสิทธิภาพการใช้งาน </li>
-                                                        <li class="list-item mt-15 li-th">ดูแลจัดการ WiFi & Access Point</li>
-                                                        <li class="list-item mt-15 li-th">บริการติดตั้งระบบ Antivirus & Spyware</li>
-                                                        <li class="list-item mt-15 li-th">ติดตั้งและดูแล Firewall </li>
+                                                        <li class="list-item li-th"><a href="it-support-thailand/it-support.html">สัญญาบริการไอที รายเดือน/รายปี</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">บริการ On-Site & Remote Support</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">บริการ IT Helpdesk (Part time & Full Time)</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">บริการบำรุงรักษา PC / Laptop </a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">IT Consulting</a> </li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.htmlit-support-thailand/it-support.html">บริการบำรุงรักษา Windows Server</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">แชร์ไฟล์และ Permission</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="nas-storage/qnap-synology.html">บริการ NAS (Synopology & QNAP) </a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="audit-software-thailand/audit-software.html">บริการตรวจสอบดูแลฮาร์ดแวร์และซอฟต์แวร์</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="firewall-fortigate/firewall-fortigate-cisco.html">เน็ตเวิร์กและประสิทธิภาพการใช้งาน </a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="lan-wire-wireless/lan-wire-wireless-thailand.html">ดูแลจัดการ WiFi & Access Point</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">บริการติดตั้งระบบ Antivirus & Spyware</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="firewall-fortigate/firewall-fortigate-cisco.html">ติดตั้งและดูแล Firewall </a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1861,19 +1891,19 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                                             <div class="content text-left circle-list">
                                                 <div class="heading">
                                                     <ul class="check-list">
-                                                        <li class="list-item li-th">รายงานกิจกรรมจัดการสินทรัพย์ด้านไอที</li>
-                                                        <li class="list-item mt-15 li-th">รายงาน รายวัน / รายสัปดาห์ / รายเดือน</li>
-                                                        <li class="list-item mt-15 li-th">ระบบสำรองข้อมูล</li>
-                                                        <li class="list-item mt-15 li-th">แบ็คอัพข้อมูลบนคลาวด์ (Real Time)</li>
-                                                        <li class="list-item mt-15 li-th">การตั้งค่า VPN & Load Balance</li>
-                                                        <li class="list-item mt-15 li-th">ที่ปรึกษาการใช้งาน AWS Cloud</li>
-                                                        <li class="list-item mt-15 li-th">ที่ปรึกษาการใช้งาน Microsoft Azure</li>
-                                                        <li class="list-item mt-15 li-th">ที่ปรึกษาการใช้งาน Microsoft Exchange & Microsoft Teams</li>
-                                                        <li class="list-item mt-15 li-th">บริการอีเมล Google G-Suite</li>
-                                                        <li class="list-item mt-15 li-th">ที่ปรึกษาวางแผนพัฒนาระบบไอทีองค์กร</li>
-                                                        <li class="list-item mt-15 li-th">เจ้าหน้าที่ไอทีผู้ชำนาญเฉพาะทาง</li>
-                                                        <li class="list-item mt-15 li-th">ทีมพนักงานไอทีประการณ์สูง</li>
-                                                        <li class="list-item mt-15 li-th">สัญญาบริการรักษาระดับคุณภาพ (SLA)</li>
+                                                        <li class="list-item li-th"><a href="it-infrastructure-thailand/setup-offfice-infrastructure.html">รายงานกิจกรรมจัดการสินทรัพย์ด้านไอที</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">รายงาน รายวัน / รายสัปดาห์ / รายเดือน</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="acronis-cloud-backup/acronis-true-image-backup.html">ระบบสำรองข้อมูล</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="acronis-cloud-backup/acronis.html">แบ็คอัพข้อมูลบนคลาวด์ (Real Time)</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">การตั้งค่า VPN & Load Balance</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="aws-services-thailand/aws-web-services.html">ที่ปรึกษาการใช้งาน AWS Cloud</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="microsoft-azure-services/active-directory-thailand.html">ที่ปรึกษาการใช้งาน Microsoft Azure</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="office365-thailand/office365.html">ที่ปรึกษาการใช้งาน Microsoft Exchange & Microsoft Teams</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="contact-it-support.html">บริการอีเมล Google G-Suite</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">ที่ปรึกษาวางแผนพัฒนาระบบไอทีองค์กร</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">เจ้าหน้าที่ไอทีผู้ชำนาญเฉพาะทาง</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">ทีมพนักงานไอทีประการณ์สูง</a></li>
+                                                        <li class="list-item mt-15 li-th"><a href="it-support-thailand/it-support.html">สัญญาบริการรักษาระดับคุณภาพ (SLA)</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -2402,11 +2432,7 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-center">
                         <a href="https://www.trustmarkthai.com/callbackData/popup.php?data=a4a35-20-5-b32000db58e574c59759d48b9e73f333f5878973&amp;markID=firstmark&quot" 
-  target="popup" 
-  onclick="window.open('https://www.trustmarkthai.com/callbackData/popup.php?data=a4a35-20-5-b32000db58e574c59759d48b9e73f333f5878973&amp;markID=firstmark&quot','popup','width=600,height=600'); return false;">
-    <img alt="กรมพัฒนาธุรกิจการค้า Trustmarkthai" src="https://www.trustmarkthai.com//trust_banners/bns_registered.png"></a>
-</a>
-                        
+  target="popup" onclick="window.open('https://www.trustmarkthai.com/callbackData/popup.php?data=a4a35-20-5-b32000db58e574c59759d48b9e73f333f5878973&amp;markID=firstmark&quot','popup','width=600,height=600'); return false;"><img alt="กรมพัฒนาธุรกิจการค้า Trustmarkthai" src="https://www.thaipcsupport.com/assets/images/bns_registered.png"></a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-center text-md-right">
                         <ul class="footer-widget__list footer-umi-inline">
@@ -2594,9 +2620,7 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
     <!-- Main JS -->
     <script src="/assets/js/main.js" defer></script>
     <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
-    <!--
-        <script src="/assets/js/plugins/plugins.min.js" defer></script>
-        -->
+    <!--<script src="/assets/js/plugins/plugins.min.js" defer></script>-->
 
     <div class="line-icon-button"><a class="line" title="Line@thaipcsupport" href="https://line.me/R/ti/p/%40thaipcsupport" target="_blank"><i class="fab fa-line link-icon"></i></a></div>
 </body>
