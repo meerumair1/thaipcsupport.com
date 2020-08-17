@@ -128,10 +128,6 @@ a.min-line-height:hover {
 .fas.fa-network-wired.wired-um {
     color: #029402;
 }
-
-
-
-
 .fas.fa-headset.headset-um {
     color: #f89500;
 }
@@ -207,6 +203,14 @@ a.min-line-height:hover {
     position: relative;
     top: 4px;
 }
+.faq-wrapper .card-header h5 button {
+    font-weight: 300;
+}
+.faq-wrapper .card-header h5 button[aria-expanded=true] {
+    background-color: #f44336;
+}
+
+
 .blink_me {
     animation: blinker .9s linear infinite;
 }
