@@ -469,27 +469,106 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <h3 class="heading heading-middle">Talk to a DevOps Strategy and Advisory <span class="text-color-primary"> Expert </span></h3>
 						<br>
 							<div class="col-lg-12 mr-auto ml-auto col-md-12">
-                        <div class="business-solution-form-wrap mr-auto ml-auto">
-                            <div class="contact-title text-center section-space--mb_20">
-                                <h5 class="">Let's Get Started</h5>
-                                
-                            </div>
-                            <form action="#" method="post">
-                                <div class="contact-form__two">
-                                    <div class="contact-inner">
-                                        <input name="name" type="text" placeholder="Name *">
-                                    </div>
-                                    <div class="contact-inner">
-                                        <input name="email" type="email" placeholder="Email *">
-                                    </div>
-                                    
-                                    <div class="comment-submit-btn text-center">
-									<a href="/en/devops-services-thailand/devops-engineer-thailand.html" class="ht-btn ht-btn-md ht-btn--outline">Talk to a DevOps Specialist</a>
-                                       
-                                    </div>
+                        
+                            <div class="business-solution-form-wrap mr-auto ml-auto" id="crmWebToEntityForm">
+                                <!--<div class="marker-quetation">
+                                <span class="blink_me"><small>ใช้งาน</small> <br>ฟรี ครั้งแรก</span>
+                            </div>-->
+                                <div class="contact-title text-center section-space--mb_20">
+                                    <h5 class="mb-10">Book appointment</h5>
                                 </div>
-                            </form>
-                        </div>
+                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2525354000008677007 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000008677007()' accept-charset='UTF-8'>
+                                    <input type='text' style='display:none;' name='xnQsjsdp' value='2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'></input>
+                                    <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                                    <input type='text' style='display:none;' name='xmIwtLD' value='5968f88351f23e61bebaf421c95f6dc2a7069fd3d4e14b12d778b86bd63de64b'></input>
+                                    <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                                    <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
+                                    <div class="contact-form__two">
+                                        <div class="contact-inner">
+                                            <input name="Last Name" type="text" placeholder="Name *">
+                                        </div>
+                                        <div class="contact-inner">
+                                            <input name="Email" type="email" placeholder="Email *">
+                                        </div>
+                                        <div class="contact-inner">
+                                            <input name="Phone" type="tel" placeholder="Phone">
+                                        </div>
+                                        <div style="display: none">
+                                            <select style='width:100%;box-sizing:border-box;' name='LEADCF1'>
+                                                <option value='-None-'>-None-</option>
+                                                <option value='Bom'>Bom</option>
+                                                <option value='Ping'>Ping</option>
+                                                <option value='Nan'>Nan</option>
+                                                <option value='Mye'>Mye</option>
+                                                <option selected value='K.Shan'>K.Shan</option>
+                                            </select>
+                                            <select style='width:100%;box-sizing:border-box;' name='Lead Source'>
+                                                <option value='-None-'>-None-</option>
+                                                <option value='Cold&#x20;Call'>Cold Call</option>
+                                                <option value='E-Mail'>E-Mail</option>
+                                                <option value='Call'>Call</option>
+                                                <option value='Call&#x20;Center&#x20;&#x3a;&#x20;Community'>Call Center &#x3a; Community</option>
+                                                <option value='Chat-Line&#x40;'>Chat-Line&#x40;</option>
+                                                <option value='Chat-Website'>Chat-Website</option>
+                                                <option value='Google&#x20;Adwords'>Google Adwords</option>
+                                                <option value='Facebook&#x20;Ads'>Facebook Ads</option>
+                                                <option value='Website-Contact&#x20;us'>Website-Contact us</option>
+                                                <option value='Landing&#x20;Page&#x20;2'>Landing Page 2</option>
+                                                <option value='Landing-IT-Support-Thailand'>Landing-IT-Support-Thailand</option>
+                                                <option value='Web-Homepage'>Web-Homepage</option>
+                                                <option value='Contact-ITBKK'>Contact-ITBKK</option>
+                                                <option selected value='Website-Acronis'>Website-Acronis</option>
+                                            </select>
+                                        </div>
+                                        <div class="text-center">
+                                            <input class="btn btn--secondary btn-two comment-submit-btn" id="formsubmit" type="submit" value="Submit">
+                                        </div>
+                                    </div>
+                                    <script>
+                                        var mndFileds = new Array('Last Name', 'Email');
+                                        var fldLangVal = new Array('Last Name', 'Email');
+                                        var name = '';
+                                        var email = '';
+
+                                        function checkMandatory2525354000008677007() {
+                                            for (i = 0; i < mndFileds.length; i++) {
+                                                var fieldObj = document.forms['WebToLeads2525354000008677007'][mndFileds[i]];
+                                                if (fieldObj) {
+                                                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                                        if (fieldObj.type == 'file') {
+                                                            alert('Please select a file to upload.');
+                                                            fieldObj.focus();
+                                                            return false;
+                                                        }
+                                                        alert(fldLangVal[i] + ' cannot be empty.');
+                                                        fieldObj.focus();
+                                                        return false;
+                                                    } else if (fieldObj.nodeName == 'SELECT') {
+                                                        if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                                            alert(fldLangVal[i] + ' cannot be none.');
+                                                            fieldObj.focus();
+                                                            return false;
+                                                        }
+                                                    } else if (fieldObj.type == 'checkbox') {
+                                                        if (fieldObj.checked == false) {
+                                                            alert('Please accept  ' + fldLangVal[i]);
+                                                            fieldObj.focus();
+                                                            return false;
+                                                        }
+                                                    }
+                                                    try {
+                                                        if (fieldObj.name == 'Last Name') {
+                                                            name = fieldObj.value;
+                                                        }
+                                                    } catch (e) {}
+                                                }
+                                            }
+                                            document.getElementById('formsubmit').disabled = true;
+                                        }
+
+                                    </script>
+                                </form>
+                            </div>
                     </div>
                        
 
