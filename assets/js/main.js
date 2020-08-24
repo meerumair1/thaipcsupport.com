@@ -1,11 +1,7 @@
 (function ($) {
     "use strict";
 
-    /*===============================
-    =         Wow Active            =
-    ================================*/
 
-    new WOW().init();
     
     /*=============================================
     =       Menu sticky & Scroll to top          =
@@ -265,53 +261,6 @@
                 $this.siblings('ul').slideDown();
             }
         }
-    });
-    
-    /*=======================================
-    =    	Portfolio Masonry Activation    =
-    =========================================*/
-
-        $('.projects-masonary-wrapper').imagesLoaded(function () {
-
-            // filter items on button click
-            $('.messonry-button').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $(this).siblings('.is-checked').removeClass('is-checked');
-                $(this).addClass('is-checked');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-
-            // init Isotope
-            var $grid = $('.mesonry-list').isotope({
-                percentPosition: true,
-                transitionDuration: '0.7s',
-                layoutMode: 'masonry',/*
-                masonry: {
-                    columnWidth: '.resizer',
-                }*/
-            });
-        });
-    
-  
-    /*==================================
-    =	      Mesonry Activation       =
-    ===================================*/
-
-    $('.masonry-activation').imagesLoaded(function () {
-        // init Isotope
-        var $grid = $('.masonry-wrap').isotope({
-            itemSelector: '.masonary-item',
-            percentPosition: true,
-            transitionDuration: '0.7s',
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: 2,
-                percentPosition: true
-            }
-        });
-
     });
     
     
@@ -914,14 +863,7 @@
     });
 
 
-    /*=============================================
-    =            counter up active            =
-    =============================================*/
-    
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+
    
     /*===================================
         Svg Icon Draw
@@ -985,13 +927,6 @@
         }
     });
 
-    /*=============================================
-    =            light gallery active            =
-    =============================================*/
-    
-    $('.popup-images').lightGallery(); 
-
-    $('.video-popup').lightGallery(); 
     
     /*=============================================
         showcoupon toggle function
