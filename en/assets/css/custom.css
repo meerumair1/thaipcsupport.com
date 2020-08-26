@@ -88,10 +88,11 @@ a.min-line-height:hover {
     border-radius: 10px;
     color: #696969 !important;
 }
-.megamenu,.submenu {
-    -webkit-transition: all .2s cubic-bezier(.645,.045,.355,1);
-    -o-transition: all .2s cubic-bezier(.645,.045,.355,1);
-    transition: all .2s cubic-bezier(.645,.045,.355,1);
+.megamenu,
+.submenu {
+    -webkit-transition: all .2s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: all .2s cubic-bezier(.645, .045, .355, 1);
+    transition: all .2s cubic-bezier(.645, .045, .355, 1);
     -webkit-transition-delay: .1s;
     -o-transition-delay: .1s;
     transition-delay: .1s;
@@ -99,14 +100,15 @@ a.min-line-height:hover {
     -o-transition-duration: .1s;
     transition-duration: .1s;
 }
-
 .megamenu--mega > li {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
     border-right: solid 1px #eaeaea;
 }
-.megamenu--mega > li:last-child {border: none}
+.megamenu--mega > li:last-child {
+    border: none
+}
 .submenu > li > a {
     color: #000 !important;
 }
@@ -770,9 +772,10 @@ body {
     display: none !important;
 }
 @media only screen and (max-width: 500px) {
-    .appointment-hero-bg-1 {background-size:0}
+    .appointment-hero-bg-1 {
+        background-size: 0
+    }
 }
-
 @media (min-width: 100px) and (max-width: 767px) {
     .num-for-mob {
         display: inherit !important;
@@ -788,29 +791,24 @@ body {
         display: none
     }
 }
-
 .pricing-table-one .pricing-table__image {
     width: 220px !important;
     height: 200px !important;
 }
-.red-num{
-	color:#ff0000 !important;
+.red-num {
+    color: #ff0000 !important;
 }
-
 .rental-icon {
     font-size: 18px;
     color: #3394d2;
     float: left;
     line-height: 1.4;
     margin-right: 20px;
-	margin-left: 20px;
+    margin-left: 20px;
 }
-
 .pricing-table-one .pricing-table__feature-mark {
-  
     background: #ff0000 !important;
 }
-
 .top-heading h1 {
     font-size: 30px;
     color: #fff;
@@ -826,30 +824,30 @@ body {
     background-size: cover;
 }
 .call-center-bg:after {
-		content: '';
-		display: block;
-		width: 500px;
-		height: 400px;
-		background-repeat: no-repeat;
-		background-position: center 35px;
-		background-image: url(../images/callcenter.png);
-		bottom: 0;
-		left: 15%;
-		position: absolute;
+    content: '';
+    display: block;
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center 35px;
+    background-image: url(../images/callcenter.png);
+    bottom: 0;
+    left: 15%;
+    position: absolute;
 }
 .call-center-bg {
-		min-height: 600px;
-		position: relative;
+    min-height: 600px;
+    position: relative;
 }
 .top-heading.call-center-box {
-		font-size: 20px;
-		display: block;
-		background-color: #3ace00;
-		box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.22);
-		max-width: 590px;
-		padding: 35px 20px;
-		margin-right: auto;
-		margin-left: auto;
+    font-size: 20px;
+    display: block;
+    background-color: #3ace00;
+    box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.22);
+    max-width: 590px;
+    padding: 35px 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*rental-computer*/
 .appointment-hero-rental {
@@ -860,94 +858,88 @@ body {
     background-size: cover;
 }
 .ht-box-icon.style-04 {
-		color: #a8d7ff;
-		text-shadow: 1px 1px 15px #737373;
+    color: #a8d7ff;
+    text-shadow: 1px 1px 15px #737373;
 }
 .ht-box-icon.style-04 .icon-box-wrap {
-		padding-left: 50px;
-		position: relative;
-		margin-bottom: 15px;
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 15px;
 }
 .ht-box-icon.style-04 .icon-box-wrap .icon {
-		position: absolute;
-		left: 0;
-		top: -8px;
-		font-size: 35px;
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-size: 35px;
 }
 .marker-quetation {
-		position: absolute;
-		top: -1px;
-		right: -1px;
-		width: 0;
-		height: 0;
-		border-top: 110px solid #F44336;
-		border-bottom: 110px solid transparent;
-		border-left: 110px solid transparent;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-top: 110px solid #F44336;
+    border-bottom: 110px solid transparent;
+    border-left: 110px solid transparent;
 }
 .marker-quetation span {
-		position: absolute;
-		top: -92px;
-		right: -35px;
-		text-align: center;
-		font-size: 19px;
-		font-weight: 300;
-		line-height: 1.19;
-		display: block;
-		color: #fff;
-		-webkit-transform: rotate(45deg);
-		-ms-transform: rotate(45deg);
-		transform: rotate(45deg);
-		width: 140px;
+    position: absolute;
+    top: -92px;
+    right: -35px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.19;
+    display: block;
+    color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 140px;
 }
 .business-solution-form-wrap.landing-form {
-		-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-		-moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-		box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-		border-radius: 0;
-		background-color: rgba(255, 255, 255, 0.84);
-		position: relative;
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.84);
+    position: relative;
     overflow: hidden;
 }
 .business-solution-form-wrap.landing-form .comment-submit-btn {
-		background: rgba(255, 151, 59, 1);
-		font-size: 20px;
-		font-weight: 300;
+    background: rgba(255, 151, 59, 1);
+    font-size: 20px;
+    font-weight: 300;
 }
-
 /*stibo*/
-.image-box-wrap-umi{
-	justify-content: right !important;
-	
+.image-box-wrap-umi {
+    justify-content: right !important;
 }
-
-.image-box-wrap-stibo{
-background:none !important;	
-padding: 0px 0px !important;	
-
+.image-box-wrap-stibo {
+    background: none !important;
+    padding: 0px 0px !important;
 }
 .umi-icon-stibo {
     fill: #fff;
     color: #fff;
     border-color: #fff;
     font-size: 100px;
-		
 }
-
 .heading-stibo {
     font-weight: 500;
     line-height: 1;
     margin-bottom: 0;
 }
 /*stibo*/
-.h1-logo{
-	line-height:0px !important;
+.h1-logo {
+    line-height: 0px !important;
 }
-.picing-rental-pc{
-	background: #000;
+.picing-rental-pc {
+    background: #000;
     text-align: center;
     color: #fff;
     font-size: 40px;
-	line-height: 55px;
+    line-height: 55px;
 }
 .min-line-height {
     line-height: 20px;
@@ -955,8 +947,6 @@ padding: 0px 0px !important;
     height: 130px !important;
     margin-bottom: 20px !important;
 }
-
-
 .fas.fa-poll-h.poll-um {
     color: #f89500;
 }
@@ -987,14 +977,9 @@ padding: 0px 0px !important;
 .fas.fa-network-wired.wired-um {
     color: #029402;
 }
-
-
-
-
 .fas.fa-headset.headset-um {
     color: #f89500;
 }
-
 .fas.fa-hands-helping.helping-um {
     color: #0055d8;
 }
@@ -1025,14 +1010,12 @@ padding: 0px 0px !important;
 .fas.fa-share-alt-square.square-um {
     color: #f3a800;
 }
-
 .fab.fa-aws.aws-um {
     color: #f89500;
 }
 .fab.fa-dev.dev-um {
     color: #585fc9;
 }
-
 .fas.fa-folder-open.open-um {
     color: #d9d205;
 }
@@ -1060,20 +1043,12 @@ padding: 0px 0px !important;
 .fas.fa-microchip.microchip-um {
     color: #cf7020;
 }
-
-
-
-
-
-
-
 /*rental*/
-.rental-heading{
-	 border: 0px solid #dee2e6 !important;
-	 border-collapse: separate;
+.rental-heading {
+    border: 0px solid #dee2e6 !important;
+    border-collapse: separate;
     border-spacing: 0 10px;
 }
-
 .rental-heading td {
     border: 0px solid #dee2e6 !important;
     border-top: 1px solid #dee2e6 !important;
@@ -1081,14 +1056,12 @@ padding: 0px 0px !important;
     text-align: center !important;
     vertical-align: middle;
 }
-
 .rental-heading th {
-   border: 0px solid #dee2e6 !important;
+    border: 0px solid #dee2e6 !important;
     border-top: 0px solid #dee2e6 !important;
-	text-align: center !important;
-	vertical-align: middle;
+    text-align: center !important;
+    vertical-align: middle;
 }
-
 .btn-blu1-clr {
     color: #fff;
     background: #408de4;
@@ -1096,35 +1069,29 @@ padding: 0px 0px !important;
 }
 .xyz12-btn {
     display: inline-block;
-	    padding: 10px 40px;
+    padding: 10px 40px;
     border-radius: 3px;
-
-   
 }
-
 .btn-blu1-clr:hover {
     color: #fff !important;
     background: #286ebc !important;
     transition: all .3s ease-in-out !important;
 }
-
-.table-rental-scroll{
-	overflow-x: auto;
-	
+.table-rental-scroll {
+    overflow-x: auto;
 }
 td.border-left-table {
     border-left: 1px solid #dee2e6 !important;
-	border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
 td.border-right-table {
     border-right: 1px solid #dee2e6 !important;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 .xyz12-pric-new {
-        font-size: 19px;
+    font-size: 19px;
 }
 .lapi {
     background: #2492f0;
@@ -1136,7 +1103,6 @@ td.border-right-table {
     color: #fff;
     font-weight: 800;
 }
-
 td.xyz12-pric.xyz12-pric-new {
     background: #c0dcf4;
     font-size: 20px;
@@ -1149,22 +1115,19 @@ td.xyz12-pric2.xyz12-pric-new2 {
     font-weight: 800;
     border-right: 1px solid #ffffff !important;
 }
-
 /*end rental*/
-
 /*Phone-number*/
-.pt-1, .py-1 {
-
-    font-size: 20px  !important;
+.pt-1,
+.py-1 {
+    font-size: 20px !important;
 }
 /*End-Phone-number*/
-
 .btn-height-cloud {
-    font-size: 15px  !important;
-    font-weight: 500  !important;
-    letter-spacing: 0  !important;
-    line-height: 30px  !important;
-    height: 154px  !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0 !important;
+    line-height: 30px !important;
+    height: 154px !important;
 }
 .h1 {
     font-size: 56px;
@@ -1173,7 +1136,6 @@ td.xyz12-pric2.xyz12-pric-new2 {
     font-size: 30px;
     color: #fff;
 }
-
 .whatsapp-bb {
     display: inline-block;
     position: fixed;
@@ -1181,7 +1143,7 @@ td.xyz12-pric2.xyz12-pric-new2 {
     right: 15px;
     bottom: 18px;
     font-size: 54px;
-    /* background-color: #00c300; */
+    background-color: #fff;
     border-radius: 100%;
     width: 60px;
     height: 60px;
@@ -1190,8 +1152,6 @@ td.xyz12-pric2.xyz12-pric-new2 {
     color: #00c300;
     box-shadow: 0 0 14px 3px rgb(40 167 26);
 }
-
-
 .whatsapp-bb:before {
     display: block;
     position: absolute;
@@ -1203,136 +1163,153 @@ td.xyz12-pric2.xyz12-pric-new2 {
     background-color: #fff;
     z-index: -1;
 }
-
-
 .footer-copyright-area {
     border-top: solid 1px #eaeaea;
 }
-
-.gsuite_price{
+.gsuite_price {
     margin: 29px auto 0;
     max-width: 270px;
 }
-
 .gsuite_price li {
     position: relative;
     display: block;
     padding: 7px 0 18px 8px;
 }
-
-
 .company-groups {
-            font-size: 13px;
-            background-color: #fff;
-            /* border: solid 1px #f1f1f1; */
-            padding: 10px 24px;
-            /* min-width: 243px; */
-            display: inline-block;
-            text-align: center;
-            border-radius: 5px;
-            color: #faa742;
-            -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
-        }
-
-        .company-groups:hover {
-            color: #4c4c4c;
-            background-color: #faa742;
-        }
-
-        .company-groups img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 122px;
-        }
-
-        .appointment-hero-bg-3 {
-            background-image: url(/assets/images/banner005.jpg);
-            background-repeat: no-repeat;
-            background-position: 29% center;
-            background-size: auto;
-            background-color: #00345e;
-        }
-    .appointment-hero-text {
-        display: none;
+    font-size: 13px;
+    background-color: #fff;
+    /* border: solid 1px #f1f1f1; */
+    padding: 10px 24px;
+    /* min-width: 243px; */
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    color: #faa742;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+.company-groups:hover {
+    color: #4c4c4c;
+    background-color: #faa742;
+}
+.company-groups img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 122px;
+}
+.appointment-hero-bg-3 {
+    background-image: url(/assets/images/banner005.jpg);
+    background-repeat: no-repeat;
+    background-position: 29% center;
+    background-size: auto;
+    background-color: #00345e;
+}
+.appointment-hero-text {
+    display: none;
+}
+.aws-banner {
+    background-color: #f6f2ed;
+    background-image: url(/assets/images/aws-box.png);
+    background-repeat: no-repeat;
+    background-position: 84% 113%;
+    background-size: 500px;
+}
+.aws-banner .aws.text-color-primary {
+    color: #ff9900
+}
+a.aws.btn.btn--white.btn-one {
+    background-color: #f90;
+}
+.acronis-banner {
+    background-color: #14234c;
+    background-image: url(/assets/images/acronis-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 45% center;
+}
+.acronis-banner .acronis.text-color-primary {
+    color: #1dadec;
+}
+.nas-banner {
+    background-color: #ffe7e7;
+    position: relative;
+    z-index: 1;
+}
+.nas-banner:before,
+.nas-banner:after {
+    content: '';
+    width: 615px;
+    height: 234px;
+    background: url(/assets/images/arrow-left.png);
+    position: absolute;
+    top: 16px;
+}
+.nas-banner:before {
+    left: 8%;
+}
+.nas-banner:after {
+    right: 8%;
+    z-index: -1;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.nas-banner .text-color-primary {
+    color: #ff4b4b;
+}
+.nas-banner .btn {
+    background-color: #ff4b4b;
+}
+.ht-box-images.style-04.custom-home {
+    box-shadow: 0 0 30px rgb(128 128 128 / 24%);
+    border-radius: 10px;
+    padding: 34px 30px 34px;
+    min-height: 400px;
+}
+.custom-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url(/assets/images/home-icon.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+.custom-icon.it-support {
+    background-position: 0px 0px
+}
+.custom-icon.firewall {
+    background-position: 0px -100px;
+}
+.custom-icon.nas-file-server {
+    background-position: 0px -200px
+}
+@media (max-width: 1574px) and (min-width:1350px) {
+    .appointment-hero-bg-3 {
+        background-position: 5% center;
+        background-size: 86%;
     }
-        .aws-banner {
-            background-color: #f6f2ed;
-            background-image: url(/assets/images/aws-box.png);
-            background-repeat: no-repeat;
-            background-position: 84% 113%;
-            background-size: 500px;
-        }
-
-        .aws-banner .aws.text-color-primary {
-            color: #ff9900
-        }
-
-        a.aws.btn.btn--white.btn-one {
-            background-color: #f90;
-        }
-
-        .acronis-banner {
-            background-color: #14234c;
-            background-image: url(/assets/images/acronis-banner.jpg);
-            background-repeat: no-repeat;
-            background-position: 45% center;
-        }
-
-        .acronis-banner .acronis.text-color-primary {
-            color: #1dadec;
-        }
-        .ht-box-images.style-04.custom-home {
-            box-shadow: 0 0 30px rgb(128 128 128 / 24%);
-            border-radius: 10px;
-            padding: 34px 30px 34px;
-            min-height: 400px;
-        }
-        .custom-icon {
-            width: 100px;
-            height: 100px;
-            margin: auto;
-            background-image: url(/assets/images/home-icon.png);
-             background-repeat: no-repeat;
-                font-size: 0;
-        }
-        .custom-icon.it-support {
-            background-position: 0px 0px
-        }
-        .custom-icon.firewall {
-            background-position: 0px -100px;
-        }
-        .custom-icon.nas-file-server {
-            background-position: 0px -200px
-        }
-        @media (max-width: 1574px) and (min-width:1350px) {
-            .appointment-hero-bg-3 {
-                background-position: 5% center;
-                background-size: 86%;
-            }
-        }
-
-        @media (max-width: 1349px) and (min-width:912px) {
-            .appointment-hero-bg-3 {
-                background-position: 160% center;
-                background-size: 107%;
-            }
-        }
-
-        @media (max-width: 911px) and (min-width:766px) {
-            .appointment-hero-bg-3 {
-                background-position: 116% center;
-                background-size: 140%;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .appointment-hero-bg-3 {
-                background-size: 0%
-            }
-            .appointment-hero-text {
-                display: inherit;
-            }
-        }
+}
+@media (max-width: 1349px) and (min-width:912px) {
+    .appointment-hero-bg-3 {
+        background-position: 160% center;
+        background-size: 107%;
+    }
+}
+@media (max-width: 911px) and (min-width:766px) {
+    .appointment-hero-bg-3 {
+        background-position: 116% center;
+        background-size: 140%;
+    }
+}
+@media (max-width: 767px) {
+    .appointment-hero-bg-3 {
+        background-size: 0%
+    }
+    .appointment-hero-text {
+        display: inherit;
+    }
+}
