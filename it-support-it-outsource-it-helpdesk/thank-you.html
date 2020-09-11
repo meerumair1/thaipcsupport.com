@@ -98,7 +98,27 @@ window.settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=
                     <div class="col-lg-12">
                         <div class="top-heading call-center-box">
                             <div class="h1 text-center text-white">ขอบคุณที่ส่งข้อความหาเรา</div>
-                            <p class="text-center">เราได้รับข้อความของท่านเรียบร้อยแล้ว จะติดต่อกลับภายใน 24 ชั่วโมง</p>
+                            <p class="text-center">เราได้รับข้อความของท่านเรียบร้อยแล้ว จะติดต่อกลับภายใน 24 ชั่วโมง</p>\
+                            <p class="text-white text-center">ระบบจะพาท่านไปที่ ThaiPCSupport <span id="countdown">5</span>
+                                <script type="text/javascript">
+                                    var seconds = 5;
+
+                                    function countdown() {
+                                        seconds = seconds - 1;
+                                        if (seconds < 0) {
+                                            // Chnage your redirection link here
+                                            window.location = "https://www.thaipcsupport.com/";
+                                        } else {
+                                            // Update remaining seconds
+                                            document.getElementById("countdown").innerHTML = seconds;
+                                            // Count down using javascript
+                                            window.setTimeout("countdown()", 1000);
+                                        }
+                                    }
+
+                                    countdown();
+
+                                </script>
                         </div>
                     </div>
                 </div>
