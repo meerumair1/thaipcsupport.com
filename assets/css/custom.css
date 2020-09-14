@@ -442,6 +442,9 @@ ul.nav.ul-umi li button:hover {
 .business-solution-form-wrap {
     padding: 12px 30px 12px !important;
 }
+.business-solution-form-wrap textarea{
+    height: 70px;
+}
 .section-space--ptb_20 {
     padding-top: 20px;
     padding-bottom: 20px;

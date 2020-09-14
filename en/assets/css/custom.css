@@ -158,6 +158,9 @@ span.social-icon.fab.fa-line {
 .business-solution-form-wrap {
     background: rgba(255, 255, 255, 0.87);
 }
+.business-solution-form-wrap textarea{
+    height: 70px;
+}
 h1.slide-header {
     font-size: 60px;
     line-height: 60px;
