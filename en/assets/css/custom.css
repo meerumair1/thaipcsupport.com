@@ -155,12 +155,6 @@ span.social-icon.fab.fa-line {
     background-size: contain;
     background-color: #3776ab;
 }
-.business-solution-form-wrap {
-    background: rgba(255, 255, 255, 0.87);
-}
-.business-solution-form-wrap textarea{
-    height: 70px;
-}
 h1.slide-header {
     font-size: 60px;
     line-height: 60px;
@@ -384,7 +378,11 @@ ul.nav.ul-umi li button:hover {
     border: 1px solid #d5dbdb;
 }
 .business-solution-form-wrap {
-    padding: 12px 30px 12px !important;
+    padding: 30px 30px 30px;
+    background: rgba(255, 255, 255, 0.87);
+}
+.business-solution-form-wrap textarea{
+    height: 70px;
 }
 .section-space--ptb_20 {
     padding-top: 20px;
