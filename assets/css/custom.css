@@ -63,6 +63,10 @@
 }
 .business-solution-form-wrap {
     background: rgba(255, 255, 255, 0.87);
+    padding: 30px 30px 30px;
+}
+.business-solution-form-wrap textarea{
+    height: 70px;
 }
 h1.slide-header {
     font-size: 60px;
@@ -438,9 +442,6 @@ ul.nav.ul-umi li button:hover {
 }
 .border-gray {
     border: 1px solid #d5dbdb;
-}
-.business-solution-form-wrap {
-    padding: 12px 30px 12px !important;
 }
 .section-space--ptb_20 {
     padding-top: 20px;

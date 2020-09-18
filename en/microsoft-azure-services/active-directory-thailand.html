@@ -115,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  <h1 class="text-center top-message mt-1">Azure Active Directory - Managed Active Directory Setup and Maintain </h1>
               </div>
               <div class="col-lg-3 text-right">
-                 <a href="#" class="ht-btn ht-btn-md eme-btn"><span class="blink">Emergency Support</span> </a>
+                 <a href="/en/contact-it-support.html" class="ht-btn ht-btn-md eme-btn"><span class="blink">Emergency Support</span></a>
               </div>
            </div>
         </div>
@@ -850,7 +850,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="row">
                          <div class="col-lg-6">
-                        <div class="contact-form-wrap">
+                       <div id="crmWebToEntityForm" class="contact-form-wrap">
                             <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2525354000007401009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000007401009()' accept-charset='UTF-8'>
                                 <input type='text' style='display:none;' name='xnQsjsdp' value='2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'></input>
                                 <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
@@ -858,6 +858,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                                 <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
                                 <div class="contact-form">
+                                    <div style="display: none">
+                                        <input name="LEADCF16" type="text" id="WebsiteSoruce1">
+                                    </div>
                                     <div class="contact-input">
                                         <div class="contact-inner">
                                             <input name="Last Name" type="text" placeholder="Name *">
@@ -884,23 +887,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <option value='Meeting'>Meeting</option>
                                             <option value='QT&#x20;before&#x20;Meeting'>QT before Meeting</option>
                                             <option value='Follow&#x20;up-QT'>Follow up-QT</option>
+                                            <option value='Prospects'>Prospects</option>
                                             <option value='Hold'>Hold</option>
                                             <option value='Lost&#x20;Lead'>Lost Lead</option>
                                             <option value='Junk&#x20;Lead'>Junk Lead</option>
                                             <option value='Not&#x20;Qualified'>Not Qualified</option>
                                         </select>
+                                        <select style='width:100%;box-sizing:border-box;' name='LEADCF1'>
+                                            <option value='-None-'>-None-</option>
+                                            <option value='Bom'>Bom</option>
+                                            <option selected value='Ping'>Ping</option>
+                                            <option value='Nanny'>Nanny</option>
+                                            <option value='Mye'>Mye</option>
+                                            <option value='K.Shan'>K.Shan</option>
+                                            <option value='Nid'>Nid</option>
+                                            <option value='Jik'>Jik</option>
+                                            <option value='Ked'>Ked</option>
+                                        </select>
                                         <select style='width:100%;box-sizing:border-box;' name='Lead Source'>
                                             <option value='-None-'>-None-</option>
+                                            <option value='Cold&#x20;Call'>Cold Call</option>
                                             <option value='E-Mail'>E-Mail</option>
                                             <option value='Call'>Call</option>
+                                            <option value='Call&#x20;Center&#x20;&#x3a;&#x20;Community'>Call Center &#x3a; Community</option>
+                                            <option value='Chat-Line&#x40;'>Chat-Line&#x40;</option>
+                                            <option value='Chat-Website'>Chat-Website</option>
                                             <option value='Google&#x20;Adwords'>Google Adwords</option>
                                             <option value='Facebook&#x20;Ads'>Facebook Ads</option>
+                                            <option selected value='Website-Contact&#x20;us'>Website-Contact us</option>
                                             <option value='Landing&#x20;Page&#x20;2'>Landing Page 2</option>
                                             <option value='Landing-IT-Support-Thailand'>Landing-IT-Support-Thailand</option>
+                                            <option value='Web-Homepage'>Web-Homepage</option>
                                             <option value='Contact-ITBKK'>Contact-ITBKK</option>
-                                            <option selected value='Website-Contact&#x20;us'>Website-Contact us</option>
-                                            <option value='Chat-Website'>Chat-Website</option>
-                                            <option value='Chat-Line&#x40;'>Chat-Line&#x40;</option>
+                                            <option value='Website-Acronis'>Website-Acronis</option>
                                         </select>
                                         <select style='width:100%;box-sizing:border-box;' name='LEADCF4'>
                                             <option value='-None-'>-None-</option>
@@ -910,18 +929,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <option value='Junk'>Junk</option>
                                         </select>
                                     </div>
-
                                     <div class="submit-btn mt-20">
-                                        <input class="ht-btn ht-btn-md" type="submit" value="Submit"></input>
-
+                                        <input class="ht-btn ht-btn-md" type="submit" value="SUBMIT"></input>
                                     </div>
                                 </div>
-
                                 <script>
+                                    document.getElementById("WebsiteSoruce1").value = window.location.href;
                                     var mndFileds = new Array('Last Name', 'Phone');
                                     var fldLangVal = new Array('Last Name', 'Phone');
                                     var name = '';
                                     var email = '';
+
+                                    function validateEmail() {
+                                        var emailFld = document.querySelectorAll('[ftype=email]');
+                                        var i;
+                                        for (i = 0; i < emailFld.length; i++) {
+                                            var emailVal = emailFld[i].value;
+                                            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                                                var atpos = emailVal.indexOf('@');
+                                                var dotpos = emailVal.lastIndexOf('.');
+                                                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                                    alert('Please enter a valid email address. ');
+                                                    emailFld[i].focus();
+                                                    return false;
+                                                }
+                                            }
+                                        }
+                                        return true;
+                                    }
 
                                     function checkMandatory2525354000007401009() {
                                         for (i = 0; i < mndFileds.length; i++) {
@@ -956,7 +991,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 } catch (e) {}
                                             }
                                         }
-                                        document.getElementById('formsubmit').disabled = true;
+                                        if (!validateEmail()) {
+                                            return false;
+                                        }
+
                                     }
 
                                 </script>
