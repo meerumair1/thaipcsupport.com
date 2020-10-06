@@ -1331,7 +1331,7 @@ a.aws.btn.btn--white.btn-one {
 .nas-banner:before,
 .nas-banner:after {
     content: '';
-    width: 615px;
+    width: 27%;
     height: 234px;
     background: url(/assets/images/arrow-left.png);
     position: absolute;
