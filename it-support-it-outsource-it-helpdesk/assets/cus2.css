@@ -1,0 +1,148 @@
+.appointment-hero-bg {
+    background-image: url(../images/bg5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.top-heading h1 {
+    font-size: 30px; !important;
+    color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'thaipcfont' !important;
+    font-weight: 500 !important;
+}
+
+.ht-box-icon.style-04 h5 {
+    color: #fff !important;
+}
+body {
+    font-family: 'thaipcfont' !important;
+    font-weight: 200 !important;
+    font-size: 16px !important;
+    color: #000 !important;
+}
+.business-solution-form-wrap .comment-submit-btn {
+    background: rgba(255, 151, 59, 1);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.text-color-primary {
+    color: #f44336;
+}
+
+.btn--secondary {
+    background-color: #ff973b;
+}
+
+a.btn.btn--secondary.btn-two {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bg-blue {
+    background-color: #b1e5f3;
+}
+
+.call-center a {
+    background-color: #fff;
+    display: block;
+    padding: 25px 15px 17px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 58%;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 29px;
+    border-radius: 20px;
+    color: #E91E63;
+    position: relative;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.03);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 22;
+}
+
+.call-center a:after {
+    content: '';
+    background-color: #b1e5f300;
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 34px 34px 0 34px;
+    border-color: #ffffff transparent transparent transparent;
+    left: 39%;
+}
+
+.call-center a:hover {
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+}
+.call-center a span {
+    font-size: 25px;
+    color: #607D8B;
+    display: block;
+}
+ul.tree-list li {
+    background-color: #fff;
+    padding: 13px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.02);
+    line-height: 16px;
+    color: #000000;
+    position: relative;
+    /* min-height: 50px; */
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+ul.tree-list li:before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 13px;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    bottom: -13px;
+    z-index: 0;
+}
+
+ul.tree-list li:hover {
+    cursor: pointer;
+    color: #292929;
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+}
+
+.faq-wrapper .card-header h5 button[aria-expanded=true] {
+    background-color: #f44336 !important;
+}
+
+.faq-wrapper .card-header h5 button[aria-expanded=true] {
+    color: #fff !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.faq-wrapper .card-header h5 button {
+    font-weight: 300 !important;
+}
+
