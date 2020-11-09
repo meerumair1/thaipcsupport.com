@@ -636,7 +636,7 @@
                             <div class="contact-title text-center">
                                 <h4 class="mb-10">ขอใบเสนอราคา</h4>
                             </div>
-                            <script src="https://www.google.com/recaptcha/api.js"></script>
+                            <!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
                             <form action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads2525354000007371028" method="POST" onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000007371028()' accept-charset='UTF-8'>
                                 <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
                                 <input type="text" style="display:none;" name="xnQsjsdp" value="2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326">
@@ -660,10 +660,10 @@
                                     <div class="contact-inner description">
                                         <textarea name="Description" maxlength="32000" style="width:100%;" placeholder="รายละเอียด"></textarea>
                                     </div>
-                                    <div class="contact-inner">
+                                    <!--<div class="contact-inner">
                                         <div class='g-recaptcha' data-sitekey='6LfWvOAZAAAAAG4otNzpQc2-bZ6z0FrpX-nqJeg6' data-theme='light' data-callback='rccallback' captcha-verified='false' id='recap'></div>
                                         <div id='recapErr' style='font-size:12px;color:red;visibility:hidden;'>Captcha validation failed. If you are not a robot then please try again.</div>
-                                    </div>
+                                    </div>-->
 
 
                                     <div style="display: none">
@@ -732,7 +732,7 @@
             var email = '';
 
             /* Do not remove this code. */
-            function rccallback() {
+            /*function rccallback() {
                 if (document.getElementById('recap') != undefined) {
                     document.getElementById('recap').setAttribute('captcha-verified', true);
                 }
@@ -748,7 +748,7 @@
                     return false;
                 }
                 return true;
-            }
+            }*/
 
             function validateEmail() {
                 var emailFld = document.querySelectorAll('[ftype=email]');
