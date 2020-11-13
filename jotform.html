@@ -1,0 +1,532 @@
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21653" type="text/javascript"></script>
+<script src="https://js.jotform.com/vendor/postMessage.js?3.3.21653" type="text/javascript"></script>
+<script src="https://js.jotform.com/WidgetsServer.js?v=1605250393771" type="text/javascript"></script>
+<script type="text/javascript">
+    JotForm.init(function() {
+        if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex', 0);
+        setTimeout(function() {
+            $('input_6').hint('ชื่อ *');
+        }, 20);
+        if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex', 0);
+        if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex', 0);
+        if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex', 0);
+        JotForm.setCustomHint('input_9', '\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e32\u0e21');
+        if (window.JotForm && JotForm.accessible) $('input_23').setAttribute('tabindex', 0);
+        setTimeout(function() {
+            $('input_23').hint('บริษัท');
+        }, 20);
+        if (window.JotForm && JotForm.accessible) $('input_25').setAttribute('tabindex', 0);
+        setTimeout(function() {
+            $('input_26').hint('ex: 23');
+        }, 20);
+        JotForm.newDefaultTheme = false;
+        JotForm.extendsNewTheme = false;
+        JotForm.newPaymentUIForNewCreatedForms = false;
+        /*INIT-END*/
+    });
+
+    JotForm.prepareCalculationsOnTheFly([null, null, null, null, null, null, {
+        "name": "input6",
+        "qid": "6",
+        "text": "ชื่อ",
+        "type": "control_textbox"
+    }, {
+        "name": "input7",
+        "qid": "7",
+        "text": "อีเมล",
+        "type": "control_textbox"
+    }, {
+        "name": "input8",
+        "qid": "8",
+        "text": "โทรศัพท์",
+        "type": "control_textbox"
+    }, {
+        "name": "input9",
+        "qid": "9",
+        "subLabel": "",
+        "text": "ข้อความ",
+        "type": "control_textarea"
+    }, null, null, null, null, null, null, null, {
+        "description": "",
+        "name": "owner",
+        "qid": "17",
+        "subLabel": "",
+        "text": "Owner",
+        "type": "control_dropdown"
+    }, {
+        "name": "submit",
+        "qid": "18",
+        "text": "Submit",
+        "type": "control_button"
+    }, {
+        "description": "",
+        "name": "leadSource",
+        "qid": "19",
+        "subLabel": "",
+        "text": "Lead Source",
+        "type": "control_dropdown"
+    }, {
+        "description": "",
+        "name": "leadStatus",
+        "qid": "20",
+        "subLabel": "",
+        "text": "Lead Status",
+        "type": "control_dropdown"
+    }, {
+        "description": "",
+        "name": "qualifyStatus",
+        "qid": "21",
+        "subLabel": "",
+        "text": "Qualify Status",
+        "type": "control_dropdown"
+    }, {
+        "name": "typeA",
+        "qid": "22",
+        "text": "Get Page URL",
+        "type": "control_widget"
+    }, {
+        "description": "",
+        "name": "company",
+        "qid": "23",
+        "subLabel": "",
+        "text": "Company",
+        "type": "control_textbox"
+    }, {
+        "description": "",
+        "name": "service",
+        "qid": "24",
+        "subLabel": "",
+        "text": "Service",
+        "type": "control_dropdown"
+    }, {
+        "description": "",
+        "name": "websiteSoure",
+        "qid": "25",
+        "subLabel": "",
+        "text": "Website Soure",
+        "type": "control_textbox"
+    }, {
+        "description": "",
+        "name": "numcom",
+        "qid": "26",
+        "subLabel": "",
+        "text": "Num.Com",
+        "type": "control_number"
+    }]);
+    setTimeout(function() {
+        JotForm.paymentExtrasOnTheFly([null, null, null, null, null, null, {
+            "name": "input6",
+            "qid": "6",
+            "text": "ชื่อ",
+            "type": "control_textbox"
+        }, {
+            "name": "input7",
+            "qid": "7",
+            "text": "อีเมล",
+            "type": "control_textbox"
+        }, {
+            "name": "input8",
+            "qid": "8",
+            "text": "โทรศัพท์",
+            "type": "control_textbox"
+        }, {
+            "name": "input9",
+            "qid": "9",
+            "subLabel": "",
+            "text": "ข้อความ",
+            "type": "control_textarea"
+        }, null, null, null, null, null, null, null, {
+            "description": "",
+            "name": "owner",
+            "qid": "17",
+            "subLabel": "",
+            "text": "Owner",
+            "type": "control_dropdown"
+        }, {
+            "name": "submit",
+            "qid": "18",
+            "text": "Submit",
+            "type": "control_button"
+        }, {
+            "description": "",
+            "name": "leadSource",
+            "qid": "19",
+            "subLabel": "",
+            "text": "Lead Source",
+            "type": "control_dropdown"
+        }, {
+            "description": "",
+            "name": "leadStatus",
+            "qid": "20",
+            "subLabel": "",
+            "text": "Lead Status",
+            "type": "control_dropdown"
+        }, {
+            "description": "",
+            "name": "qualifyStatus",
+            "qid": "21",
+            "subLabel": "",
+            "text": "Qualify Status",
+            "type": "control_dropdown"
+        }, {
+            "name": "typeA",
+            "qid": "22",
+            "text": "Get Page URL",
+            "type": "control_widget"
+        }, {
+            "description": "",
+            "name": "company",
+            "qid": "23",
+            "subLabel": "",
+            "text": "Company",
+            "type": "control_textbox"
+        }, {
+            "description": "",
+            "name": "service",
+            "qid": "24",
+            "subLabel": "",
+            "text": "Service",
+            "type": "control_dropdown"
+        }, {
+            "description": "",
+            "name": "websiteSoure",
+            "qid": "25",
+            "subLabel": "",
+            "text": "Website Soure",
+            "type": "control_textbox"
+        }, {
+            "description": "",
+            "name": "numcom",
+            "qid": "26",
+            "subLabel": "",
+            "text": "Num.Com",
+            "type": "control_number"
+        }]);
+    }, 20);
+
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.21653" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.21653" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.21653" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5f6c4c83346ec05354558fe8" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.21653" />
+<style type="text/css">
+    .form-label-left {
+        width: 150px;
+    }
+
+    .form-label-right {
+        width: 150px;
+    }
+
+    .form-all {
+        width: 690px;
+        color: #555 !important;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size: 14px;
+    }
+
+    .form-radio-item label,
+    .form-checkbox-item label,
+    .form-grading-label,
+    .form-header {
+        color: false;
+    }
+
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+    /*PREFERENCES STYLE*/
+    .form-all {
+        font-family: Lucida Grande, sans-serif;
+    }
+
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+        font-family: Lucida Grande, sans-serif;
+    }
+
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+        font-family: Lucida Grande, sans-serif;
+    }
+
+    .form-header-group {
+        font-family: Lucida Grande, sans-serif;
+    }
+
+    .form-label {
+        font-family: Lucida Grande, sans-serif;
+    }
+
+    .form-label.form-label-auto {
+
+        display: inline-block;
+        float: left;
+        text-align: left;
+
+    }
+
+    .form-line {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .form-all {
+        max-width: 690px;
+        width: 100%;
+    }
+
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+        width: 150px;
+    }
+
+    .form-all {
+        font-size: 14px
+    }
+
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+        font-size: 14px
+    }
+
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+        font-size: 14px
+    }
+
+    .supernova .form-all,
+    .form-all {
+        background-color: #fff;
+    }
+
+    .form-all {
+        color: #555;
+    }
+
+    .form-header-group .form-header {
+        color: #555;
+    }
+
+    .form-header-group .form-subHeader {
+        color: #555;
+    }
+
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+        color: #555;
+    }
+
+    .form-sub-label {
+        color: #6f6f6f;
+    }
+
+    .supernova {
+        background-color: undefined;
+    }
+
+    .supernova body {
+        background: transparent;
+    }
+
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+        background-color: undefined;
+    }
+
+    .supernova {
+        background-image: none;
+    }
+
+    #stage {
+        background-image: none;
+    }
+
+    .form-all {
+        background-image: none;
+    }
+
+    .ie-8 .form-all:before {
+        display: none;
+    }
+
+    .ie-8 {
+        margin-top: auto;
+        margin-top: initial;
+    }
+
+    /*PREFERENCES STYLE*/
+    /*__INSPECT_SEPERATOR__*/
+    /* Injected CSS Code */
+
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/203148481635456/" method="post" name="form_203148481635456" id="203148481635456" accept-charset="utf-8" autocomplete="on">
+    <input type="hidden" name="formID" value="203148481635456" />
+    <input type="hidden" id="JWTContainer" value="" />
+    <input type="hidden" id="cardinalOrderNumber" value="" />
+    <div role="main" class="form-all">
+        <ul class="form-section page-section">
+            <li class="form-line jf-required" data-type="control_textbox" id="id_6">
+                <label class="form-label form-label-left form-label-auto" id="label_6" for="input_6">
+                    ชื่อ
+                    <span class="form-required">
+                        *
+                    </span>
+                </label>
+                <div id="cid_6" class="form-input jf-required">
+                    <input type="text" id="input_6" name="q6_input6" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" placeholder="ชื่อ *" data-component="textbox" aria-labelledby="label_6" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_7">
+                <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+                    อีเมล
+                    <span class="form-required">
+                        *
+                    </span>
+                </label>
+                <div id="cid_7" class="form-input jf-required">
+                    <input type="text" id="input_7" name="q7_input7" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="อีเมล *" data-component="textbox" aria-labelledby="label_7" required="" />
+                </div>
+            </li>
+            <li class="form-line jf-required" data-type="control_textbox" id="id_8">
+                <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8">
+                    โทรศัพท์
+                    <span class="form-required">
+                        *
+                    </span>
+                </label>
+                <div id="cid_8" class="form-input jf-required">
+                    <input type="text" id="input_8" name="q8_input8" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="โทรศัพท์ *" data-component="textbox" aria-labelledby="label_8" required="" />
+                </div>
+            </li>
+            <li class="form-line" data-type="control_textarea" id="id_9">
+                <label class="form-label form-label-left form-label-auto" id="label_9" for="input_9"> ข้อความ </label>
+                <div id="cid_9" class="form-input">
+                    <textarea id="input_9" class="form-textarea" name="q9_input9" cols="40" rows="6" data-component="textarea" aria-labelledby="label_9"></textarea>
+                </div>
+            </li>
+            <li class="form-line" data-type="control_textbox" id="id_23">
+                <label class="form-label form-label-left form-label-auto" id="label_23" for="input_23"> Company </label>
+                <div id="cid_23" class="form-input">
+                    <input type="text" id="input_23" name="q23_company" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="บริษัท" data-component="textbox" aria-labelledby="label_23" />
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_dropdown" id="id_17">
+                <label class="form-label form-label-left form-label-auto" id="label_17" for="input_17"> Owner </label>
+                <div id="cid_17" class="form-input always-hidden">
+                    <select class="form-dropdown" id="input_17" name="q17_owner" style="width:150px" data-component="dropdown" aria-labelledby="label_17">
+                        <option value=""> </option>
+                        <option selected="" value="K.Shan"> K.Shan </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_dropdown" id="id_19">
+                <label class="form-label form-label-left form-label-auto" id="label_19" for="input_19"> Lead Source </label>
+                <div id="cid_19" class="form-input always-hidden">
+                    <select class="form-dropdown" id="input_19" name="q19_leadSource" style="width:150px" data-component="dropdown" aria-labelledby="label_19">
+                        <option value=""> </option>
+                        <option selected="" value="Web-Homepage"> Web-Homepage </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_dropdown" id="id_20">
+                <label class="form-label form-label-left form-label-auto" id="label_20" for="input_20"> Lead Status </label>
+                <div id="cid_20" class="form-input always-hidden">
+                    <select class="form-dropdown" id="input_20" name="q20_leadStatus" style="width:150px" data-component="dropdown" aria-labelledby="label_20">
+                        <option value=""> </option>
+                        <option selected="" value="NewLead"> NewLead </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_dropdown" id="id_24">
+                <label class="form-label form-label-left form-label-auto" id="label_24" for="input_24"> Service </label>
+                <div id="cid_24" class="form-input always-hidden">
+                    <select class="form-dropdown" id="input_24" name="q24_service" style="width:150px" data-component="dropdown" aria-labelledby="label_24">
+                        <option value=""> </option>
+                        <option selected="" value="ThaiPCsupport"> ThaiPCsupport </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_dropdown" id="id_21">
+                <label class="form-label form-label-left form-label-auto" id="label_21" for="input_21"> Qualify Status </label>
+                <div id="cid_21" class="form-input always-hidden">
+                    <select class="form-dropdown" id="input_21" name="q21_qualifyStatus" style="width:150px" data-component="dropdown" aria-labelledby="label_21">
+                        <option value=""> </option>
+                        <option selected="" value="Hot"> Hot </option>
+                    </select>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_widget" id="id_22">
+                <div id="cid_22" class=" always-hidden">
+                    <div style="width:100%;text-align:Left" data-component="widget-directEmbed">
+                        <div class="direct-embed-widgets get-form-page-url-widget " data-type="direct-embed" style="width:1px;min-height:50px">
+                            <input type='hidden' id='input_22' name='q22_typeA' class='form-hidden getParentURL'>
+                            <script type='text/javascript' src='//widgets.jotform.io/getParentUrl/min/scripts.min.js'></script>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_textbox" id="id_25">
+                <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25"> Website Soure </label>
+                <div id="cid_25" class="form-input always-hidden">
+                    <input type="text" id="input_25" name="q25_websiteSoure" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_25" />
+                </div>
+            </li>
+            <li class="form-line always-hidden" data-type="control_number" id="id_26">
+                <label class="form-label form-label-left form-label-auto" id="label_26" for="input_26"> Num.Com </label>
+                <div id="cid_26" class="form-input always-hidden">
+                    <input type="number" id="input_26" name="q26_numcom" data-type="input-number" class=" form-number-input form-textbox" style="width:60px" size="5" value="0" placeholder="ex: 23" data-component="number" aria-labelledby="label_26" step="any" />
+                </div>
+            </li>
+            <li class="form-line" data-type="control_button" id="id_18">
+                <div id="cid_18" class="form-input-wide">
+                    <div style="margin-left:156px" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                        <button id="input_18" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li style="display:none">
+                Should be Empty:
+                <input type="text" name="website" value="" />
+            </li>
+        </ul>
+    </div>
+    <script>
+        JotForm.showJotFormPowered = "old_footer";
+
+    </script>
+    <script>
+        JotForm.poweredByText = "Powered by JotForm";
+
+    </script>
+    <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="203148481635456" />
+    <script type="text/javascript">
+        var all_spc = document.querySelectorAll("form[id='203148481635456'] .si" + "mple" + "_spc");
+        for (var i = 0; i < all_spc.length; i++) {
+            all_spc[i].value = "203148481635456-203148481635456";
+        }
+
+    </script>
+</form>
