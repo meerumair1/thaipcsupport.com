@@ -228,10 +228,10 @@
     </script>
     
     <!--Jotform-->
-    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21653" type="text/javascript"></script>
-<script src="https://js.jotform.com/vendor/postMessage.js?3.3.21653" type="text/javascript"></script>
-<script src="https://js.jotform.com/WidgetsServer.js?v=1605250393771" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.21655" type="text/javascript"></script>
+<script src="https://js.jotform.com/vendor/postMessage.js?3.3.21655" type="text/javascript"></script>
+<script src="https://js.jotform.com/WidgetsServer.js?v=1605251754425" type="text/javascript"></script>
 <script type="text/javascript">
     JotForm.init(function() {
         if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex', 0);
@@ -239,7 +239,13 @@
             $('input_6').hint('ชื่อ *');
         }, 20);
         if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex', 0);
+        setTimeout(function() {
+            $('input_7').hint('อีเมล');
+        }, 20);
         if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex', 0);
+        setTimeout(function() {
+            $('input_8').hint('โทรศัพท์ *');
+        }, 20);
         if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex', 0);
         JotForm.setCustomHint('input_9', '\u0e02\u0e49\u0e2d\u0e04\u0e27\u0e32\u0e21');
         if (window.JotForm && JotForm.accessible) $('input_23').setAttribute('tabindex', 0);
@@ -945,17 +951,17 @@
                                             <input type="text" id="input_6" name="q6_input6" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" placeholder="ชื่อ *" data-component="textbox" aria-labelledby="label_6" required="" />
                                         </div>
                                         <div class="contact-inner">
-                                            <input type="text" id="input_7" name="q7_input7" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="อีเมล *" data-component="textbox" aria-labelledby="label_7" required="" />
+                                            <input type="text" id="input_7" name="q7_input7" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" placeholder="อีเมล" data-component="textbox" aria-labelledby="label_7" required="" />
                                         </div>
                                     </div>
                                     <div class="contact-inner">
-                                        <input type="text" id="input_8" name="q8_input8" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="โทรศัพท์ *" data-component="textbox" aria-labelledby="label_8" required="" />
+                                        <input type="text" id="input_8" name="q8_input8" data-type="input-textbox" class="form-textbox validate[required]" size="20" value="" placeholder="โทรศัพท์ *" data-component="textbox" aria-labelledby="label_8" required="" />
                                     </div>
                                     <div class="contact-inner">
                                         <input type="text" id="input_23" name="q23_company" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="บริษัท" data-component="textbox" aria-labelledby="label_23" />
                                     </div>
                                     <div class="contact-inner contact-message">
-                                        <textarea id="input_9" class="form-textarea" name="q9_input9" cols="40" rows="6" data-component="textarea" aria-labelledby="label_9"></textarea>
+                                        <textarea id="input_9" class="form-textarea" name="q9_input9" cols="40" rows="6" data-component="textarea" aria-labelledby="label_9" placeholder="ข้อความ"></textarea>
                                     </div>
                                     <div style="display: none">
                                         <select class="form-dropdown" id="input_17" name="q17_owner" style="width:150px" data-component="dropdown" aria-labelledby="label_17">
