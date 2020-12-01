@@ -253,16 +253,15 @@
         setTimeout(function() {
             $('input_23').hint('บริษัท');
         }, 20);
-        if (window.JotForm && JotForm.accessible) $('input_25').setAttribute('tabindex', 0);
+        if (window.JotForm && JotForm.accessible) $('input_27').setAttribute('tabindex', 0);
         setTimeout(function() {
-            $('input_26').hint('ex: 23');
+            $('input_27').hint('0');
         }, 20);
         JotForm.newDefaultTheme = false;
         JotForm.extendsNewTheme = false;
         JotForm.newPaymentUIForNewCreatedForms = false;
         /*INIT-END*/
     });
-
     JotForm.prepareCalculationsOnTheFly([null, null, null, null, null, null, {
         "name": "input6",
         "qid": "6",
@@ -284,40 +283,12 @@
         "subLabel": "",
         "text": "ข้อความ",
         "type": "control_textarea"
-    }, null, null, null, null, null, null, null, {
-        "description": "",
-        "name": "owner",
-        "qid": "17",
-        "subLabel": "",
-        "text": "Owner",
-        "type": "control_dropdown"
-    }, {
+    }, null, null, null, null, null, null, null, null, {
         "name": "submit",
         "qid": "18",
         "text": "Submit",
         "type": "control_button"
-    }, {
-        "description": "",
-        "name": "leadSource",
-        "qid": "19",
-        "subLabel": "",
-        "text": "Lead Source",
-        "type": "control_dropdown"
-    }, {
-        "description": "",
-        "name": "leadStatus",
-        "qid": "20",
-        "subLabel": "",
-        "text": "Lead Status",
-        "type": "control_dropdown"
-    }, {
-        "description": "",
-        "name": "qualifyStatus",
-        "qid": "21",
-        "subLabel": "",
-        "text": "Qualify Status",
-        "type": "control_dropdown"
-    }, {
+    }, null, null, null, {
         "name": "typeA",
         "qid": "22",
         "text": "Get Page URL",
@@ -329,27 +300,13 @@
         "subLabel": "",
         "text": "Company",
         "type": "control_textbox"
-    }, {
+    }, null, null, null, {
         "description": "",
-        "name": "service",
-        "qid": "24",
+        "name": "numCom",
+        "qid": "27",
         "subLabel": "",
-        "text": "Service",
-        "type": "control_dropdown"
-    }, {
-        "description": "",
-        "name": "websiteSoure",
-        "qid": "25",
-        "subLabel": "",
-        "text": "Website Soure",
+        "text": "Num. Com",
         "type": "control_textbox"
-    }, {
-        "description": "",
-        "name": "numcom",
-        "qid": "26",
-        "subLabel": "",
-        "text": "Num.Com",
-        "type": "control_number"
     }]);
     setTimeout(function() {
         JotForm.paymentExtrasOnTheFly([null, null, null, null, null, null, {
@@ -373,40 +330,12 @@
             "subLabel": "",
             "text": "ข้อความ",
             "type": "control_textarea"
-        }, null, null, null, null, null, null, null, {
-            "description": "",
-            "name": "owner",
-            "qid": "17",
-            "subLabel": "",
-            "text": "Owner",
-            "type": "control_dropdown"
-        }, {
+        }, null, null, null, null, null, null, null, null, {
             "name": "submit",
             "qid": "18",
             "text": "Submit",
             "type": "control_button"
-        }, {
-            "description": "",
-            "name": "leadSource",
-            "qid": "19",
-            "subLabel": "",
-            "text": "Lead Source",
-            "type": "control_dropdown"
-        }, {
-            "description": "",
-            "name": "leadStatus",
-            "qid": "20",
-            "subLabel": "",
-            "text": "Lead Status",
-            "type": "control_dropdown"
-        }, {
-            "description": "",
-            "name": "qualifyStatus",
-            "qid": "21",
-            "subLabel": "",
-            "text": "Qualify Status",
-            "type": "control_dropdown"
-        }, {
+        }, null, null, null, {
             "name": "typeA",
             "qid": "22",
             "text": "Get Page URL",
@@ -418,30 +347,15 @@
             "subLabel": "",
             "text": "Company",
             "type": "control_textbox"
-        }, {
+        }, null, null, null, {
             "description": "",
-            "name": "service",
-            "qid": "24",
+            "name": "numCom",
+            "qid": "27",
             "subLabel": "",
-            "text": "Service",
-            "type": "control_dropdown"
-        }, {
-            "description": "",
-            "name": "websiteSoure",
-            "qid": "25",
-            "subLabel": "",
-            "text": "Website Soure",
+            "text": "Num. Com",
             "type": "control_textbox"
-        }, {
-            "description": "",
-            "name": "numcom",
-            "qid": "26",
-            "subLabel": "",
-            "text": "Num.Com",
-            "type": "control_number"
         }]);
     }, 20);
-
 </script>
     
 
@@ -938,9 +852,9 @@
                         </div>-->
                         <div class="contact-form-wrap">
                             <form class="jotform-form" action="https://submit.jotform.com/submit/203148481635456/" method="post" name="form_203148481635456" id="203148481635456" accept-charset="utf-8" autocomplete="on">
-                                <input type="hidden" name="formID" value="203148481635456" />
-                                <input type="hidden" id="JWTContainer" value="" />
-                                <input type="hidden" id="cardinalOrderNumber" value="" />
+    <input type="hidden" name="formID" value="203148481635456" />
+    <input type="hidden" id="JWTContainer" value="" />
+    <input type="hidden" id="cardinalOrderNumber" value="" />
                                 <div class="contact-form">
                                     <div class="contact-input">
                                         <div class="contact-inner">
@@ -960,34 +874,11 @@
                                         <textarea id="input_9" class="form-textarea" name="q9_input9" cols="40" rows="6" data-component="textarea" aria-labelledby="label_9" placeholder="ข้อความ"></textarea>
                                     </div>
                                     <div style="display: none">
-                                        <select class="form-dropdown" id="input_17" name="q17_owner" style="width:150px" data-component="dropdown" aria-labelledby="label_17">
-                                            <option value=""> </option>
-                                            <option selected="" value="K.Shan"> K.Shan </option>
-                                        </select>
-
-                                        <select class="form-dropdown" id="input_19" name="q19_leadSource" style="width:150px" data-component="dropdown" aria-labelledby="label_19">
-                                            <option value=""> </option>
-                                            <option selected="" value="Web-Homepage"> Web-Homepage </option>
-                                        </select>
-                                        <select class="form-dropdown" id="input_20" name="q20_leadStatus" style="width:150px" data-component="dropdown" aria-labelledby="label_20">
-                                            <option value=""> </option>
-                                            <option selected="" value="NewLead"> NewLead </option>
-                                        </select>
-                                        <select class="form-dropdown" id="input_24" name="q24_service" style="width:150px" data-component="dropdown" aria-labelledby="label_24">
-                                            <option value=""> </option>
-                                            <option selected="" value="ThaiPCsupport"> ThaiPCsupport </option>
-                                        </select>
-                                        <select class="form-dropdown" id="input_21" name="q21_qualifyStatus" style="width:150px" data-component="dropdown" aria-labelledby="label_21">
-                                            <option value=""> </option>
-                                            <option selected="" value="Hot"> Hot </option>
-                                        </select>
-
-                                        <input type='hidden' id='input_22' name='q22_typeA' class='form-hidden getParentURL'>
-                                        <script type='text/javascript' src='//widgets.jotform.io/getParentUrl/min/scripts.min.js'></script>
-
-                                        <input type="text" id="input_25" name="q25_websiteSoure" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_25" />
-                                        <input type="number" id="input_26" name="q26_numcom" data-type="input-number" class=" form-number-input form-textbox" style="width:60px" size="5" value="0" placeholder="ex: 23" data-component="number" aria-labelledby="label_26" step="any" />
-
+                                       <input type="text" id="input_27" name="q27_numCom" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="0" data-component="textbox" aria-labelledby="label_27" />
+                                        
+                                         <input type='hidden' id='input_22' name='q22_typeA' class='form-hidden getParentURL'>
+                            <script type='text/javascript' src='//widgets.jotform.io/getParentUrl/min/scripts.min.js'></script>
+                                        
                                     </div>
                                     <div class="submit-btn mt-20">
                                         <button id="input_18" type="submit" class="ht-btn ht-btn-md form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
