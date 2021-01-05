@@ -1405,3 +1405,42 @@ a.aws.btn.btn--white.btn-one {
         display: inherit;
     }
 }
+
+
+
+
+/*css for LP */
+.social-icon-uu {
+    font-size: 50px!important;
+    margin-top: 0;
+    margin-right: 10px;
+    float: left;
+    line-height: 5px;
+    color: #43c606;
+}
+
+.line-icon-button-uu {
+    display: inline-block;
+    position: fixed;
+    right: 15px;
+    bottom: 18px;
+    overflow: hidden;
+    text-align: center;
+    color: #00c300;
+    
+    line-height: 1;
+}
+
+
+.navigation-menu>ul>li.has-children-uu>a:after {
+    position: static;
+    margin-left: 5px;
+    font-family: "Font Awesome 5 Pro";
+    content: none;
+    font-size: 14px;
+    vertical-align: middle;
+    -webkit-transition: all .7s cubic-bezier(.645,.045,.355,1);
+    -o-transition: all .7s cubic-bezier(.645,.045,.355,1);
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+}
+/*css for LP */
