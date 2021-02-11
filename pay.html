@@ -169,6 +169,30 @@
             font-style: normal;
             font-display: swap
         }
+        #smart-button-container {
+    border: solid 2px #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}  
+#smart-button-container label {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+}
+    #smart-button-container input {
+    border: solid 2px #ccc;
+    display: inline-block;
+    width: 52%;
+    padding: 10px;
+}
+p#descriptionError,p#invoiceidDiv,p#invoiceidError,p#priceLabelError {
+    padding: 0;
+    display: block;
+    line-height: 0;
+}
 
     </style>
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
@@ -614,9 +638,9 @@
                         <div class="contact-form-wrap">
                             
                             <div id="smart-button-container">
-    <div style="text-align: center"><label for="description">Description </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+    <div style="text-align: left"><label for="description"> Description</label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
       <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-    <div style="text-align: center"><label for="amount"> </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
+    <div style="text-align: left"><label for="amount"> Amount</label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
       <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
     <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
       <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
