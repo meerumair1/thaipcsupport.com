@@ -4,13 +4,19 @@
     <meta charset="utf-8">
     <title>Paypal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
     }
+    h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
     #smart-button-container {
         border: solid 2px #ccc;
         padding: 20px;
@@ -40,10 +46,12 @@
     }
 </style>
 <body>
+    <h1>Please Add in note Image modeling and rending Image Services</h1>
+
     <div id="smart-button-container">
-        <div style="text-align: center"><label for="description">Description </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+        <div><label for="description"> Description</label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
         <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
-        <div style="text-align: center"><label for="amount"> Amount</label><input name="amountInput" type="number" id="amount" value=""><span> USD</span></div>
+        <div><label for="amount">Amount </label><input name="amountInput" type="number" id="amount" value=""><span> USD</span></div>
         <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
         <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
         <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
@@ -71,10 +79,10 @@
             }
             paypal.Buttons({
                 style: {
-                    color: 'blue',
-                    shape: 'pill',
-                    label: 'pay',
-                    layout: 'horizontal',
+                    color: 'gold',
+                    shape: 'rect',
+                    label: 'paypal',
+                    layout: 'vertical',
                 },
                 onInit: function(data, actions) {
                     actions.disable();
