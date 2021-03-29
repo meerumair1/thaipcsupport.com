@@ -1197,7 +1197,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                                                <div id="crmWebToEntityForm" class="contact-form-wrap">
+                                                
+                        <div id="crmWebToEntityForm" class="contact-form-wrap">
                             <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
                             <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2525354000007401009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000007401009()' accept-charset='UTF-8'>
                                 <input type='text' style='display:none;' name='xnQsjsdp' value='2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'></input>
@@ -1207,7 +1208,7 @@
                                 <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
                                 <div class="contact-form">
                                     <div style="display: none">
-                                        <input name="LEADCF16" type="text" id="WebsiteSoruce1">
+                                        <input name="LEADCF16" type="text" id="LEADCF16">
                                     </div>
                                     <div class="contact-input">
                                         <div class="contact-inner">
@@ -1226,6 +1227,13 @@
                                     <div class="contact-inner contact-message">
                                         <textarea name="Description" placeholder="โปรดระบุข้อความ"></textarea>
                                     </div>
+                                    <div class="contact-inner">
+                                        <div class='zcwf_col_fld'><input type='text' maxlength='10' name='enterdigest' placeholder="Enter Captcha*"/></div>
+                                        <img id='imgid2525354000007401009' src='https://crm.zoho.com/crm/CaptchaServlet?formId=5968f88351f23e61bebaf421c95f6dc2aadfd1a300a4bf00035dcff2091eac58&grpid=2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'>
+                <a href='javascript:;' onclick='reloadImg2525354000007401009();'>Reload</a>
+                                    </div>
+                                    
+                                    
                                     <div style="display: none">
                                         <select style='width:100%;box-sizing:border-box;' name='Lead Status'>
                                             <option value='-None-'>-None-</option>
@@ -1282,72 +1290,97 @@
                                         <input class="ht-btn ht-btn-md" type="submit" value="ส่งข้อความ"></input>
                                     </div>
                                 </div>
+                                
                                 <script>
-                                    document.getElementById("WebsiteSoruce1").value = window.location.href;
-                                    var mndFileds = new Array('Last Name', 'Phone');
-                                    var fldLangVal = new Array('Last Name', 'Phone');
-                                    var name = '';
-                                    var email = '';
+            
+            document.getElementById("LEADCF16").value = window.location.href;
+            /* Do not remove this code. */
+            function reloadImg2525354000007401009() {
+                var captcha = document.getElementById('imgid2525354000007401009');
+                if (captcha.src.indexOf('&d') !== -1) {
+                    captcha.src = captcha.src.substring(0, captcha.src.indexOf('&d')) + '&d' + new Date().getTime();
+                } else {
+                    captcha.src = captcha.src + '&d' + new Date().getTime();
+                }
+            }
 
-                                    function validateEmail() {
-                                        var emailFld = document.querySelectorAll('[ftype=email]');
-                                        var i;
-                                        for (i = 0; i < emailFld.length; i++) {
-                                            var emailVal = emailFld[i].value;
-                                            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                                                var atpos = emailVal.indexOf('@');
-                                                var dotpos = emailVal.lastIndexOf('.');
-                                                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                                    alert('Please enter a valid email address. ');
-                                                    emailFld[i].focus();
-                                                    return false;
-                                                }
-                                            }
-                                        }
-                                        return true;
-                                    }
+            function validateEmail2525354000007401009() {
+                var form = document.forms['WebToLeads2525354000007401009'];
+                var emailFld = form.querySelectorAll('[ftype=email]');
+                var i;
+                for (i = 0; i < emailFld.length; i++) {
+                    var emailVal = emailFld[i].value;
+                    if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                        var atpos = emailVal.indexOf('@');
+                        var dotpos = emailVal.lastIndexOf('.');
+                        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                            alert('Please enter a valid email address. ');
+                            emailFld[i].focus();
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            }
 
-                                    function checkMandatory2525354000007401009() {
-                                        for (i = 0; i < mndFileds.length; i++) {
-                                            var fieldObj = document.forms['WebToLeads2525354000007401009'][mndFileds[i]];
-                                            if (fieldObj) {
-                                                if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                                    if (fieldObj.type == 'file') {
-                                                        alert('Please select a file to upload.');
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                    alert(fldLangVal[i] + ' cannot be empty.');
-                                                    fieldObj.focus();
-                                                    return false;
-                                                } else if (fieldObj.nodeName == 'SELECT') {
-                                                    if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                                                        alert(fldLangVal[i] + ' cannot be none.');
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                } else if (fieldObj.type == 'checkbox') {
-                                                    if (fieldObj.checked == false) {
-                                                        alert('Please accept  ' + fldLangVal[i]);
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                }
-                                                try {
-                                                    if (fieldObj.name == 'Last Name') {
-                                                        name = fieldObj.value;
-                                                    }
-                                                } catch (e) {}
-                                            }
-                                        }
-                                        if (!validateEmail()) {
-                                            return false;
-                                        }
+            function checkMandatory2525354000007401009() {
+                var mndFileds = new Array('Last Name', 'Phone');
+                var fldLangVal = new Array('Last\x20Name', 'Phone');
+                for (i = 0; i < mndFileds.length; i++) {
+                    var fieldObj = document.forms['WebToLeads2525354000007401009'][mndFileds[i]];
+                    if (fieldObj) {
+                        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                            if (fieldObj.type == 'file') {
+                                alert('Please select a file to upload.');
+                                fieldObj.focus();
+                                return false;
+                            }
+                            alert(fldLangVal[i] + ' cannot be empty.');
+                            fieldObj.focus();
+                            return false;
+                        } else if (fieldObj.nodeName == 'SELECT') {
+                            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                alert(fldLangVal[i] + ' cannot be none.');
+                                fieldObj.focus();
+                                return false;
+                            }
+                        } else if (fieldObj.type == 'checkbox') {
+                            if (fieldObj.checked == false) {
+                                alert('Please accept  ' + fldLangVal[i]);
+                                fieldObj.focus();
+                                return false;
+                            }
+                        }
+                        try {
+                            if (fieldObj.name == 'Last Name') {
+                                name = fieldObj.value;
+                            }
+                        } catch (e) {}
+                    }
+                }
+                if (!validateEmail2525354000007401009()) {
+                    return false;
+                }
+                document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+            }
 
-                                    }
+            function tooltipShow2525354000007401009(el) {
+                var tooltip = el.nextElementSibling;
+                var tooltipDisplay = tooltip.style.display;
+                if (tooltipDisplay == 'none') {
+                    var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                    for (i = 0; i < allTooltip.length; i++) {
+                        allTooltip[i].style.display = 'none';
+                    }
+                    tooltip.style.display = 'block';
+                } else {
+                    tooltip.style.display = 'none';
+                }
+            }
 
-                                </script>
+        </script>
                             </form>
+                            <iframe name='captchaFrame' style='display:none;'></iframe>
                         </div>
                     </div>
                     <div class="col-lg-5 ml-auto">
