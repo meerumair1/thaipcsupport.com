@@ -13,7 +13,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'thaipcfont' !important;
     font-weight: 500 !important;
 }
-
+p {line-height: 26px}
+h5.heading a:hover {
+    color: #ff973b;
+}
 .ht-box-icon.style-04 h5 {
     color: #fff !important;
 }
