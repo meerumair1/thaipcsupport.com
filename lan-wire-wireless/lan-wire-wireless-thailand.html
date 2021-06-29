@@ -145,7 +145,24 @@
             font-style: normal;
             font-display: swap
         }
-        .ht-box-images.style-04 .text-th {
+        .ht-box-images.style-04 .text-th {font-size: 14px;}
+        .check-list .list-item::before {
+            color: #ffffff;
+            content: '\f00c';
+            position: absolute;
+            top: 4px;
+            left: 0px;
+            display: block;
+            font-size: 10px;
+            text-align: center;
+            line-height: 1.7;
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 900;
+            background-color: #086ad8;
+            border-radius: 100%;
+            height: 16px;
+            width: 16px;
+        }
     </style>
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
     <!--
@@ -780,35 +797,129 @@
             </div>
         </div>
         <div class="bg-gray section-space--ptb_60">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-6">Images</div>
-                    <div class="col-6">
-                        <h5 class="mb-10">ประเภทของสายแลน LAN</h5>
-                        <ul class="check-list">
-                            <li class="list-item">รับเดินสายแลนและสายไฟเบอร์ภายในและภายนอกอาคารสำนักงานและโรงงาน</li>
-                            <li class="list-item">รับติดตั้งสายแลนและสายไฟเบอร์</li>
-                            <li class="list-item">รับวางระบบสายแลนและสายไฟเบอร์</li>
-                            <li class="list-item">รับวางระบบเน็ตเวิร์ค Network</li>
-                            <li class="list-item">บริการให้คำปรึกษาและดูหน้างานก่อนทำการเดินสายแลนและสายไฟเบอร์ </li>
-                        </ul>
+                    <div class="col-12 text-center mb-30">
+                        <h4>รูปแบบการเดินของสายแลน LAN</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="grid-item animate">
+                            <div class="ht-box-icon style-03">
+                                <div class="icon-box-wrap">
+                                    <div class="content-header">
+                                        <div class="icon">
+                                            <i class="fas fa-network-wired"></i>
+                                        </div>
+                                        <h5 class="heading">
+                                            BUS
+                                        </h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="text-th">มีการรับส่งข้อมูลด้วยความเร็ว 10-100 MB/s จะเชื่อมต่อกันบนสายสัญญาณเส้นเดียวกัน โดยจะมีอุปกรณ์ที่เรียกว่า T-Connector เป็นตัวแปลงสัญญาณข้อมูลเพื่อนำเข้าสู่ระบบคอมพิวเตอร์และ Terminator ในการปิดหัวท้ายของสายในระบบเครือข่ายเพื่อดูดซับข้อมูลไม่ให้เกิดการสะท้อนกลับของสัญญาณ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="grid-item animate">
+                            <div class="ht-box-icon style-03">
+                                <div class="icon-box-wrap">
+                                    <div class="content-header">
+                                        <div class="icon">
+                                            <i class="fal fa-life-ring"></i>
+                                        </div>
+                                        <h5 class="heading">
+                                            STAR
+                                        </h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="text-th">เป็นระบบที่มีเป็นการต่อแบบรวมศูนย์ โดยเครื่องคอมพิวเตอร์ทุกเครื่องจะต่อสายเข้าไปที่อุปกรณ์ที่เรียกว่า Hub หรือ Switch โดยอุปกรณ์ที่เรียกว่า Hub หรือ Switch จะทำหน้าที่เปรียบศูนย์กลางที่ทำหน้าที่กระจายข้อมูล โดยข้อดีของการต่อในรูปแบบนี้ คือ หากสายสัญญาณเกิดขาดในคอมพิวเตอร์เครื่องใดเครื่องหนึ่ง เครื่องคอมพิวเตอร์อื่นๆจะสามารถใช้งานได้ปกติ แต่หากศูนย์กลางคือ Hub หรือ Switch เกิดเสียจะทำให้ระบบทั้งระบบไม่สามารถทำงานได้ทั้งระบบ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="grid-item animate">
+                            <div class="ht-box-icon style-03">
+                                <div class="icon-box-wrap">
+                                    <div class="content-header">
+                                        <div class="icon">
+                                            <i class="fal fa-life-ring"></i>
+                                        </div>
+                                        <h5 class="heading">
+                                            RING
+                                        </h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="text-th">เป็นระบบที่มีการส่งข้อมูลไปในทิศทางเดียวกัน โดยจะมีเครื่อง Server หรือ Switch ในการปล่อย Token เพื่อตรวจสอบว่ามีเครื่องคอมพิวเตอร์ใดต้องการส่งข้อมูลหรือไม่และระหว่างการส่งข้อมูลเครื่องคอมพิวเตอร์อื่นๆที่ต้องการส่งข้อมูลจะต้องทำการรอให้ข้อมูลก่อนหน้านั้นถูกส่งให้สำเร็จเสียก่อน</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="bg-white section-space--ptb_60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">Images</div>
+                    <div class="col-8 mb-30">
+                        <h5 class="mb-10">ประเภทของสายแลน LAN</h5>
+                        <ul class="check-list mb-30">
+                            <li class="list-item">การเดินสายแลนจะมีสายแลน LAN ให้เลือกหลายขนาดเช่น Cat 5e, Cat 6</li>
+                            <li class="list-item">ประเภทที่หนึ่ง สายแลน LAN <strong> UTP CAT 5</strong> คือ สายแลน ที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 100 Mbps สายชนิดนี้ไม่เป็นที่นิยมใช้งานกันเท่าไรเนื่องด้วยมีความเร็วในการถ่ายโอนข้อมูลที่ต่ำ</li>
+                            <li class="list-item">ประเภทที่สอง สายแลน LAN <strong>UTP CAT 5e</strong> คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 1 Gpbs</li>
+                            <li class="list-item">ประเภทที่สาม สายแลน LAN <strong>UTP CAT 6</strong> คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 10 Gpbs BANWIDTH อยู่ที่ 250 MHz</li>
+                            <li class="list-item">ประเภทที่สี่ สายแลน LAN <strong>UTP CAT 7</strong> คือ สายแลนที่เป็นสายทองแดงที่มีความเร็วที่ต่ำ ความเร็วสูงสุดอยู่ที่ 10 Gpbs BANWIDTH อยู่ที่ 600 MHz </li>
+                        </ul>
+                            <h5 class="mb-10">มาตราฐานของการเดินสายแลน LAN</h5>
+                            <p class="text-th">การเดินสายแลนจะต้องให้ช่างหรือเจ้าหน้าที่ ที่มีความชำนาญในการใช้อุปกรณ์ หรือผู้ที่ผ่านการอบรมมาแล้วเป็นอย่างดี เป็นผู้ที่ทำการเดินสายให้ เพื่อป้องกันไม่ให้เกิดอันตรายแก่ตัวเอง และสร้างความเสียหายให้กับลูกค้า</p>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
         <div class="bg-gray section-space--ptb_60">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h4 class="heading font-weight--light text-center">บริการ</h4>
+                    <div class="col-12 mb-30">
+                        <h5 class="mb-10">เดินสายแลน LAN Cat 6 และ เดินสายแลน LAN Cat 5e ต่างกันอย่างไร?</h5>
+                        <ul class="check-list">
+                        <li class="list-item">เดินสายแลน LAN Cat 6 Cat 5e ต่างกันในด้านของความเร็ว และระยะสาย และราคาสายแลนก็ต่างกันมาก ซึ่งสายแลน LAN Cat 6 ได้ เปรียบตรงที่ทองแดงมีขนาดใหญ่กว่า ทำให้เดินสายได้ในระยะไกล และรองรับความเร็วในระดับ 1Gbps ได้ดีกว่าสายแลน LAN Cat5e</li>
+                        <li class="list-item">เดินสายแลน LAN Cat 5e เหมาะสำหรับใช้งานทั่วไป ตามบ้านที่ใช้ความเร็วไม่เกิน 100 Mbps ส่วนสายแลน LAN Cat 6 นั้น เหมาะที่จะใช้งานกับองค์กรหรือระบบเครือข่ายที่ใช้ความเร็วในระดับ 1 Gbps</li>
+                        </ul>
                     </div>
-                    <div class="col-12 text-center">
-                        <div class="computing-info-box">
-                            <div class="section-under-heading mt-10">ให้บริการติดตั้งระบบ LAN โดย ThaiPC Support ดูแลจัดหาอุปกรณ์พร้อมติดตั้งครบวงจร ให้กับบริษัท</div>
-                        </div>
+                    <div class="col-12">
+                        <h5 class="mb-10">เดินสายแลน LAN UTP Cat5e และสายแลน LAN Cat6 แบบใช้ภายในอาคาร</h5>
+                            <p class="p-th"><strong>ลักษณะ การใช้งาน :</strong> สายสัญญาณชนิดนี้ (หมาะแก่การใช้งานภายในอาคารทั่วไป การติดตั้งง่าย จะเดินแบบร้อยท่อ ร้อยเฟล็ก หรือใส่รางพลาสติกก็ได้ ขึ้นอยู่กับลักษณะงานและสถานที่นั้นๆ <br><strong>ประโยชน์ :</strong> ใช้ในระบบเครื่อข่ายคอมพิวเตอร์, ระบบ CCTV, ระบu Network Camera, ระบบโทรศัพท์(IP PHone), ระบบ PLC,
+                                ระบบ Data และ Control ต่างๆ, Token ring, 155Mbps ATM, 100 Mbps TP-PMD, ISDN, Analog and digital video,
+                                VOIP, POE (IEEE802.3af, at) โดยสามารถส่งผ่านข้อมูลได้ดั่งแต่ 10-100-1000Mbps ทั้ง 3 ช่วงความเร็ว ขึ้นอยู่กับอุปกรณ์ที่มา
+                                ต่อพ่วงกับสายสัญญาณและการประยุกต์ใช้งานจริงกับอุปกรณ์นั้นๆ และ ซึ่งปัจุบันราคาสายชนิดนี้เริ่มจะถูกลงมามาก เพราะมีสายที่มี
+                                ความเร็วดีกว่ามาแทน คือ Cat.6 เพื่อตอบสนองความเร็วที่มากขึ้นตามยุคสมัย</p>
+                        <h5 class="mb-10">เดินส่ายแลน LAN Cat6 UTP Cable (Unshield Twisted pair) แบบใช้งานภายในอาคาร</h5>
+                               <p class="p-th"> <strong>ลักษณะการใช้งาน :</strong> สายสัญญาณชนิดนี้ เหมาะกับการใช้งานภายในอาคารทั่วไป การติดตั้งง่าย แต่จะมีขนาด (Diameter) ที่ใหญ่
+                                กว่าสายแลน LAN Cat.5e พอสมควร จึงจะต้องเพิ่มขนาดของ ท่อร้อยสายให้มีขนาดที่ใหญ่ขึ้นตามไปด้วย ส่วนการติดตั้งจะเดิน
+                                แบบร้อยท่อ ร้อยเฟล็ก หรือใส่รางพลาสติกก็ได้ ขึ้นอยู่กับลักษณะของพื้นที่และสถานที่นั้นๆ<br>
+                                <strong>ประโยชน์ : </strong>ใช้ในระบบเครือข่ายคอมพิวเตอร์ ที่ต้องการความเร็วที่สูงขึ้น เช่น ระบบ CCTV, ระบบ Network Camera, ระบบ
+โทรศัพท์(IP PHone), ระบบ VoIP, ระบบ PLC, ระบบ Data และ Control ต่างๆ Token ring, 155Mbps ATM, 100 Mbps TP-
+PMD, ISDN, Analog and digital video, VoIP, PoE (IEEE802.3af, at) โดยสามารถส่งผ่านข้อมูลได้ตั้งแต่
+10-100-1000Mbps ทั้ง 3 ช่วงความเร็ว ขึ้นอยู่กับอุปกรณ์ที่มาต่อพ่วงกับสายสัญญาณและการประยุกต์ใช้งานจริงกับอุปกรณ์นั้นๆ
+และ ซึ่งปัจุบันราคาสายชนิดนี้เริ่มจะถูกลงมาแล้วแต่ยังไม่มากนัก แต่มีสายที่มีความเร็วดีกว่ามาแทน คือ Cat.6A หรือ Cat.7 ที่
+ความเร็ว 10 Gigabit เพื่อตอบสนองความเร็วที่มากขึ้นตามยุคสมัย ในปัจจุบัน
+                            </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <!--Old-->
+        <div class="bg-whith section-space--ptb_60">
             
             <div class="container">
                 <div class="row">
