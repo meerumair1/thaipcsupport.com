@@ -104,6 +104,7 @@ h5.slide-header {
 .thank-tou-page .align-items-center {
     min-height: 250px;
 }
+.body-th .check-list .list-item {padding-left: 25px!important; line-height: 23px;}
 @media only screen and (max-width: 1199px) {}
 body {
     line-height: inherit;
