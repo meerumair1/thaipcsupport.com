@@ -163,6 +163,31 @@
             height: 16px;
             width: 16px;
         }
+        ul.check-list {padding-left: 15px;}
+        .bg-blue {background-color: #086aca21;position: relative;}
+        .ht-box-icon.style-03.active .icon-box-wrap {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background: #fff;
+    -webkit-box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    border-radius: 0;
+}
+/*.bg-blue:after {
+    content: '';
+    width: 570px;
+    height: 279px;
+    position: absolute;
+    display: block;
+    top: 21%;
+    right: 0px;
+    z-index: 1;
+    background-image: url(../assets/images/lan/lan-wire-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}*/
     </style>
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
     <!--
@@ -543,7 +568,6 @@
         <div class="appointment-hero-wrapper appointment-hero-bg-2 section-space--ptb_60">
             <div class="container">
                 <div class="row align-items-center">
-                    
                     <div class="col-lg-6 col-md-6">
                         <div class="appointment-hero-wrap wow move-up">
                             <div class="ht-box-icon style-04">
@@ -771,7 +795,7 @@
 
         <div class="bg-white section-space--ptb_60">
             <div class="container">
-                <div class="row">
+                <div class="row mb-30">
                     <div class="col-12">
                         <h4 class="heading text-center text-color-primary">บริการ / Services</h4>
                     </div>
@@ -781,8 +805,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 mb-30">
                         <h5 class="mb-10">บริการเดินสายแลน เดินสายแลน Cat 5e เดินสายแลน Cat 6 </h5>
                         <ul class="check-list">
                             <li class="list-item">รับเดินสายแลนและสายไฟเบอร์ภายในและภายนอกอาคารสำนักงานและโรงงาน</li>
@@ -792,24 +816,25 @@
                             <li class="list-item">บริการให้คำปรึกษาและดูหน้างานก่อนทำการเดินสายแลนและสายไฟเบอร์ </li>
                         </ul>
                     </div>
-                    <div class="col-6">Images</div>
+                   
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="../assets/images/lan/lan-wire-2.jpg" alt="สายแลน"></div>
                 </div>
             </div>
         </div>
-        <div class="bg-gray section-space--ptb_60">
-            <div class="container-fluid">
-                <div class="row">
+        <div class="bg-blue section-space--ptb_60">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center mb-30">
                         <h4>รูปแบบการเดินของสายแลน LAN</h4>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-9">
+                    <div class="col-lg-12">
                         <div class="grid-item animate">
-                            <div class="ht-box-icon style-03">
+                            <div class="ht-box-icon style-03 active">
                                 <div class="icon-box-wrap">
                                     <div class="content-header">
-                                        <div class="icon">
-                                            <i class="fas fa-network-wired"></i>
-                                        </div>
                                         <h5 class="heading">
                                             BUS
                                         </h5>
@@ -821,14 +846,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="grid-item animate">
-                            <div class="ht-box-icon style-03">
+                            <div class="ht-box-icon style-03 active">
                                 <div class="icon-box-wrap">
                                     <div class="content-header">
-                                        <div class="icon">
-                                            <i class="fal fa-life-ring"></i>
-                                        </div>
                                         <h5 class="heading">
                                             STAR
                                         </h5>
@@ -840,14 +862,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="grid-item animate">
-                            <div class="ht-box-icon style-03">
+                            <div class="ht-box-icon style-03 active">
                                 <div class="icon-box-wrap">
                                     <div class="content-header">
-                                        <div class="icon">
-                                            <i class="fal fa-life-ring"></i>
-                                        </div>
                                         <h5 class="heading">
                                             RING
                                         </h5>
@@ -860,14 +879,15 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
 
         <div class="bg-white section-space--ptb_60">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">Images</div>
-                    <div class="col-8 mb-30">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5"><img class="img-fluid" src="../assets/images/lan/lan-wire.jpg" alt="Lan wire"></div>
+                    <div class="col-lg-6 offset-lg-1 mb-30">
                         <h5 class="mb-10">ประเภทของสายแลน LAN</h5>
                         <ul class="check-list mb-30">
                             <li class="list-item">การเดินสายแลนจะมีสายแลน LAN ให้เลือกหลายขนาดเช่น Cat 5e, Cat 6</li>
@@ -884,17 +904,17 @@
             </div>
         </div>
 
-        <div class="bg-gray section-space--ptb_60">
+        <div class="bg-blue section-space--ptb_60">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 mb-30">
+                    <div class="col-10 mb-30">
                         <h5 class="mb-10">เดินสายแลน LAN Cat 6 และ เดินสายแลน LAN Cat 5e ต่างกันอย่างไร?</h5>
                         <ul class="check-list">
                         <li class="list-item">เดินสายแลน LAN Cat 6 Cat 5e ต่างกันในด้านของความเร็ว และระยะสาย และราคาสายแลนก็ต่างกันมาก ซึ่งสายแลน LAN Cat 6 ได้ เปรียบตรงที่ทองแดงมีขนาดใหญ่กว่า ทำให้เดินสายได้ในระยะไกล และรองรับความเร็วในระดับ 1Gbps ได้ดีกว่าสายแลน LAN Cat5e</li>
                         <li class="list-item">เดินสายแลน LAN Cat 5e เหมาะสำหรับใช้งานทั่วไป ตามบ้านที่ใช้ความเร็วไม่เกิน 100 Mbps ส่วนสายแลน LAN Cat 6 นั้น เหมาะที่จะใช้งานกับองค์กรหรือระบบเครือข่ายที่ใช้ความเร็วในระดับ 1 Gbps</li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-10">
                         <h5 class="mb-10">เดินสายแลน LAN UTP Cat5e และสายแลน LAN Cat6 แบบใช้ภายในอาคาร</h5>
                             <p class="p-th"><strong>ลักษณะ การใช้งาน :</strong> สายสัญญาณชนิดนี้ (หมาะแก่การใช้งานภายในอาคารทั่วไป การติดตั้งง่าย จะเดินแบบร้อยท่อ ร้อยเฟล็ก หรือใส่รางพลาสติกก็ได้ ขึ้นอยู่กับลักษณะงานและสถานที่นั้นๆ <br><strong>ประโยชน์ :</strong> ใช้ในระบบเครื่อข่ายคอมพิวเตอร์, ระบบ CCTV, ระบu Network Camera, ระบบโทรศัพท์(IP PHone), ระบบ PLC,
                                 ระบบ Data และ Control ต่างๆ, Token ring, 155Mbps ATM, 100 Mbps TP-PMD, ISDN, Analog and digital video,
