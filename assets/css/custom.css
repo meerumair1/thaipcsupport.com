@@ -1407,8 +1407,12 @@ a.aws.btn.btn--white.btn-one {
     }
 }
 
-
-
+/*css for clinets */
+.border-h-clients {
+    border-bottom: 3px solid #5a5a5a;
+    padding-bottom: 10px;
+}
+/*css end for clinets */
 
 /*css for LP */
 .social-icon-uu {

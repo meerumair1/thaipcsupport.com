@@ -1338,6 +1338,12 @@ a.aws.btn.btn--white.btn-one {
 
 
 
+/*css for clinets */
+.border-h-clients {
+    border-bottom: 3px solid #5a5a5a;
+    padding-bottom: 10px;
+}
+/*css end for clinets */
 
 
 
@@ -1345,7 +1351,7 @@ a.aws.btn.btn--white.btn-one {
 
 
 
-
+/*css for bitdefender */
 
 .appointment-hero-bg-bit {
     background-image: url(../images/bit/hero-banner-bs-abs.jpg);
@@ -1696,3 +1702,5 @@ input[type=checkbox], input[type=radio] {
     border-color: #086ad8!important;
 	
 }
+
+/*css end for bitdefender */
