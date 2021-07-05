@@ -1412,6 +1412,11 @@ a.aws.btn.btn--white.btn-one {
     border-bottom: 3px solid #5a5a5a;
     padding-bottom: 10px;
 }
+
+.mob-cl-space {
+    margin-bottom: 20px;
+}
+
 /*css end for clinets */
 
 /*css for LP */
