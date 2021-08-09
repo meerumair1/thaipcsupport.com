@@ -131,6 +131,7 @@ a.hot-link {
 		font-size: 35px;
 }
 .marker-quetation {
+		display: none!important;
 		position: absolute;
 		top: -1px;
 		right: -1px;
@@ -141,6 +142,7 @@ a.hot-link {
 		border-left: 110px solid transparent;
 }
 .marker-quetation span {
+	display: none!important;
 		position: absolute;
 		top: -92px;
 		right: -35px;
