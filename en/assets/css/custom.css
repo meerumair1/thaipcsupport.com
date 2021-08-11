@@ -914,11 +914,11 @@ body {
     position: relative;
     overflow: hidden;
 }
-.business-solution-form-wrap.landing-form .comment-submit-btn {
+/*.business-solution-form-wrap.landing-form .comment-submit-btn {
     background: rgba(255, 151, 59, 1);
     font-size: 20px;
     font-weight: 300;
-}
+}*/
 /*stibo*/
 .image-box-wrap-umi {
     justify-content: right !important;

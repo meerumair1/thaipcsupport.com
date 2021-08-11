@@ -157,114 +157,84 @@
                             <div class="contact-title text-center section-space--mb_20">
                                 <h4 class="mb-10">ขอใบเสนอราคา</h5>
                             </div>
-                            <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2525354000007371028 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000007371028()' accept-charset='UTF-8'>
-                                <input type='text' style='display:none;' name='xnQsjsdp' value='2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'></input>
-                                <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-                                <input type='text' style='display:none;' name='xmIwtLD' value='5968f88351f23e61bebaf421c95f6dc2f034df77beeb6d70fd30ab3a1b2a2adc'></input>
-                                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
-                                <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/landing1/thank-you.html'> </input>
+                            <form action='https://bigin.zoho.com/crm/WebToContactForm' name='CMIGNITEWebToContacts' method='POST' enctype='multipart/form-data' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
+                                <input type='text' style='display:none;' name='xnQsjsdp' value='5e93cae7a740ea681dd32d32ee4b469eec99add6eec788698bb6e71fe5f993b8'/>
+ 	                            <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+ 	                            <input type='text' style='display:none;' name='xmIwtLD' value='39d30f4d5b0bf49a19757ded8a33038818c2ab6f3bd9e28b575603a3110b0823'/>
+ 	                            <input type='text' style='display:none;' name='actionType' value='Q29udGFjdHM='/>
+                                <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
                                 <div class="contact-form__two">
-                                    <div class="contact-inner">
-                                        <input name="Last Name" type="text" placeholder="ชื่อ สกุล *">
+                                    <div class="contact-input">
+                                        <div class="contact-inner">
+                                            <input name="Last Name" type="text" placeholder="Name *">
+                                        </div>
+                                        <div class="contact-inner">
+                                            <input name="Phone" type="Phone" placeholder="Phone *">
+                                        </div>
                                     </div>
                                     <div class="contact-inner">
-                                        <input name="Email" type="email" placeholder="อีเมล *">
+                                        <input name="Email" type="email" placeholder="Email *">
                                     </div>
+
                                     <div class="contact-inner">
-                                        <input name="Phone" type="tel" placeholder="เบอร์โทรศัพท์">
+                                        <textarea name="Description" placeholder="Description"></textarea>
                                     </div>
-                                    <div style="display: none">
-                                        <select style='width:100%;box-sizing:border-box;' name='LEADCF1'>
-                                            <option value='-None-'>-None-</option>
-                                            <option value='Bom'>Bom</option>
-                                            <option selected value='Ping'>Ping</option>
-                                            <option value='K.Shan'>K.Shan</option>
-                                        </select>
-                                        
-                                        <select style='width:100%;box-sizing:border-box;' name='Lead Status'>
-                                            <option value='-None-'>-None-</option>
-                                            <option selected value='New&#x20;Lead'>New Lead</option>
-                                            <option value='Contacted'>Contacted</option>
-                                            <option value='Meeting&#x20;before&#x20;QT'>Meeting before QT</option>
-                                            <option value='Meeting'>Meeting</option>
-                                            <option value='QT&#x20;before&#x20;Meeting'>QT before Meeting</option>
-                                            <option value='Follow&#x20;up-QT'>Follow up-QT</option>
-                                            <option value='Hold'>Hold</option>
-                                            <option value='Lost&#x20;Lead'>Lost Lead</option>
-                                            <option value='Junk&#x20;Lead'>Junk Lead</option>
-                                            <option value='Not&#x20;Qualified'>Not Qualified</option>
-                                        </select>
-                                        
-                                        <select style='width:100%;box-sizing:border-box;' name='LEADCF4'>
-                                            <option value='-None-'>-None-</option>
-                                            <option selected value='Hot'>Hot</option>
-                                            <option value='Medium'>Medium</option>
-                                            <option value='Hold'>Hold</option>
-                                            <option value='Junk'>Junk</option>
-                                        </select>
-                                        
-                                        <select style='width:100%;box-sizing:border-box;' name='Lead Source'>
-                                            <option value='-None-'>-None-</option>
-                                            <option value='E-Mail'>E-Mail</option>
-                                            <option value='Call'>Call</option>
-                                            <option selected value='Google&#x20;Adwords'>Google Adwords</option>
-                                            <option value='Facebook&#x20;Ads'>Facebook Ads</option>
-                                            <option value='Landing&#x20;Page&#x20;2'>Landing Page 2</option>
-                                            <option value='Landing-IT-Support-Thailand'>Landing-IT-Support-Thailand</option>
-                                            <option value='Contact-ITBKK'>Contact-ITBKK</option>
-                                            <option value='Website-Contact&#x20;us'>Website-Contact us</option>
-                                            <option value='Chat-Website'>Chat-Website</option>
-                                            <option value='Chat-Line&#x40;'>Chat-Line&#x40;</option>
-                                        </select>
-                                    </div>
-                                    <div class="text-center">
-                                        <input class="btn btn--secondary btn-two comment-submit-btn" id="formsubmit" type="submit" value="ขอใบเสนอราคา"></input>
+                                    <div class="bgn-wf-row" style="display:none;">
+                                        <div class="bgn-wf-label">Contact Status
+                                        </div>
+                                        <div class="bgn-wf-field">
+                                             <select name="CONTACTCF1" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
+                                                  <option value="-None-">-None-</option>
+                                                  <option selected value="New Lead">New Lead</option>
+                                                  <option value="Closed won">Closed won</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                                   <div class="bgn-wf-row" style="display:none;">
+                                        <div class="bgn-wf-label">Support Own
+                                        </div>
+                                        <div class="bgn-wf-field">
+                                             <select name="CONTACTCF3" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
+                                                  <option value="-None-">-None-</option>
+                                                  <option selected value="None">None</option>
+                                                  <option value="Mameaw">Mameaw</option>
+                                                  <option value="Apo">Apo</option>
+                                                  <option value="kin">kin</option>
+                                                  <option value="Nabee">Nabee</option>
+                                                  <option value="James">James</option>
+                                                  <option value="Milk">Milk</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                                   <div class="bgn-wf-row" style="display:none;">
+                                        <div class="bgn-wf-label">Leads Source
+                                        </div>
+                                        <div class="bgn-wf-field">
+                                             <select name="CONTACTCF2" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
+                                                  <option value="-None-">-None-</option>
+                                                  <option selected value="Website - Contact us">Website - Contact us</option>
+                                                  <option value="Website - Landing page">Website - Landing page</option>
+                                                  <option value="Call - Outbound">Call - Outbound</option>
+                                                  <option value="Call - Inbound">Call - Inbound</option>
+                                                  <option value="Line@">Line@</option>
+                                                  <option value="Facebook">Facebook</option>
+                                                  <option value="Email">Email</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                                    <div class="comment-submit-btn text-center">
+                                        <input class="ht-btn ht-btn-md" id='formsubmit' type="submit" value="Submit"></input>
                                     </div>
                                 </div>
-                                    
                                 <script>
-                                    var mndFileds = new Array('Last Name', 'Phone', 'Email');
-                                    var fldLangVal = new Array('Last Name', 'Phone', 'Email');
-                                    var name = '';
-                                    var email = '';
+                                    var mndFileds=new Array('Last Name');
+                                    var fldLangVal=new Array('Last Name');
+                                    var name='';
+                                    var email=''; 
+                                   function disableSubmitwhileReset(){var e=document.getElementById("formsubmit");null!==document.getElementById("privacyTool")||null!==document.getElementById("consentTool")?(e.disabled=!0,e.style.opacity="0.5;"):e.removeAttribute("disabled")}
+                                   function checkMandatory(){var e,t=mndFileds.length;for(e=0;e<t;e++){var i=document.forms.CMIGNITEWebToContacts[mndFileds[e]];if(i){if(0===i.value.replace(/^\s+|\s+$/g,"").length)return"file"===i.type?(alert("Please select a file to upload."),i.focus(),!1):(alert(fldLangVal[e]+" cannot be empty."),i.focus(),!1);if("SELECT"===i.nodeName){if("-None-"===i.options[i.selectedIndex].value)return alert(fldLangVal[e]+" cannot be none."),i.focus(),!1}else if("checkbox"===i.type&&!1===i.checked)return alert("Please accept  "+fldLangVal[e]),i.focus(),!1;try{"Last Name"===i.name&&(name=i.value)}catch(e){murphy.error(e)}}}return validateFileUpload()}
+                                   function validateFileUpload(){var e=document.getElementById("theFile"),t=0;if(e){if(e.files.length>3)return alert("You can upload a maximum of three files at a time."),!1;if("files"in e){var i=e.files.length;if(0!==i){for(var o=0;o<i;o++){var a=e.files[o];"size"in a&&(t+=a.size)}if(t>20971520)return alert("Total file(s) size should not exceed 20MB."),!1}}}}</script>
 
-                                    function checkMandatory2525354000007371028() {
-                                        for (i = 0; i < mndFileds.length; i++) {
-                                            var fieldObj = document.forms['WebToLeads2525354000007371028'][mndFileds[i]];
-                                            if (fieldObj) {
-                                                if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                                    if (fieldObj.type == 'file') {
-                                                        alert('Please select a file to upload.');
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                    alert(fldLangVal[i] + ' cannot be empty.');
-                                                    fieldObj.focus();
-                                                    return false;
-                                                } else if (fieldObj.nodeName == 'SELECT') {
-                                                    if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                                                        alert(fldLangVal[i] + ' cannot be none.');
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                } else if (fieldObj.type == 'checkbox') {
-                                                    if (fieldObj.checked == false) {
-                                                        alert('Please accept  ' + fldLangVal[i]);
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    }
-                                                }
-                                                try {
-                                                    if (fieldObj.name == 'Last Name') {
-                                                        name = fieldObj.value;
-                                                    }
-                                                } catch (e) {}
-                                            }
-                                        }
-                                        document.getElementById('formsubmit').disabled = true;
-                                    }
-
-                                </script>
                             </form>
                         </div>
                     </div>
