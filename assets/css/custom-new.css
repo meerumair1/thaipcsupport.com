@@ -56,7 +56,7 @@
     display: block !important;
 }
 .lf-text-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
 }
 .appointment-hero-bg-1 {
     background-image: url(../images/itsupport-thailand.jpg);
@@ -92,15 +92,7 @@ h1.slide-header:after {
     font-size: 42px;
     top: 6px;
 }
-h2.slide-header {
-    
-    text-transform: uppercase;
-}
- 
-h5.slide-header {
-    font-size: 23px;
-    font-weight: 300;
-}
+
 .thank-tou-page {
     background-position: 70%;
 }
@@ -1012,11 +1004,11 @@ body {
     position: relative;
     overflow: hidden;
 }
-.business-solution-form-wrap.landing-form .comment-submit-btn {
+/*.business-solution-form-wrap.landing-form .comment-submit-btn {
     background: rgba(255, 151, 59, 1);
     font-size: 20px;
     font-weight: 300;
-}
+}*/
 .h1-logo {
     line-height: 0px !important;
 }
