@@ -36,6 +36,24 @@
     line-height: 23px !important;
     font-weight: 500 !important;
 }
+
+a {
+      font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+    line-height: 23px !important;
+    font-weight: 500 !important;
+}
+
+div {
+      font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+    line-height: 23px !important;
+    font-weight: 500 !important;
+}
+span {
+      font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+    line-height: 23px !important;
+    font-weight: 500 !important;
+}
+
 .body-th,
 .body-th h1,
 .body-th h2,
