@@ -1,62 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
+
 .h1-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+   font-family: 'Sarabun', sans-serif !important;
+
 }
 .h2-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h3-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h4-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h5-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h6-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
-	font-display: swap;
-			rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .p-th {
-    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
-	font-display: swap;
-			rel:preload;
 }
+
+
 .li-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .a-th {
-    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+   font-family: 'Sarabun', sans-serif !important;
     text-decoration: none !important;
     font-weight: 600 !important;
-	font-display: swap;
-			rel:preload;
 }
 .text-th {
-    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+   font-family: 'Sarabun', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
-	font-display: swap;
-			rel:preload;
 }
-
-
-
 .body-th,
 .body-th h1,
 .body-th h2,
@@ -64,20 +47,7 @@
 .body-th h4,
 .body-th h5,
 .body-th h6 {
-    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
-	font-display: swap;
-	rel:preload;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
-	font-display: swap;
-	rel:preload;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .desc {
     color: #666 !important;
@@ -86,7 +56,7 @@ h6 {
     display: block !important;
 }
 .lf-text-th {
-    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .appointment-hero-bg-1 {
     background-image: url(../images/itsupport-thailand.jpg);
@@ -122,7 +92,15 @@ h1.slide-header:after {
     font-size: 42px;
     top: 6px;
 }
-
+h2.slide-header {
+    
+    text-transform: uppercase;
+}
+ 
+h5.slide-header {
+    font-size: 23px;
+    font-weight: 300;
+}
 .thank-tou-page {
     background-position: 70%;
 }
@@ -1034,11 +1012,11 @@ body {
     position: relative;
     overflow: hidden;
 }
-/*.business-solution-form-wrap.landing-form .comment-submit-btn {
+.business-solution-form-wrap.landing-form .comment-submit-btn {
     background: rgba(255, 151, 59, 1);
     font-size: 20px;
     font-weight: 300;
-}*/
+}
 .h1-logo {
     line-height: 0px !important;
 }
