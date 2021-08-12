@@ -1452,3 +1452,21 @@ a.aws.btn.btn--white.btn-one {
 
 
 
+.hover-style-link{
+	
+	font-family: 'Sarabun', sans-serif !important;
+}
+
+.iILOR {
+	    animation-name: auto !important;
+	
+}
+
+.navigation-menu>ul>li.active>a:before, .navigation-menu>ul>li:hover>a:before {
+    width: auto !important;
+    min-width: 100% !important;
+}
+
+.navigation-menu>ul>li.active>a span, .navigation-menu>ul>li:hover>a span {
+    color: rgb(8 106 216) !important;
+}
