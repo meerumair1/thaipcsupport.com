@@ -183,10 +183,12 @@ a.hot-link {
 		position: relative;
     overflow: hidden;
 }
-.business-solution-form-wrap .comment-submit-btn {
+.business-solution-form-wrap .comment-submit-btn input {
 		background: rgba(255, 151, 59, 1);
 		font-size: 20px;
 		font-weight: 300;
+		width: 100%;
+
 }
 .business-solution-form-wrap input {
 		font-size: 16px;
