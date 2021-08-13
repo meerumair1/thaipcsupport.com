@@ -1978,7 +1978,7 @@
                                     
                                     
                                     <div style="display:none;">
-                                        <input type='text' id='LEADCF16' name='LEADCF16' maxlength='450' value='https://www.thaipcsupport.com/'></input>
+                                        <input name="LEADCF16" type="text" id="LEADCF16">
                                         <select class='zcwf_col_fld_slt' id='Lead_Source' name='Lead Source'>
                                             <option value='-None-'>-None-</option>
                                             <option value='Cold&#x20;Call'>Cold Call</option>
@@ -2008,6 +2008,7 @@
                                 </div>
                                 
                                 <script>
+                                    document.getElementById("LEADCF16").value = window.location.href;
                                     function validateEmail2525354000000986011() {
                                         var form = document.forms['WebToLeads2525354000000986011'];
                                         var emailFld = form.querySelectorAll('[ftype=email]');
