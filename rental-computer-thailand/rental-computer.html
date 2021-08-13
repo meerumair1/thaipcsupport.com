@@ -1062,92 +1062,141 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="col-lg-6">
     <div id="crmWebToEntityForm" class="contact-form-wrap">
         <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-            <form action='https://bigin.zoho.com/crm/WebToContactForm' name='CMIGNITEWebToContacts' method='POST' enctype='multipart/form-data' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
-                <input type='text' style='display:none;' name='xnQsjsdp' value='5e93cae7a740ea681dd32d32ee4b469eec99add6eec788698bb6e71fe5f993b8'/>
-                <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
-                <input type='text' style='display:none;' name='xmIwtLD' value='39d30f4d5b0bf49a19757ded8a3303884b7eefa468ecc408c03bc4a203bdb2bd'/>
-                <input type='text' style='display:none;' name='actionType' value='Q29udGFjdHM='/>
+            <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2525354000000986011 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2525354000000986011()' accept-charset='UTF-8'>
+                <input type='text' style='display:none;' name='xnQsjsdp' value='2e3cd0e69c9394f6bd1aaa810952430fe1bfaf08d916a7e5d10ffe8c9c022326'></input>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                <input type='text' style='display:none;' name='xmIwtLD' value='5968f88351f23e61bebaf421c95f6dc2b9e743c2d832cc3f16055b619c484c4f'></input>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                 <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
             <div class="contact-form">
                 <div class="contact-input">
                     <div class="contact-inner">
-                        <input name="Last Name" type="text" placeholder="Name *">
+                        <input id='First_Name' name='First Name' type="text" placeholder="ชื่อ *">
                     </div>
                     <div class="contact-inner">
-                        <input name="Email" type="email" placeholder="Email *">
+                        <input id='Last_Name' name='Last Name' type="text" placeholder="นามสกุล *">
                     </div>
                 </div>
                 <div class="contact-inner">
-                    <input name="Phone" maxlength="20" type="text" placeholder="Phone *">
+                    <input id='Phone' name='Phone' maxlength="20" type="text" placeholder="โทรศัพท์ *">
                 </div>
                 <div class="contact-inner">
-                    <input name="Account Name" type="text" placeholder="Company">
+                    <input type='text' ftype='email' id='Email' name='Email' maxlength="20" type="text" placeholder="อีเมล *">
+                </div>
+                <div class="contact-inner">
+                    <input id='Company' name='Company' type="text" placeholder="บริษัท">
                 </div>
                 <div class="contact-inner contact-message">
-                    <textarea name="Description" maxlength="32000" placeholder="Description"></textarea>
+                    <textarea id='Description' name='Description' maxlength="32000" placeholder="โปรดระบุข้อความ"></textarea>
                 </div>
                 
                 
-                <div class="bgn-wf-row" style="display:none;">
-                    <div class="bgn-wf-label">Contact Status
-                    </div>
-                    <div class="bgn-wf-field">
-                         <select name="CONTACTCF1" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
-                              <option value="-None-">-None-</option>
-                              <option selected value="New Lead">New Lead</option>
-                              <option value="Closed won">Closed won</option>
-                         </select>
-                    </div>
+                <div style="display:none;">
+                    <input name="LEADCF16" type="text" id="LEADCF16">
+                    <select class='zcwf_col_fld_slt' id='Lead_Source' name='Lead Source'>
+                        <option value='-None-'>-None-</option>
+                        <option value='Cold&#x20;Call'>Cold Call</option>
+                        <option value='E-Mail'>E-Mail</option>
+                        <option value='Call'>Call</option>
+                        <option value='Call&#x20;Center&#x20;&#x3a;&#x20;Community'>Call Center &#x3a; Community
+                        </option>
+                        <option value='Chat-Line&#x40;'>Chat-Line&#x40;</option>
+                        <option value='Chat-Website'>Chat-Website</option>
+                        <option value='Google&#x20;Adwords'>Google Adwords</option>
+                        <option value='Facebook&#x20;Ads'>Facebook Ads</option>
+                        <option selected value='Website-Contact&#x20;us'>Website-Contact us</option>
+                        <option value='Landing&#x20;Page&#x20;2'>Landing Page 2</option>
+                        <option value='Landing-IT-Support-Thailand'>Landing-IT-Support-Thailand</option>
+                        <option value='Web-Homepage'>Web-Homepage</option>
+                        <option value='Contact-ITBKK'>Contact-ITBKK</option>
+                        <option value='Website-Acronis'>Website-Acronis</option>
+                        <option value='JOB&#x20;BKK'>JOB BKK</option>
+                        <option value='JOB&#x20;Topgun'>JOB Topgun</option>
+                        <option value='JOB&#x20;Thai'>JOB Thai</option>
+                   </select>
                </div>
-               <div class="bgn-wf-row" style="display:none;">
-                    <div class="bgn-wf-label">Support Own
-                    </div>
-                    <div class="bgn-wf-field">
-                         <select name="CONTACTCF3" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
-                              <option value="-None-">-None-</option>
-                              <option selected value="None">None</option>
-                              <option value="Mameaw">Mameaw</option>
-                              <option value="Apo">Apo</option>
-                              <option value="kin">kin</option>
-                              <option value="Nabee">Nabee</option>
-                              <option value="James">James</option>
-                              <option value="Milk">Milk</option>
-                         </select>
-                    </div>
-               </div>
-               <div class="bgn-wf-row" style="display:none;">
-                    <div class="bgn-wf-label">Leads Source
-                    </div>
-                    <div class="bgn-wf-field">
-                         <select name="CONTACTCF2" style="border: 1px solid #e2e0df;padding: 10px 15px;max-width: 480px;border-radius:3px;width: 60%;">
-                              <option value="-None-">-None-</option>
-                              <option selected value="Website - Contact us">Website - Contact us</option>
-                              <option value="Website - Landing page">Website - Landing page</option>
-                              <option value="Call - Outbound">Call - Outbound</option>
-                              <option value="Call - Inbound">Call - Inbound</option>
-                              <option value="Line@">Line@</option>
-                              <option value="Facebook">Facebook</option>
-                              <option value="Email">Email</option>
-                         </select>
-                    </div>
-               </div>
-
+   
                 <div class="submit-btn mt-20">
-                    <input class="ht-btn ht-btn-md" id='formsubmit'  type="submit" value="Submit"></input>
+                    <input class="ht-btn ht-btn-md" id='formsubmit'  type="submit" value="ส่งข้อความ"></input>
                 </div>
             </div>
             
             <script>
-                var mndFileds=new Array('Last Name');
-                var fldLangVal=new Array('Last Name');
-                var name='';
-                var email=''; 
-               function disableSubmitwhileReset(){var e=document.getElementById("formsubmit");null!==document.getElementById("privacyTool")||null!==document.getElementById("consentTool")?(e.disabled=!0,e.style.opacity="0.5;"):e.removeAttribute("disabled")}
-               function checkMandatory(){var e,t=mndFileds.length;for(e=0;e<t;e++){var i=document.forms.CMIGNITEWebToContacts[mndFileds[e]];if(i){if(0===i.value.replace(/^\s+|\s+$/g,"").length)return"file"===i.type?(alert("Please select a file to upload."),i.focus(),!1):(alert(fldLangVal[e]+" cannot be empty."),i.focus(),!1);if("SELECT"===i.nodeName){if("-None-"===i.options[i.selectedIndex].value)return alert(fldLangVal[e]+" cannot be none."),i.focus(),!1}else if("checkbox"===i.type&&!1===i.checked)return alert("Please accept  "+fldLangVal[e]),i.focus(),!1;try{"Last Name"===i.name&&(name=i.value)}catch(e){murphy.error(e)}}}return validateFileUpload()}
-               function validateFileUpload(){var e=document.getElementById("theFile"),t=0;if(e){if(e.files.length>3)return alert("You can upload a maximum of three files at a time."),!1;if("files"in e){var i=e.files.length;if(0!==i){for(var o=0;o<i;o++){var a=e.files[o];"size"in a&&(t+=a.size)}if(t>20971520)return alert("Total file(s) size should not exceed 20MB."),!1}}}}
+                document.getElementById("LEADCF16").value = window.location.href;
+                function validateEmail2525354000000986011() {
+                    var form = document.forms['WebToLeads2525354000000986011'];
+                    var emailFld = form.querySelectorAll('[ftype=email]');
+                    var i;
+                    for (i = 0; i < emailFld.length; i++) {
+                        var emailVal = emailFld[i].value;
+                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                            var atpos = emailVal.indexOf('@');
+                            var dotpos = emailVal.lastIndexOf('.');
+                            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                    alert('Please enter a valid email address. ');
+                                    emailFld[i].focus();
+                                    return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+   
+                function checkMandatory2525354000000986011() {
+                    var mndFileds = new Array('Company', 'First Name', 'Last Name', 'Email', 'Phone');
+                    var fldLangVal = new Array('Company', 'First\x20Name', 'Last\x20Name', 'Email', 'Phone');
+                    for (i = 0; i < mndFileds.length; i++) {
+                        var fieldObj = document.forms['WebToLeads2525354000000986011'][mndFileds[i]];
+                        if (fieldObj) {
+                            if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                    if (fieldObj.type == 'file') {
+                                        alert('Please select a file to upload.');
+                                        fieldObj.focus();
+                                        return false;
+                                    }
+                                    alert(fldLangVal[i] + ' cannot be empty.');
+                                    fieldObj.focus();
+                                    return false;
+                            } else if (fieldObj.nodeName == 'SELECT') {
+                                    if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                        alert(fldLangVal[i] + ' cannot be none.');
+                                        fieldObj.focus();
+                                        return false;
+                                    }
+                            } else if (fieldObj.type == 'checkbox') {
+                                    if (fieldObj.checked == false) {
+                                        alert('Please accept  ' + fldLangVal[i]);
+                                        fieldObj.focus();
+                                        return false;
+                                    }
+                            }
+                            try {
+                                    if (fieldObj.name == 'Last Name') {
+                                        name = fieldObj.value;
+                                    }
+                            } catch (e) { }
+                        }
+                    }
+                    if (!validateEmail2525354000000986011()) { return false; }
+                    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                }
+   
+                function tooltipShow2525354000000986011(el) {
+                    var tooltip = el.nextElementSibling;
+                    var tooltipDisplay = tooltip.style.display;
+                    if (tooltipDisplay == 'none') {
+                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                        for (i = 0; i < allTooltip.length; i++) {
+                            allTooltip[i].style.display = 'none';
+                        }
+                        tooltip.style.display = 'block';
+                    } else {
+                        tooltip.style.display = 'none';
+                    }
+                }
             </script>
-            
         </form>
+       
     </div>
 </div>
 <div class="col-lg-5 ml-auto">
