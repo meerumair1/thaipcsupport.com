@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .h1-th {
    font-family: 'Sarabun', sans-serif !important;
 
@@ -1285,14 +1286,14 @@ td.xyz12-pric2.xyz12-pric-new2 {
     width: 122px;
 }
 .appointment-hero-bg-3 {
-    background-image: url(/assets/images/banner005.jpg);
+    background-image: url(https://google.thaipcsupport.com/assets/images/banner005.jpg);
     background-repeat: no-repeat;
     background-position: 29% center;
     background-size: auto;
     background-color: #00345e;
 }
 .appointment-hero-bg-acronis {
-    background-image: url(../images/bg5-2.jpg);
+    background-image: url(https://google.thaipcsupport.com/assets/images/bg5-2.jpg);
 }
 .appointment-hero-text {
     display: none;
