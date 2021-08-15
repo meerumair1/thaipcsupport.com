@@ -618,11 +618,11 @@ a.ht-btn.ht-btn-md.eme-btn {
     }
     .mobile-eme-btn {
         display: inherit !important;
-        background: #f70505 !important;
-        height: 40px !important;
+        background: #fff !important;
+        height: auto !important;
         line-height: 20px !important;
         margin-top: 09px !important;
-        padding: 10px !important;
+        padding: 20px 0px 20px 10px !important;
     }
 }
 .navigation-menu.primary--menu > ul > li > a {
