@@ -1471,3 +1471,10 @@ a.aws.btn.btn--white.btn-one {
 .navigation-menu>ul>li.active>a span, .navigation-menu>ul>li:hover>a span {
     color: rgb(8 106 216) !important;
 }
+
+@media only screen and (max-width: 767px) {
+    .header__logo {
+    min-height: 71px;
+    height: 71px;
+}
+}
