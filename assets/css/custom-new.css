@@ -67,7 +67,8 @@
     background-color: #3776ab;
 }
 .appointment-hero-bg-2 {
-    background-image: url(../images/bg5.webp);
+    /* background-image: url(../images/bg5.webp); */
+	background: #010f28;
 }
 .business-solution-form-wrap {
     background: rgba(255, 255, 255, 0.87);
@@ -867,11 +868,12 @@ body {
     color: #fff;
 }
 .appointment-hero-bg-thank-you {
-    background-image: url(../images/bg5.webp);
+   /* background-image: url(../images/bg5.webp); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+	background: #010f28;
 }
 .call-center-bg:after {
     content: '';
@@ -949,11 +951,12 @@ body {
 }
 /*rental-computer*/
 .appointment-hero-rental {
-    background-image: url(../images/landing/bg5.webp);
+    /* background-image: url(../images/landing/bg5.webp); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+	background: #010f28;
 }
 .ht-box-icon.style-04 {
     color: #a8d7ff;
