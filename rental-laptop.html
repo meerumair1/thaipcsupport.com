@@ -136,6 +136,16 @@
         h1, h2, h3, h4, h5, h6 {font-weight: 500;}
         h5.h6-th {font-size: 22px;}
         p, .p-th,.navigation-menu > ul > li > a { font-weight: 400!important;}
+        .btn-contact {
+            padding-left: 55px;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .btn-contact span {
+                font-size: 40px;
+                position: absolute;
+                left: 9px;
+            }
         .appointment-hero-bg-3:before {
             content: '';
             background-image: url(/assets/images/rent_laptop.png);
@@ -189,10 +199,27 @@
         font-weight: 400;
     }
     .ht-box-images.style-07.custom-spac {
-    margin-bottom: 35px;
-    box-shadow: 0 0 20px 10px #0000000f;
-    border-radius: 10px;
-}
+        margin-bottom: 35px;
+        box-shadow: 0 0 20px 10px #0000000f;
+        border-radius: 10px;
+        position: relative;
+    }
+    .ht-box-images.style-07.custom-spac .hot {
+        position: absolute;
+        right: -11px;
+        top: -12px;
+        background-color: #f33f2e;
+        color: #fff;
+        padding: 9px;
+        text-align: center;
+        border-radius: 21px;
+    }
+    .contact-box {
+        background-color: #fff;
+        padding: 35px;
+        display: inline-block;
+        box-shadow: 0 0 26px 13px #0000001a;
+    }
     </style>
 
 </head>
@@ -700,9 +727,21 @@
             </div>
         </div>
         <!--===========  feature-icon-wrapper  Start =============-->
-        <div class="feature-icon-wrapper section-space--ptb_90 bg-gray">
+        <div class="feature-icon-wrapper section-space--ptb_60 bg-gray">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 text-center mb-30">
+                    <div class="contact-box">
+                        <h5 class="mb-10">สอบถามข้อมูลเพิ่มเติม</h5>
+                        <a class="btn btn-contact" href="tel:0650088330"><span class="btn-icon ml-0 mr-2"><i class="fas fa-phone-volume"></i></span> 065 008 8330</a> <a class="btn btn-secondary btn-contact" href="https://line.me/R/ti/p/%40thaipcsupport"><span class="btn-icon ml-0 mr-2"><i class="social-icon fab fa-line"></i></span> @thaipcsupport</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
             <div class="container">
                 <div class="row">
+            
                     <div class="col-12 text-center mb-30">
                         <h2 class="top-header">บริการเช่าคอมพิวเตอร์ โน๊ตบุ๊ค <span class="text-color-primary">รายเดือน/รายปี</span></h2>
                     </div>
@@ -714,12 +753,12 @@
                                     <div class="ht-box-images style-02">
                                         <div class="image-box-wrap">
                                             <div class="box-image">
-                                                <img src="/assets/images/icon001.png">
+                                                <img src="/assets/images/icon_free.png">
                                             </div>
                                             <div class="content">
-                                                <h5 class="mb-10 h6-th "><a href="/it-support-thailand/it-support.html" title="บริการ IT Support">บริการครบวงจร</a></h5>
+                                                <h5 class="mb-10 h6-th "><a href="/it-support-thailand/it-support.html" title="บริการ IT Support">บริการจัดส่ง <span class="blink" style="color: #f33f2e;">ฟรี</span></a></h5>
                                                 <p class="p-th">
-                                                    ให้บริการรวดเร็ว มีบริการจัดส่ง ติดตั้งลงโปรแกรมพื้นฐาน รีโมทช่วยเหลือหากมีปัญหาการใช้งาน
+                                                    บริการจัดส่งฟรี ติดตั้งลงโปรแกรมพื้นฐาน รีโมทช่วยเหลือหากมีปัญหาการใช้งาน
                                                 </p>
                                             </div>
                                         </div>
@@ -731,7 +770,7 @@
                                     <div class="ht-box-images style-02">
                                         <div class="image-box-wrap">
                                             <div class="box-image">
-                                                <img src="/assets/images/icon002.png">
+                                                <img src="/assets/images/icon_software.png">
                                             </div>
                                             <div class="content">
                                                 <h5 class="mb-10 h6-th"><a href="/firewall-fortigate/firewall-fortigate-cisco.html" title="Firewall & Security">สินค้ามาตรฐาน </a></h5>
@@ -748,7 +787,7 @@
                                     <div class="ht-box-images style-02">
                                         <div class="image-box-wrap">
                                             <div class="box-image">
-                                                <img src="/assets/images/icon003.png">
+                                                <img src="/assets/images/icon_time.png">
                                             </div>
                                             <div class="content">
                                                 <h5 class="mb-10 h6-th"><a href="/nas-storage/qnap-synology.html" title="บริการ NAS & File Server">เลือกระยะเวลา </a></h5>
@@ -813,6 +852,7 @@
                                 <div class="col-lg-4 col-md-6 wow move-up animated">
                                     <!-- ht-box-icon Start -->
                                     <div class="ht-box-images style-07 custom-spac">
+                                        <div class="hot blink">HOT</div>
                                         <div class="image-box-wrap">
                                             <div class="box-image">
                                                 <div class="default-image">
@@ -872,15 +912,15 @@
                                                 </div>
                                                 <div class="spec">
                                                     <li>CPU<span>Core i3</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
+                                                    <li>SSD<span>256GB</span></li>
+                                                    <li>RAM<span>8GB</span></li>
                                                 </div>
                                             </div>
                                             <div class="content">
                                                 
                                                 <div class="text">
                                                     <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i3, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
+                                                        CPU Core i3, Ram 8Gb, SSD 256GB พร้อมบริการ Onsite Service
                                                     </p>
                                                 </div>
                                             </div>
@@ -891,6 +931,87 @@
                                 <div class="col-lg-4 col-md-6 wow move-up animated">
                                     <!-- ht-box-icon Start -->
                                     <div class="ht-box-images style-07 custom-spac">
+                                        <div class="hot blink">HOT</div>
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid" src="assets/images/desktop_001.png" alt="">
+                                                </div>
+                                                <div class="spec">
+                                                    <li>CPU<span>Core i5</span></li>
+                                                    <li>SSD<span>256GB</span></li>
+                                                    <li>RAM<span>8GB</span></li>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                
+                                                <div class="text">
+                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
+                                                        CPU Core i5, Ram 8Gb, SSD 256GB พร้อมบริการ Onsite Service
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow move-up animated">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07 custom-spac">
+                                        
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid" src="assets/images/desktop_001.png" alt="">
+                                                </div>
+                                                <div class="spec">
+                                                    <li>CPU<span>Core i7</span></li>
+                                                    <li>SSD<span>256GB</span></li>
+                                                    <li>RAM<span>8GB</span></li>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                
+                                                <div class="text">
+                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
+                                                        CPU Core i7, Ram 8Gb, SSD 256GB พร้อมบริการ Onsite Service
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow move-up animated">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07 custom-spac">
+                                        <div class="image-box-wrap">
+                                            <div class="box-image">
+                                                <div class="default-image">
+                                                    <img class="img-fulid" src="assets/images/desktop_001.png" alt="">
+                                                </div>
+                                                <div class="spec">
+                                                    <li>CPU<span>Core i5</span></li>
+                                                    <li>SSD<span>256GB</span></li>
+                                                    <li>RAM<span>16GB</span></li>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                
+                                                <div class="text">
+                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
+                                                        CPU Core i5, Ram 16Gb, SSD 256GB พร้อมบริการ Onsite Service
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ht-box-icon End -->
+                                </div>
+                                <div class="col-lg-4 col-md-6 wow move-up animated">
+                                    <!-- ht-box-icon Start -->
+                                    <div class="ht-box-images style-07 custom-spac">
+                                        <div class="hot blink">HOT</div>
                                         <div class="image-box-wrap">
                                             <div class="box-image">
                                                 <div class="default-image">
@@ -940,7 +1061,6 @@
                                     </div>
                                     <!-- ht-box-icon End -->
                                 </div>
-                                
 
                             </div>
                         </div>
