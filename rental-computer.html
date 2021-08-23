@@ -135,9 +135,19 @@
         a.btn.btn-secondary {
             background-color: #43c606;
         }
+        .btn-contact {
+            padding-left: 55px;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .btn-contact span {
+            font-size: 40px;
+            position: absolute;
+            left: 9px;
+        }
         h1, h2, h3, h4, h5, h6 {font-weight: 500;}
         h5.h6-th {font-size: 22px;}
-        p, .p-th,.navigation-menu > ul > li > a { font-weight: 400!important;}
+        p, .p-th,.navigation-menu > ul > li > a {  font-weight: 400!important; font-weight: 300!important; font-size: 16px;line-height: 26px!important;}
         .appointment-hero-bg-3:before {
             content: '';
             background-image: url(/assets/images/rent_computer.png);
@@ -190,10 +200,16 @@
         display: block;
         font-weight: 400;
     }
-    .ht-box-images.style-07.custom-spac {
-    margin-bottom: 35px;
-    box-shadow: 0 0 20px 10px #0000000f;
-    border-radius: 10px;
+        .ht-box-images.style-07.custom-spac {
+        margin-bottom: 35px;
+        box-shadow: 0 0 20px 10px #0000000f;
+        border-radius: 10px;
+    }
+    table.rental-heading tr th {
+        font-weight: 500;
+    }
+    table.rental-heading tr td {
+    font-weight: 300;
 }
     </style>
 
@@ -701,17 +717,10 @@
         <!--===========  feature-icon-wrapper  Start =============-->
         <div class="feature-icon-wrapper section-space--ptb_60 bg-gray">
             <div class="container">
-                <div class="row justify-content-md-center mb-30">
-                    <div class="col col-lg-12 text-center">
-                        <a href="tel:0650088330"  class="btn">โทรหาเรา 065-008-8330</a>  <a href="https://line.me/R/ti/p/%40thaipcsupport"  class="btn btn-secondary">Line @thaipcsupport</a>
-                    </div>
-                    <!--<div class="col col-lg-3 text-center">
-                        <a href="https://line.me/R/ti/p/%40thaipcsupport" class="btn">@thaipcsupport</a>
-                    </div>-->
-                </div>
                 <div class="row mb-30">
                     <div class="col-12 text-center mb-30">
                         <h2 class="top-header">บริการเช่าคอมพิวเตอร์ โน๊ตบุ๊ค <span class="text-color-primary">รายเดือน/รายปี</span></h2>
+                        <p>สำหรับลูกค้าจัดอบรม/เทรนนิ่ง งานบรรยาย/สัมมนา งานอีเว้นต์ และงานอื่น ๆ ลูกค้าองค์กรหรือสำนักงาน ติดตั้ง Microsoft office365(Word, Excel, PowerPoint) พร้อมใช้</p>                        </p>
                     </div>
                     <div class="col-12">
                         <div class="feature-images__four">
@@ -724,9 +733,10 @@
                                                 <img src="/assets/images/icon001.png">
                                             </div>
                                             <div class="content">
-                                                <h5 class="mb-10 h6-th "><a href="/it-support-thailand/it-support.html" title="บริการ IT Support">บริการครบวงจร</a></h5>
+                                                <h5 class="mb-10 h6-th "><a href="/it-support-thailand/it-support.html" title="บริการ IT Support">
+                                                    บริการจัดส่ง <span class="blink" style="color: red;">ฟรี</span></a></h5>
                                                 <p class="p-th">
-                                                    ให้บริการรวดเร็ว มีบริการจัดส่ง ติดตั้งลงโปรแกรมพื้นฐาน รีโมทช่วยเหลือหากมีปัญหาการใช้งาน
+                                                    บริการจัดส่งฟรี ติดตั้งลงโปรแกรมพื้นฐาน รีโมทช่วยเหลือหากมีปัญหาการใช้งาน
                                                 </p>
                                             </div>
                                         </div>
@@ -758,7 +768,7 @@
                                                 <img src="/assets/images/icon003.png">
                                             </div>
                                             <div class="content">
-                                                <h5 class="mb-10 h6-th"><a href="/nas-storage/qnap-synology.html" title="บริการ NAS & File Server">เลือกระยะเวลา </a></h5>
+                                                <h5 class="mb-10 h6-th"><a href="/nas-storage/qnap-synology.html" title="บริการ NAS & File Server">เลือกระยะเวลาได้ </a></h5>
                                                 <p class="p-th">
                                                     สามารถเลือกระยะเวลาในการเช่าได้ ไม่ว่าจะเป็นรายวันละรายเดือน (3, 6, 12 เดือน)
                                                 </p>
@@ -771,218 +781,299 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="row justify-content-md-center mb-30">
+                    <div class="col col-lg-12 text-center">
+                        <a class="btn btn-contact" href="tel:0650088330"><span class="btn-icon ml-0 mr-2"><i class="fas fa-phone-volume"></i></span> 065 008 8330</a>  <a class="btn btn-secondary btn-contact" href="https://line.me/R/ti/p/%40thaipcsupport"><span class="btn-icon ml-0 mr-2"><i class="social-icon fab fa-line"></i></span> @thaipcsupport</a>
+                    </div>
+                    <!--<div class="col col-lg-3 text-center">
+                        <a href="https://line.me/R/ti/p/%40thaipcsupport" class="btn">@thaipcsupport</a>
+                    </div>-->
+                </div>
             </div>
         </div>
  
-
-        <div class="feature-images-wrapper section-space--ptb_100">
+        <div class="accordion-wrapper bg  section-space--ptb_100">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- section-title-wrap Start -->
-                        <div class="section-title-wrap text-center section-space--mb_20">
-                            <h3 class="heading"><span class="text-color-primary">ให่เช่า</span>คอมพิวเตอร์และโน๊ตบุ๊ค </h3>
-                        </div>
-                        <!-- section-title-wrap Start -->
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feature-images__serven">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image">
-                                                    <img class="img-fluid" src="assets/images/desktop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i3</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i3, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image">
-                                                    <img class="img-fluid" src="assets/images/desktop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i5</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i5, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image">
-                                                    <img class="img-fluid" src="assets/images/desktop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i7</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์ ตั้งโต๊ะสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i7, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image custom-spac">
-                                                    <img class="img-fluid" src="assets/images/laptop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i3</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์โน๊ตบุ๊คสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i3, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image">
-                                                    <img class="img-fluid" src="assets/images/laptop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i5</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์โน๊ตบุ๊คสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i5, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 wow move-up animated">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-07 custom-spac">
-                                        <div class="image-box-wrap">
-                                            <div class="box-image">
-                                                <div class="default-image">
-                                                    <img class="img-fluid" src="assets/images/laptop_001.png" alt="">
-                                                </div>
-                                                <div class="spec">
-                                                    <li>CPU<span>Core i7</span></li>
-                                                    <li>SSD<span>512GB</span></li>
-                                                    <li>RAM<span>16GB</span></li>
-                                                </div>
-                                            </div>
-                                            <div class="content">
-                                                
-                                                <div class="text">
-                                                    <p class="p-th">คอมพิวเตอร์โน๊ตบุ๊คสำหรับสำนักงานหรือบ้านพร้อมใช้งาน
-                                                        CPU Core i7, Ram 16Gb, SSD 512GB พร้อมบริการ Onsite Service
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 text-center">
-                        <div class="cta-button-group--two text-center">
-                            <a href="#" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span> ติดต่อเราตอนนี้</a>
-                        </div>
-                    </div>
-                </div>
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="section-title-wrap text-center section-space--mb_40">
+                        <h3 class="heading">ราคาและ <span class="text-color-primary">สเปคคอมพิวเตอร์</span></h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 table-rental-scroll">
+                     <div class="section-title-wrap section-space--mb_10">
+                           <h4 class="heading text-center"><a href="/rental-computer-thailand/rental-laptop.html" title="เช่าโน๊ตบุ๊ค">เช่าโน๊ตบุ๊ค, Laptop</a></h4>
+                        </div><table class="table table-bordered rental-heading">
+                        
+                        <thead>
+                           <tr scope="row">
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Type</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">CPU</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">RAM</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Harddisk Space</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">VGA </th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Screen Size</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Operating<br>System</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Office</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Anti Virus</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Daily</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Weekly</th>
+                              <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Monthly</th>
+                           </tr>
+                           <tr scope="row" class="rental-heading-tr">
+                              <td class="border-left-table lapi">Laptop</td>
+                              <td>
+                                 <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                              </td>
+                              <td>
+                                 <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                              </td>
+                              <td>
+                                 <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                              </td>
+                              <td>
+                                 <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">Integrated Graphic</div>
+                              </td>
+                              <td><b>13.3 / 14 / 15.6 </b></td>
+                              <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit </b></td>
+                              <td><b>Microsoft<br>Office365</b></td>
+                              <td><b>NOD32 </b></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                           </tr>
+                           <tr scope="row" class="rental-heading-tr">
+                              <td class="border-left-table lapi">Laptop</td>
+                              <td>
+                                 <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                              </td>
+                              <td>
+                                 <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                              </td>
+                              <td>
+                                 <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                              </td>
+                              <td>
+                                 <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                              </td>
+                              <td><b>13.3 / 14 / 15.6 </b></td>
+                              <td style="width: 120px;"><b>Windows 10<br>Pro 64 Bit</b> </td>
+                              <td><b>Microsoft<br>Office365</b></td>
+                              <td><b>NOD32 </b></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                           </tr>
+                           <tr scope="row" class="rental-heading-tr">
+                              <td class="border-left-table lapi">Laptop</td>
+                              <td>
+                                 <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                              </td>
+                              <td>
+                                 <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">16 GB</div>
+                              </td>
+                              <td>
+                                 <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">512 SSD</div>
+                              </td>
+                              <td>
+                                 <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                              </td>
+                              <td><b>13.3 / 14 / 15.6 </b></td>
+                              <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit</b> </td>
+                              <td><b>Microsoft<br>Office365</b></td>
+                              <td><b>NOD32 </b></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                           </tr>
+                           <tr scope="row" class="rental-heading-tr">
+                              <td class="border-left-table lapi">Laptop</td>
+                              <td>
+                                 <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i7</div>
+                              </td>
+                              <td>
+                                 <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                              </td>
+                              <td>
+                                 <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                              </td>
+                              <td>
+                                 <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">Integrated Graphic</div>
+                              </td>
+                              <td><b>13.3 / 14 / 15.6</b> </td>
+                              <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit</b> </td>
+                              <td><b>Microsoft<br>Office365</b></td>
+                              <td><b>NOD32</b> </td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                           </tr>
+                           <tr scope="row" class="rental-heading-tr">
+                              <td class="border-left-table lapi">Laptop</td>
+                              <td>
+                                 <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i7</div>
+                              </td>
+                              <td>
+                                 <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">16 GB</div>
+                              </td>
+                              <td>
+                                 <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">512 SSD</div>
+                              </td>
+                              <td>
+                                 <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                              </td>
+                              <td><b>13.3 / 14 / 15.6</b> </td>
+                              <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit </b></td>
+                              <td><b>Microsoft<br>Office365</b></td>
+                              <td><b>NOD32 </b></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                              <td class="xyz12-pric xyz12-pric-new border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                           </tr>
+                     </thead></table>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 table-rental-scroll">
+                     <div class="section-title-wrap section-space--mb_10">
+                           <h4 class="heading text-center"><a href="/rental-computer-thailand/rental-desktop.html" title="เช่าคอมพิวเตอร์">เช่าคอมพิวเตอร์,  Desktop</a></h4>
+                        </div><table class="table table-bordered rental-heading">
+                        
+                        <tbody><tr scope="row">
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Type</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">CPU</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">RAM</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Harddisk Space</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">VGA </th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Screen Size</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Operating<br>System</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Office</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Anti Virus</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Daily</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Weekly</th>
+                           <th style="border-left: 1px solid #fff !important; background: #012852; color: #fff; border-top: 1px solid #fff !important; font-size: 16px; vertical-align: middle;">Monthly</th>
+                        </tr>
+                        <tr scope="row" class="rental-heading-tr">
+                           <td class="border-left-table deski">Desktop</td>
+                           <td>
+                              <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                           </td>
+                           <td>
+                              <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                           </td>
+                           <td>
+                              <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                           </td>
+                           <td>
+                              <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">Integrated Graphic</div>
+                           </td>
+                           <td><b>13.3 / 14 / 15.6 </b></td>
+                           <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit </b></td>
+                           <td><b>Microsoft<br>Office365</b></td>
+                           <td><b>NOD32 </b></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                        </tr>
+                        <tr scope="row" class="rental-heading-tr">
+                           <td class="border-left-table deski">Desktop</td>
+                           <td>
+                              <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                           </td>
+                           <td>
+                              <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                           </td>
+                           <td>
+                              <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                           </td>
+                           <td>
+                              <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                           </td>
+                           <td><b>13.3 / 14 / 15.6 </b></td>
+                           <td style="width: 120px;"><b>Windows 10<br>Pro 64 Bit</b> </td>
+                           <td><b>Microsoft<br>Office365</b></td>
+                           <td><b>NOD32 </b></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                        </tr>
+                        <tr scope="row" class="rental-heading-tr">
+                           <td class="border-left-table deski">Desktop</td>
+                           <td>
+                              <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i5</div>
+                           </td>
+                           <td>
+                              <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">16 GB</div>
+                           </td>
+                           <td>
+                              <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">512 SSD</div>
+                           </td>
+                           <td>
+                              <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                           </td>
+                           <td><b>13.3 / 14 / 15.6 </b></td>
+                           <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit</b> </td>
+                           <td><b>Microsoft<br>Office365</b></td>
+                           <td><b>NOD32 </b></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                        </tr>
+                        <tr scope="row" class="rental-heading-tr">
+                           <td class="border-left-table deski">Desktop</td>
+                           <td>
+                              <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i7</div>
+                           </td>
+                           <td>
+                              <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">8 GB</div>
+                           </td>
+                           <td>
+                              <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">256 SSD</div>
+                           </td>
+                           <td>
+                              <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">Integrated Graphic</div>
+                           </td>
+                           <td><b>13.3 / 14 / 15.6</b> </td>
+                           <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit</b> </td>
+                           <td><b>Microsoft<br>Office365</b></td>
+                           <td><b>NOD32</b> </td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                        </tr>
+                        <tr scope="row" class="rental-heading-tr">
+                           <td class="border-left-table deski">Desktop</td>
+                           <td>
+                              <div style="background: #ffffff; width: 70px; line-height: 27px; color: #000; font-size: 30px; margin: auto; font-weight: 600;">i7</div>
+                           </td>
+                           <td>
+                              <div style="background: #2d7f03;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 60px;">16 GB</div>
+                           </td>
+                           <td>
+                              <div style="background: #7f0303;color: #fff;padding: 5px 5px 5px 5px;border-radius: 2px; width: 100px;">512 SSD</div>
+                           </td>
+                           <td>
+                              <div style="background: #ffffff; color: #000; margin: auto; font-weight: 700;">GeForce</div>
+                           </td>
+                           <td><b>13.3 / 14 / 15.6</b> </td>
+                           <td style="width: 120px;"><b>Windows 10<br> Pro 64 Bit </b></td>
+                           <td><b>Microsoft<br>Office365</b></td>
+                           <td><b>NOD32 </b></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html"></a><a href="/contact-it-support.html">โทร</a></td>
+                           <td class="xyz12-pric2 xyz12-pric-new2 border-right-table"><a href="/contact-it-support.html">โทร</a></td>
+                        </tr>
+                        
+                     </tbody></table>
+                  </div>
+               </div>
             </div>
-        </div>
+            
+         </div>
 
-        <!--<div class="section-space--ptb_60 bg-gray">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-5">
-                        <img loading="lazy" alt="AWS Transfer" src="https://aws.thaipcsupport.comassets/images/aws/aws-transfer-dark.png" class="img-fluid">
-                    </div>
-                    <div class="col-xl-5 col-lg-5 text-center">
-                        <div class="text-center mb-10">
-                            <h3 class="heading">สนใจเช่าอุปกรณ์</h3>
-                            <p class="text-th">หากคุณกำลังสนใจเช่าอุปกรณ์ IT กับเรา กรอกข้อมูลเพื่อให้เราติดต่อกลับ</p>
-                        </div>
-                        <div class="cta-button-group--two text-center">
-                            <a href="#top-contact" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span>ลงทะเบียนตอนนี้</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--========== Call to Action Area End ============-->
-        <!--====================  Accordion area ====================-->
-        <div class="feature-large-images-wrapper section-space--ptb_100 bg-gray">
+        <div class="feature-large-images-wrapper section-space--ptb_90 bg-gray">
             <div class="container">
                <div class="row">
                   <div class="col-lg-12">
@@ -1018,1223 +1109,173 @@
                </div>
             </div>
          </div>
-        <div class="about-delivering-wrapper section-space--ptb_80">
+         
+        <div class="section-space--ptb_90">
             <div class="container">
-                <div class="row">
+                <div class="row mb-30">
                     <div class="col-lg-12">
-                        <div class="section-title-wrap text-center section-space--mb_40">
-                            <h3 class="heading">บริการของเรา</h3>
-                        </div>
+                        <h4 class="heading mb-10">บริการให้เช่าเครื่องคอมพิวเตอร์ และ Notebook <span class="text-color-primary">THAIPC SUPPORT</span> </h4>
+                        <p class="p-th">ในโลกดิจิทัลที่หมุนไปอย่างรวดเร็วนี้ คุณไม่สามารถจินตนาการถึงชีวิตที่ปราศจากอุปกรณ์คอมพิวเตอร์ได้ ด้วยการรับรู้ทางเทคโนโลยีที่เพิ่มมากขึ้น แทบจะไม่มีที่ใดที่ไม่มีคอมพิวเตอร์หรืออุปกรณ์ที่เกี่ยวข้อง ไม่ว่าจะเป็นบ้าน ร้านค้า โรงงานสำนักงานหรือโรงเรียน คุณก็ต้องมี Notebook หรือ Desktop สำหรับการทำงาน ด้านความบันเทิงธุรกิจ และการศึกษา ในขณะที่เทคโนโลยีเติบโตขึ้นเรื่อย ๆ ทำให้ Notebook หรือ Desktop ก็ล้าสมัยไปอย่างรวดเร็วในด้านเทคโนโลยี จึงปฏิเสธไม่ได้เลยว่าเป็นการยากที่จะลงทุนในอุปกรณ์เหล่านี้บ่อยๆ ThaiPC Support จึงขอนำเสนอบริการเช่าอุปกรณ์คอมพิวเตอร์ ทำให้คุณสามารถมีอุปกรณ์เหล่านี้ได้ตามสัญญาเช่า หากคุณมีร้านค้าขนาดเล็ก หรือ บริษัทขนาดใหญ่ การเช่าใช้ Notebook หรือ Desktop ช่วยให้เกิดความคุ้มค่ากับธุรกิจของคุณ รวมถึงแผนการประชุมที่กำลังจะมาถึง คุณสามารถเช่า Notebook หรือชุดอุปกรณ์คอมพิวเตอร์ เพื่อช่วยประหยัดค่าใช้จ่ายได้มากขึ้น และอีกข้อที่ดีของการเช่าอุปกรณ์คือ คุณจะประหยัดพื้นที่จัดเก็บอุปกรณ์ รวมถึงเรื่องลดความยุ่งยากในการทำสต๊อคอุปกรณ์อีกด้วย</p>
+                        <p class="p-th">ไม่ว่าจะ Notebook ระดับไฮเอนด์และ Desktop คุณภาพระดับสูง ต้องการเช่าสำหรับส่วนบุคคลหรือธุรกิจ ทุกอุปกรณ์ผ่านการตรวจสอบคุณภาพและการบำรุงรักษาอุปกรณ์ ให้มีคุณภาพมาตราฐานสูงสุด เพื่อให้ผู้เช่าได้รับความไว้วางใจในการใช้บริการของเรา นอกเหนือจากนี้ เรายังบริการจัดส่งอุปกรณ์อย่างรวดเร็ว พร้อมด้วยทีมงานที่มีความเชี่ยวชาญ เข้าไปติดตั้งอุปกรณ์ให้พร้อมใช้งานได้ทันที</p>
+                        <p class="p-th">เราขอนำเสนอ Notebook และ Desktop ที่พร้อมใช้งานในทุกๆ ด้าน หลากหลายแบรนด์ อาทิเช่น Apple, Lenovo, Dell, Asus ที่มาพร้อมด้วย Microsoft, Intel Core และอื่น ๆ ที่มีความปลอดภัยสูงเนื่องจากมีนโยบายความเป็นส่วนตัว ซึ่งผู้รับบริการสามารถดูข้อมูลและติดต่อเราได้ผ่านทางอีเมล โทรศัพท์ หรือสถานที่ตามที่ระบุไว้</p>
+                        
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-30">
                     <div class="col-lg-12">
-                        <div class="faq-wrapper ">
-                            <div id="accordion">
-                                <div class="card umi-card">
-                                    <div class="card-header" id="headingOne">
-                                        <div class="row">
-                                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two ul-umi" role="tablist">
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/it-support-thailand/it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                            <i class="fas fa-headset" style="font-size: 38px;"></i><br><br>บริการ <br>IT Support<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/firewall-fortigate/firewall-fortigate-cisco.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                            <i class="fas fa-network-wired" style="font-size: 38px;"></i><br><br>ระบบ VPN<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                            <i class="fas fa-server" style="font-size: 38px;"></i><br><br>ระบบ Backup & Recovery<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = ' /aws-services-thailand/aws-web-services.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                            <i class="fab fa-aws" style="font-size: 38px;"></i><br><br>บริการ <br>AWS Cloud<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/devops-services-thailand/devops-services.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                            <i class="fab fa-dev" style="font-size: 38px;"></i><br><br>บริการ DevOps<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="collapseOne" class="collapse mob-collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse mob-collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseThree" class="collapse mob-collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseFour" class="collapse mob-collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseFive" class="collapse mob-collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card umi-card">
-                                    <div class="card-header" id="headingTwo">
-                                        <div class="row">
-                                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two ul-umi" role="tablist">
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/it-helpdesk-support/it-helpdesk-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseEleven">
-                                                            <i class="fas fa-hands-helping" style="font-size: 38px;"></i><br><br>บริการ <br>IT Helpdesk<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/firewall-fortigate/firewall-fortigate-cisco.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                            <i class="fas fa-fire" style="font-size: 38px;"></i><br><br>ติดตั้ง Firewall<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/nas-storage/qnap-synology.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                            <i class="fas fa-share-alt" style="font-size: 38px;"></i><br><br>จัดการระบบ NAS & File Sharing<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/microsoft-azure-services/active-directory-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                                            <i class="fas fa-folder-open" style="font-size: 38px;"></i><br><br>ติดตั้ง Active Directory<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/database-services-thailand/database-consultancy.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                                            <i class="fas fa-database" style="font-size: 38px;"></i><br><br>ดูแลระบบ Database<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="collapseSix" class="collapse mob-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseSeven" class="collapse mob-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseEight" class="collapse mob-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseNine" class="collapse mob-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTen" class="collapse mob-collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card umi-card">
-                                    <div class="card-header" id="headingThree">
-                                        <div class="row">
-                                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two ul-umi" role="tablist">
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/it-support-thailand/it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                                            <i class="fas fa-ambulance" style="font-size: 38px;"></i><br><br>บริการ IT Maintenance<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/audit-software-thailand/audit-software.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweleve" aria-expanded="false" aria-controls="collapseTweleve">
-                                                            <i class="fas fa-calculator" style="font-size: 38px;"></i><br><br>บริการ <br>IT Service<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/office365-thailand/office365.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                                            <i class="fas fa-file-excel" style="font-size: 38px;"></i><br><br>ติดตั้ง Microsoft Office365<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/cdn-cloudflare-akamai/web-optimisation-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                                            <i class="fas fa-user-secret" style="font-size: 38px;"></i><br><br>จัดการระบบ CDN และ Security<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/microsoft-azure-services/active-directory-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseFiften" aria-expanded="false" aria-controls="collapseFiften">
-                                                            <i class="fab fa-microsoft" style="font-size: 38px;"></i><br><br>ติดตั้ง <br>Microsoft Azure<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="collapseEleven" class="collapse mob-collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweleve" class="collapse mob-collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseThirteen" class="collapse mob-collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseFourteen" class="collapse mob-collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseFiften" class="collapse mob-collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card umi-card">
-                                    <div class="card-header" id="headingFour">
-                                        <div class="row">
-                                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two ul-umi" role="tablist">
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                                                            <i class="fas fa-microchip" style="font-size: 38px;"></i><br><br>จัดซื้อฮาร์ดแวร์และซอฟต์แวร์<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/firewall-fortigate/firewall-fortigate-cisco.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                                                            <i class="fas fa-radiation-alt" style="font-size: 38px;"></i><br><br>ติดตั้งระบบ Antivirus และ Spyware<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                                                            <i class="fab fa-google" style="font-size: 38px;"></i><br><br>บริการระบบอีเมล<br>G-Suite<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/it-infrastructure-thailand/setup-offfice-infrastructure.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                                                            <i class="fas fa-tools" style="font-size: 38px;"></i><br><br>ดููแลระบบ Infrastructure<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/electronic-ewaste-thailand/ewaste-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweenty" aria-expanded="false" aria-controls="collapseTweenty">
-                                                            <i class="fas fa-recycle" style="font-size: 38px;"></i><br><br>บริการ<br>E-waste<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="collapseSixteen" class="collapse mob-collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseSeventeen" class="collapse mob-collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseEighteen" class="collapse mob-collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseNineteen" class="collapse mob-collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweenty" class="collapse mob-collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card umi-card">
-                                    <div class="card-header" id="headingFive">
-                                        <div class="row">
-                                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two ul-umi" role="tablist">
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/lan-wire-wireless/lan-wire-wireless-thailand.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweentyone" aria-expanded="false" aria-controls="collapseTweentyone">
-                                                            <i class="fas fa-ethernet" style="font-size: 38px;"></i><br><br>วางระบบ Network<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweentytwo" aria-expanded="false" aria-controls="collapseTweentytwo">
-                                                            <i class="fas fa-code" style="font-size: 38px;"></i><br><br>พัฒนาเว็บแอพพลิเคชั่น<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweentythree" aria-expanded="false" aria-controls="collapseTweentythree">
-                                                            <i class="fas fa-laptop-code" style="font-size: 38px;"></i><br><br>พัฒนา Mobile App<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweentyfour" aria-expanded="false" aria-controls="collapseTweentyfour">
-                                                            <i class="fas fa-hdd" style="font-size: 38px;"></i><br><br>โดเมนและเว็บโฮสติ้ง<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <h5 class="mb-0"><button onclick="window.location.href = '/contact-it-support.html';" class="btn-link collapsed text-center umi-tog" data-toggle="collapse" data-target="#collapseTweentyfive" aria-expanded="false" aria-controls="collapseTweentyfive">
-                                                            <i class="fas fa-tasks" style="font-size: 38px;"></i><br><br>พัฒนาระบบ CRM<br><span class="arrow-umi">
-                                                                <i class="fas fa-chevron-up disable"></i><i class="fas fa-chevron-down"></i> </span>
-                                                        </button>
-                                                    </h5>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweentyone" class="collapse mob-collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweentytwo" class="collapse mob-collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweentythree" class="collapse mob-collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweentyfour" class="collapse mob-collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTweentyfive" class="collapse mob-collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                        <div class="card-body umi-body">
-                                            <div class="col-lg-12">
-                                                <div class="row ">
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 2
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 3
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <p> ThaiPcSupport<br>
-                                                            Query data in S3 using SQL 4
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h5 class="heading mb-10">โซลูชั่นการเช่าสำหรับทุกธุรกิจ </h5>
+                        <p class="p-th">เมื่อคุณต้องการชุดอุปกรณ์คอมพิวเตอร์ใช้งานสำหรับ ออกอีเว้นท์ พนักงานพาร์ทไทม์ นักศึกษาฝึกงาน การจัดสัมนาอบรมขององค์กร การจัดงานแสดงสินค้า หรือ กิจกรรมขององค์กร ThaiPC Support คือ หนึ่งในบริษัทให้เช่าคอมพิวเตอร์ที่มากด้วยประสบการณ์กว่า 20 ปี</p>
+                        <p class="p-th">เราพร้อมจัดส่งอุปกรณ์เครื่องคอมพิวเตอร์ตามต้องการได้ทุกที่ในประเทศ และเราคือทางเลือกที่ดีที่สุดสำหรับการเช่าอย่างรวดเร็ว เราสามารถปรับแต่ง PC และ Mac ได้หลายวิธี ได้แก่ </p>
+                        <ul class="check-list">
+                            <li class="list-item">Backgrounds และ logos</li>
+                            <li class="list-item">รองรับการเชื่อมต่อ Wi-Fi </li>
+                            <li class="list-item">การติดตั้งซอฟต์แวร์</li>
+                            <li class="list-item">ตั้งค่าความปลอดภัย</li>
+                            <li class="list-item">การเข้ารหัสฮาร์ดไดรฟ์</li>
+                            <li class="list-item">บัญชีผู้ใช้หลายบัญชี</li>
+                        </ul>
                     </div>
                 </div>
+                
+                <div class="row mb-30">
+                    <div class="col-lg-12">
+                        <h5 class="heading mb-10">เช่าคอมพิวเตอร์ประสิทธิภาพสูง</h5>
+                        <p class="p-th">ThaiPC Support ให้บริการเช่าอุปกรณ์คอมพิวเตอร์ประสิทธิภาพสูงจากแบรนด์ชั้นนำ โดยคุณสามารถมั่นใจได้ว่า จะได้รับอุปกรณ์ที่ดีที่สุดในตลาด โดยไม่จำเป็นต้องลงทุนซื้อคอมพิวเตอร์เครื่องใหม่ การเช่า Notebook หรือ Desktop เป็นวิธีที่ดีที่สุด สำหรับสำนักงานที่กำลังจะขยายตัว สำนักงานที่จัดหา Workstation สำหรับพนักงานชั่วคราว หรือการทดสอบต่างๆ </p>
+                        <p class="p-th">นอกเหนือจากการเช่าอุปกรณ์ที่ได้มาตรฐานแล้ว เรายังมีทีมงานที่มีประสบการณ์สูง ในการดูแลตั้งค่าอุปกรณ์คอมพิวเตอร์ให้ตรงตามข้อกำหนดของผู้รับบริการอีกด้วย</p>
+                    </div>
+                </div>
+
+                <div class="row mb-30">
+                    <div class="col-lg-12">
+                        <h5 class="heading mb-10">การวางแผนและการดำเนินการตรงเวลาตามงบประมาณอย่างไร้ที่ติ </h5>
+                        <p class="p-th">เรามีประสบการณ์มากมาย ทั้งด้าน Storage, Routers และ อุปกรณ์รักษาความปลอดภัย รวมถึงการกำหนดค่าและบำรุงรักษา Wi-Fi และ WiMAX พร้อมการปรับปรุงผลิตภัณฑ์ด้านอุปกรณ์ต่อพ่วงต่างๆ เช่น Intel Processors, AMD processors, Intel Motherboards, WeP (Wipro) range บนทุกอุปกรณ์ ช่วยให้มั่นใจได้ว่า เราพร้อมมอบบริการหลังการขายที่ดีให้กับลูกค้าที่มีค่าของเราทุกคน ส่งต่อความมั่นใจในฐานะหนึ่งในผู้ให้บริการชั้นนำในด้านเทคโนโลยีฮาร์ดแวร์ ซอฟต์แวร์ อีกทั้งบริการสายเคเบิลแบบมีโครงสร้างด้วยสายไฟเบอร์ออปติกและทองแดง พร้อม Systimax, Nortel และ AMP โครงสร้างพื้นฐานไร้สายของ Signal Chain ที่สมบูรณ์ เรามอบโซลูชั่นให้กับ Active Networking Components เช่น สวิตช์เลเยอร์ 3 ที่จัดการได้และไม่สามารถจัดการได้ สวิตช์หลายชั้น เราเตอร์ และโมเด็ม เรามีวิศวกรที่มีความรู้ความสามารถในระบบเครือข่ายเฉพาะ Windows 2008 และ Server 2012 การดูแล ADS, DNS, DHCP, TELNET Server Infrastructure มีประสบการณ์ และได้รับการฝึกอบรมทางเทคนิคอยู่เสมอ</p>
+                        <p class="p-th">เราขอนำเสนอบริการเช่า Notebook และ Desktop ในหลากหลายแบรนด์ อาทิเช่น Apple, Lenovo, Dell, Asus ที่มาพร้อมด้วย Microsoft, Intel Core และอื่น ๆ ที่มีความปลอดภัยสูง เนื่องจากมีนโยบายความเป็นส่วนตัว ซึ่งผู้รับบริการสามารถดูข้อมูลและติดต่อเราได้ผ่านทางอีเมล โทรศัพท์ หรือสถานที่ตามที่ระบุไว้</p>
+                    </div>
+                </div>
+
+
             </div>
+        
         </div>
-        <!--====================  Accordion area  ====================-->
-        <!--========== Call to Action Area Start ============-->
-        <!--<div class="section-space--ptb_60 acronis-banner">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="text-center mb-10 text-white">
-                            <h3 class="heading text-white">ระบบ <span class="acronis text-color-primary"> Acronis</span> </h3>
-                            <p class="text-th">Backup & Recovery ด้วย Acronis Backup<br>แก้ไขปัญหาระบบล่ม ไม่เสถียร ไม่ปลอดภัย ทำให้ธุรกิจสามารถทำงานได้อย่างต่อเนื่อง <br>ลดความเสี่ยงในการเกิด Downtime</p>
-                        </div>
-                        <div class="cta-button-group--two text-center">
-                            <a href="/aws-services-thailand/aws-web-services.html" class="aws btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span> ข้อมูลเพิ่มเติม</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--========== Call to Action Area End ============-->
-        <!--===========  feature-images-wrapper  End =============-->
-        <div class="feature-images-wrapper bg-gray  section-space--ptb_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="feature-images__four">
-                            <div class=" row">
-                                <div class="single-item col-lg-12 col-md-6 mt-10 move-up">
-                                    <!-- ht-box-icon Start -->
-                                    <div class="ht-box-images style-04 color-bt-two">
-                                        <div class="image-box-wrap">
-                                            <div class="content text-left">
-                                                <div class="heading">
-                                                    <ul class="check-list circle-list">
-                                                        <li class="list-item li-th"><a href="/it-support-thailand/it-support.html">สัญญาบริการไอที รายเดือน/รายปี</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">บริการ On-Site & Remote Support</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">บริการ IT Helpdesk (Part time & Full Time)</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">บริการบำรุงรักษา PC / Laptop </a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">IT Consulting</a> </li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">บริการบำรุงรักษา Windows Server</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">แชร์ไฟล์และ Permission</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/nas-storage/qnap-synology.html">บริการ NAS (Synopology & QNAP) </a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/audit-software-thailand/audit-software.html">บริการตรวจสอบดูแลฮาร์ดแวร์และซอฟต์แวร์</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/firewall-fortigate/firewall-fortigate-cisco.html">เน็ตเวิร์กและประสิทธิภาพการใช้งาน </a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/lan-wire-wireless/lan-wire-wireless-thailand.html">ดูแลจัดการ WiFi & Access Point</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">บริการติดตั้งระบบ Antivirus & Spyware</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/firewall-fortigate/firewall-fortigate-cisco.html">ติดตั้งและดูแล Firewall </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- ht-box-icon End -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="row center-middle">
-                            <img loading="lazy"  alt="IT Support Thailand" src="/assets/images/it-support/it-support2.png" width="296" height="608" class="img-center">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="feature-images__four">
-                            <div class=" row">
-                                <div class="single-item col-lg-12 col-md-6 mt-10 move-up">
-                                    <div class="ht-box-images style-04 color-bt-three">
-                                        <div class="image-box-wrap">
-                                            <div class="content text-left circle-list">
-                                                <div class="heading">
-                                                    <ul class="check-list">
-                                                        <li class="list-item li-th"><a href="it-infrastructure-thailand/setup-offfice-infrastructure.html">รายงานกิจกรรมจัดการสินทรัพย์ด้านไอที</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">รายงาน รายวัน / รายสัปดาห์ / รายเดือน</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/acronis-cloud-backup/acronis-true-image-backup.html">ระบบสำรองข้อมูล</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/acronis-cloud-backup/acronis.html">แบ็คอัพข้อมูลบนคลาวด์ (Real Time)</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">การตั้งค่า VPN & Load Balance</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/aws-services-thailand/aws-web-services.html">ที่ปรึกษาการใช้งาน AWS Cloud</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/microsoft-azure-services/active-directory-thailand.html">ที่ปรึกษาการใช้งาน Microsoft Azure</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/office365-thailand/office365.html">ที่ปรึกษาการใช้งาน Microsoft Exchange & Microsoft Teams</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/contact-it-support.html">บริการอีเมล Google G-Suite</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">ที่ปรึกษาวางแผนพัฒนาระบบไอทีองค์กร</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">เจ้าหน้าที่ไอทีผู้ชำนาญเฉพาะทาง</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">ทีมพนักงานไอทีประการณ์สูง</a></li>
-                                                        <li class="list-item mt-15 li-th"><a href="/it-support-thailand/it-support.html">สัญญาบริการรักษาระดับคุณภาพ (SLA)</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about-delivering-wrapper section-space--ptb_80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title-wrap text-center section-space--mb_40">
-                            <h3 class="heading h3-th">ลูกค้าของเรา</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img loading="lazy"  alt="IT Support Thailand" src="/assets/images/customers/all.jpg" width="1160" height="616" class="img-fluid" title="sandvik-thaipcsupport">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <br>
-                <div class="tab-button text-center">
-                    <a href="/clients.html" class="ht-btn ht-btn-md">ลููกค้าทั้งหมด</a>
-                </div>
-            </div>
-        </div>
+
         <div class="accordion-wrapper bg-gray  section-space--ptb_100">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title-wrap text-center section-space--mb_20">
-                            <h3 class="heading">คำถามที่พบบ่อย</h3>
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="section-title-wrap text-center section-space--mb_20">
+                        <h3 class="heading">คำถามที่พบบ่อย</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="faq-wrapper  section-space--mt_40">
+                        <div id="faq-toggles-faq">
+                           <div class="card">
+                              <div class="card-header" id="faqTwo">
+                                 <h5 class="mb-0">
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqTwo" aria-expanded="false" aria-controls="collapsefaqTwo">
+                                    ต้องการเช่าคอมพิวเตอร์ จะต้องทำอย่างไร<span> <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-chevron-up"></i> </span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapsefaqTwo" class="collapse" aria-labelledby="faqTwo" style="">
+                                 <div class="card-body">
+                                    <p>คุณสามารถแจ้ง รุ่น/สเปค,จำนวนคอมพิวเตอร์ และระยะเวลาที่ต้องการเช่า ในรูปแบบ "รายวัน", "รายสัปดาห์" และ "รายเดือน" เพื่อประเมินค่าใช้จ่ายเบื้องต้นได้ โดยเครื่องเช่าที่จะมีโปรแกรมลิขสิทธิ์ Windows 10 /MS Office 365(Word, Excel, PowerPoint) /Anti-virus Eset ติดตั้งพร้อมใช้งาน</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header" id="faqThree">
+                                 <h5 class="mb-0">
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqThree" aria-expanded="false" aria-controls="collapsefaqThree">
+                                    สามารถลงโปรแกรมเพิ่มในเครื่องเช่าได้หรือไม่ <span> <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-chevron-up"></i> </span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapsefaqThree" class="collapse" aria-labelledby="faqThree" style="">
+                                 <div class="card-body">
+                                    <p>คุณสามารถลงโปรแกรมอื่นๆ ที่จำเป็นต้องใช้ได้ด้วยตนเอง หรือหากต้องการให้ทางเราจัดการให้กรุณาแจ้งเพื่อประเมินค่าบริการเพิ่มเติม(โปรแกรมที่ลงจะต้องเป็นโปรแกรมที่ถูกต้องและมีลิขสิทธ์เท่านั้น)</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header" id="faqFour">
+                                 <h5 class="mb-0">
+                                    <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqFour" aria-expanded="false" aria-controls="collapsefaqFour">
+                                    ต้องใช้เงินมัดจำสำหรับการเช่าหรือไม่<span> <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-chevron-up"></i> </span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapsefaqFour" class="collapse" aria-labelledby="faqFour" style="">
+                                 <div class="card-body">
+                                    <p>ใช้เพียงเอกสาร หนังสือรับรองบริษัท หรือ ภพ.20 เป็นหลักฐานประกอบการเช่าใช้คอมพิวเตอร์ ไม่จำเป็นต้องวางเงินมัดจำ</p>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="faq-wrapper  section-space--mt_40">
-                            <div id="faq-toggles-faq">
-                                <div class="card">
-                                    <div class="card-header" id="faqTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqTwo" aria-expanded="false" aria-controls="collapsefaqTwo">
-                                                บริการ IT Support / IT Outsource ของ ThaiPC Support<span> <i class="fas fa-chevron-down"></i>
-                                                    <i class="fas fa-chevron-up"></i> </span>
-                                            </button>
-                                        </h5>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="toggles-wrapper section-space--mt_40">
+                        <div class="faq-wrapper">
+                           <div id="faq-toggles">
+                              <div class="card">
+                                 <div class="card-header" id="faqTweleve">
+                                    <h5 class="mb-0">
+                                       <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqTweleve" aria-expanded="false" aria-controls="collapsefaqTweleve">
+                                       มีเจ้าหน้าที่ IT ดูแลปัญหาระหว่างการใช้ตลอดทั้งวันด้วยหรือไม่<span> <i class="fas fa-chevron-down"></i>
+                                       <i class="fas fa-chevron-up"></i> </span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapsefaqTweleve" class="collapse" aria-labelledby="faqTweleve" style="">
+                                    <div class="card-body">
+                                       <p>ThaiPC Support จะดูแลรับผิดชอบในการส่งมอบเครื่องเช่า ขนย้าย ติดตั้ง(พร้อมตรวจสอบคุณภาพเครื่องให้พร้อมใช้งาน) และเก็บกลับเท่านั้น หากลูกค้าต้องการเจ้าหน้าที่ IT ช่วยดูแลการใช้งานระหว่างวัน กรุณาแจ้งเพื่อประเมินค่าบริการเพิ่มเติม</p>
                                     </div>
-                                    <div id="collapsefaqTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion" style="">
-                                        <div class="card-body">
-                                            <p>บริการดูแลครอบคลุมงาน IT ทั้งองค์กร คอมพิวเตอร์เปิดไม่ติด ปริ้นเตอร์ไม่ทำงาน ไฟล์ข้อมูลหาย ไวรัสเข้าคอมพิวเตอร์ อินเตอร์เน็ตช้า ฯลฯ รวมถึงบริการ จัดซื้อ/จัดหา Hardware Software ให้คำปรึกษาและแนะนำ knowledge ด้าน IT ให้การทำงานของพนักงานมีความราบรื่น โดยไม่จำเป็นต้องมีพนักงาน IT ประจำ</p>
-                                        </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqThirteen">
+                                    <h5 class="mb-0">
+                                       <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqThirteen" aria-expanded="false" aria-controls="collapsefaqThirteen">
+                                       ถ้าเครื่องคอมพิวเตอร์มีปัญหาระหว่างใช้งาน ThaiPC Support มีแนวทางช่วยเหลืออย่างไร <span> <i class="fas fa-chevron-down"></i>
+                                       <i class="fas fa-chevron-up"></i> </span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapsefaqThirteen" class="collapse" aria-labelledby="faqThirteen">
+                                    <div class="card-body">
+                                       <p>เราจะมีเครื่องสำรองติดตั้งไว้ ณ สถานที่เช่า ในอัตราส่วน 1:10 (โดยทุก10 เครื่องเช่า จะมีเครื่องสำรองให้ 1 เครื่องเสมอ) รวมถึงเจ้าหน้าที่ IT จะเข้าดูแลและแก้ไขปัญหา โดยไม่ต้องกังวลว่างานของคุณจะสะดุด</p>
                                     </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="faqThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapsefaqThree" aria-expanded="false" aria-controls="collapsefaqThree">
-                                                รูปแบบบริการ <span> <i class="fas fa-chevron-down"></i>
-                                                    <i class="fas fa-chevron-up"></i> </span>
-                                            </button>
-                                        </h5>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqFourteen">
+                                    <h5 class="mb-0">
+                                       <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqFourteen" aria-expanded="false" aria-controls="collapsefaqFourteen">
+                                       การขนย้ายและติดตั้งอุปกรณ์<span> <i class="fas fa-chevron-down"></i>
+                                       <i class="fas fa-chevron-up"></i> </span>
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapsefaqFourteen" class="collapse" aria-labelledby="faqFourteen">
+                                    <div class="card-body">
+                                       <p>ThaiPC Support บริการขนย้าย ติดตั้งอุปกรณ์และ Network ให้พร้อมสำหรับใช้งาน ณ สถานที่ พร้อมเก็บกลับ</p>
                                     </div>
-                                    <div id="collapsefaqThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion" style="">
-                                        <div class="card-body">
-                                            <p>ThaiPC Support ให้บริการดูแลและแก้ไขปัญหาสำหรับองค์กร ในรูปแบบสัญญาบริการ </p>
-                                            <p><b>รายครั้ง:</b> ไม่มีข้อผูกมัด เรียกหาเราเมื่อคุณเกิดปัญหา ชำระค่าบริการต่อครั้งตามรายละเอียดงานที่คุณส่งมอบ</p>
-                                            <p><b>รายเดือน:</b> ให้บริการดูแลอย่างต่อเนื่องทุกปัญหาที่คุณแจ้ง เราพร้อมดูแลและแก้ไข ในรูปแบบบริการ Onsite, On Call และ Remote Support ชำระค่าบริการรายเดือน สัญญาบริการปีต่อปี</p>
-                                            <p><b>รายปี:</b> เลือกชำระค่าบริการเหมาจ่ายรายปี ให้คุณมั่นใจในการดูแลและบริการอย่างต่อเนื่องในทุกช่องทางตลอดทั้งปี </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="faqFour">
-                                        <h5 class="mb-0">
-                                            <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqFour" aria-expanded="false" aria-controls="collapsefaqFour">
-                                                ค่าบริการ<span> <i class="fas fa-chevron-down"></i>
-                                                    <i class="fas fa-chevron-up"></i> </span>
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsefaqFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion" style="">
-                                        <div class="card-body">
-                                            <p>ThaiPC Support ประเมินค่าบริการจาก Scope งานอย่างเหมาะสมและคุ้มค่าต่อความต้องการ และการลงทุนขององค์กร ยินดีเข้าตรวจสอบหน้างานก่อน โดยไม่มีค่าใช้จ่ายใดๆ สอบถามข้อมูลเพิ่มเติม 02-114-7310</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!-- Start toggles -->
-                        <div class="toggles-wrapper section-space--mt_40">
-                            <div class="faq-wrapper">
-                                <div id="faq-toggles">
-                                    <div class="card">
-                                        <div class="card-header" id="faqTweleve">
-                                            <h5 class="mb-0">
-                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqTweleve" aria-expanded="false" aria-controls="collapsefaqTweleve">
-                                                    มีเจ้าหน้าที่ IT Support onsite แบบ Fulltime หรือไม่<span> <i class="fas fa-chevron-down"></i>
-                                                        <i class="fas fa-chevron-up"></i> </span>
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapsefaqTweleve" class="collapse" aria-labelledby="faqTweleve" data-parent="#accordion" style="">
-                                            <div class="card-body">
-                                                <p>ThaiPC Support พร้อมให้บริการในทุกรูปแบบเพื่อให้ตรงกับความต้องการของคุณ สอบถามข้อมูลเพิ่มเติม 02-114-7310</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqThirteen">
-                                            <h5 class="mb-0">
-                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqThirteen" aria-expanded="false" aria-controls="collapsefaqThirteen">
-                                                    ต้องการเช่าคอมพิวเตอร์ ต้องทำอย่างไร <span> <i class="fas fa-chevron-down"></i>
-                                                        <i class="fas fa-chevron-up"></i> </span>
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapsefaqThirteen" class="collapse" aria-labelledby="faqThirteen" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>คุณสามารถแจ้ง รุ่น/สเปค คอมพิวเตอร์ที่คุณต้องการใช้งาน จำนวนคอมพิวเตอร์ และระยะเวลาที่ต้องการเช่า ในรูปแบบ "รายวัน", "รายเดือน" และ "รายปี"</p>
-                                                <p>โดยจะได้รับโปรแกรม Windows 10 /Office 365 /Anti-virus Eset ลิขสิทธิ์ ติดตั้งพร้อมใช้งาน</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="faqFourteen">
-                                            <h5 class="mb-0">
-                                                <button class="collapsed" data-toggle="collapse" data-target="#collapsefaqFourteen" aria-expanded="false" aria-controls="collapsefaqFourteen">
-                                                    การสำรองข้อมูลบนคลาวด์ คืออะไร <span> <i class="fas fa-chevron-down"></i>
-                                                        <i class="fas fa-chevron-up"></i> </span>
-                                                </button>
-                                            </h5>
-                                        </div>
-                                        <div id="collapsefaqFourteen" class="collapse" aria-labelledby="faqFourteen" data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>การสำรองข้อมูลบนคลาวด์ หรือการสำรองข้อมูลออนไลน์ เป็นกระบวนโอนย้ายข้อมูลไปยังเซิร์ฟเวอร์ภายนอกตามระยะเวลาที่กำหนด โดยเซิร์ฟเวอร์จะตั้งอยู่ในศูนย์ข้อมูลที่ปลอดภัย เชื่อถือได้ ง่ายต่อการจัดการและตรวจสอบ</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End toggles -->
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!--======== Tabs Wrapper Start ======== -->
-        <div class="tabs-wrapper bg-white gray section-space--ptb_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title-wrapper text-center section-space--mb_60 move-up">
-                            <h6 class="section-sub-title mb-20 h6-th">ภาพรวมบริษัท</h6>
-                            <h3 class="section-title h3-th">
-                                ThaiPC Support
-                                <span class="text-color-primary"> ก่อตั้งเมื่อปี 2544</span>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 ht-tab-wrap">
-                        <div class="text-center  ">
-                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two" role="tablist">
-                                <li class="tab__item nav-item active">
-                                    <a class="nav-link active" id="nav-tab1" data-toggle="tab" href="#tab_list_06" role="tab" aria-selected="true">ภารกิจของเรา</a>
-                                </li>
-                                <li class="tab__item nav-item">
-                                    <a class="nav-link" id="nav-tab2" data-toggle="tab" href="#tab_list_07" role="tab" aria-selected="false">Security Partners</a>
-                                </li>
-                                <li class="tab__item nav-item ">
-                                    <a class="nav-link" id="nav-tab3" data-toggle="tab" href="#tab_list_08" role="tab" aria-selected="false">Software Partners</a>
-                                </li>
-                                <li class="tab__item nav-item ">
-                                    <a class="nav-link" id="nav-tab5" data-toggle="tab" href="#tab_list_09" role="tab" aria-selected="false">Cloud Consultant</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-content ht-tab__content">
-                            <div class="tab-pane fade show active" id="tab_list_06" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
-                                    <div class="row">
-                                        <div class="col-lg-6 ">
-                                            <div class="tab-history-image mt-30">
-                                                <div class="single-popup-wrap">
-                                                    <img loading="lazy"  alt="IT Support Thailand" class="img-fluid" src="/assets/images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg" width="570" height="350">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5 offset-lg-1 ">
-                                            <div class="tab-content-inner  mt-30">
-                                                <div class="text mb-30 text-th">บริการดูแล วางแผน และออกแบบระบบสำหรับองค์กรของคุณ <br>เวลาทำการ จันทร์ - ศุกร์ เวลา 9.00 น. - 18.00 น.<br></div>
-                                                <ul class="check-list section-space--mb_40">
-                                                    <li class="list-item li-th">ที่ปรึกษาด้านระบบไอที </li>
-                                                    <li class="list-item li-th">ออกแบบระบบไอทีสำหรับองค์กร </li>
-                                                    <li class="list-item li-th">จัดหาอุปกรณ์ไอที </li>
-                                                    <li class="list-item li-th">ดูแลและตรวจสอบซอฟต์แวร์ </li>
-                                                </ul>
-                                                <div class="tab-button">
-                                                    <a class="btn-text" href="#">
-                                                        <span class="button-text">สอบถามรายละเอียด <i class="far fa-long-arrow-right"></i></span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab_list_07" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_60 brand-logo-slider__one">
-                                    <div class="modern-grid--12">
-                                        <div class="brand-logo brand-logo--slider">
-                                            <div>
-                                                <img loading="lazy"  alt="IT Support Thailand" src="/assets/images/featured/security-partners/all.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab_list_08" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_60 brand-logo-slider__one">
-                                    <div class="modern-grid--12">
-                                        <div class="brand-logo brand-logo--slider">
-                                            <div>
-                                                <img loading="lazy"  alt="IT Support Thailand" src="/assets/images/featured/software-partners/all.jpg" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="tab_list_09" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_60 brand-logo-slider__one">
-                                    <div class="modern-grid--12">
-                                        <div class="brand-logo brand-logo--slider">
-                                            <img loading="lazy"  alt="IT Support Thailand" src="/assets/images/featured/cloud-consultant/all.jpg" class="img-fluid">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--======== Tabs Wrapper End ======== -->
+         </div>
+
         <!--============ ติดต่อเรา Area Start =================-->
         <div class="contact-us-area appointment-contact-bg section-space--ptb_100">
             <div class="container">
