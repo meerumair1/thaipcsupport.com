@@ -125,7 +125,14 @@
     
     <style>
         @media (max-width: 767px){
-        .appointment-hero-bg-3:before {display: none!important;}
+            .appointment-hero-bg-3:before {
+                display: none!important;
+            }
+            .appointment-hero-bg-3 .image-banner {
+                right: inherit !important;
+                position: initial!important;
+                width: 100%!important;
+            }
         }
         .body-th, .body-th h1, .body-th h2, .body-th h3, .body-th h4, .body-th h5, .body-th h6 ,.p-th, .li-th, .text-th, .hover-style-link{
             font-family: 'Prompt', sans-serif !important;
@@ -148,7 +155,7 @@
         p, .p-th,.navigation-menu > ul > li > a {  font-weight: 400!important; font-weight: 300!important; font-size: 16px;line-height: 26px!important;}
         .ht-box-images.style-02 .image-box-wrap {padding: 30px 20px;}
         .ht-box-images.style-02 .image-box-wrap .box-image {margin-right: 20px;}
-        .appointment-hero-bg-3:before {
+        /*.appointment-hero-bg-3:before {
             content: '';
             background-image: url(/assets/images/rent_computer.png);
             background-repeat: no-repeat;
@@ -158,11 +165,17 @@
             display: block;
             position: absolute;
             overflow: hidden;
-        }
+        }*/
         .appointment-hero-bg-3 {
             background: rgb(69,180,254);
             background: linear-gradient(180deg , rgba(69,180,254,1) 0%, rgba(10,233,254,1) 100%);
             overflow: hidden;
+        }
+        .appointment-hero-bg-3 .image-banner {
+            height: auto;
+            right: 210px;
+            position: relative;
+            width: calc(100% + 254px);
         }
         .business-solution-form-wrap {
             background: rgb(0 0 0 / 85%);
@@ -550,12 +563,12 @@
         <div class="appointment-hero-wrapper appointment-hero-bg-3 section-space--ptb_30">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="appointment-hero-text mb-0">
-                            <img src="/assets/images/small_computer.png" class="img-fluid">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="image-banner mb-0">
+                            <img src="/assets/images/rent_computer.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-4 col-md-5">
                         <div id="top-contact" class="business-solution-form-wrap">
                             <div class="contact-title text-center section-space--mb_20">
                                 <h5 class="h5-th">ติดต่อเรา</h5>
