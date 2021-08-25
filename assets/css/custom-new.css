@@ -1481,3 +1481,17 @@ a.aws.btn.btn--white.btn-one {
     height: 71px;
 }
 }
+
+.navigation-menu>ul>li.has-children>a:after {
+ 
+    height: 15.2px !important;
+    width: 7px !important;
+	float: right !important;
+}
+
+span.social-icon.fab.fa-line::before {
+    width: 43.75px;
+    height: 54.4px;
+    float: right;
+    line-height: 50px;
+}
