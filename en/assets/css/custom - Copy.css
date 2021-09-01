@@ -1361,11 +1361,6 @@ a.aws.btn.btn--white.btn-one {
     background-image: url(../images/bit/hero-banner-bs-abs.jpg);
 }
 
-.appointment-hero-bg-bit-2 {
-    background-image: url(../images/bit/aditional-bg.jpg);
-}
-
-
 .buyzone__container {
     color: #000;
     background: #fff;
@@ -1711,18 +1706,5 @@ input[type=checkbox], input[type=radio] {
     border-color: #086ad8!important;
 	
 }
-.text-right-bit {
-        text-align:right !important;
-    }
-@media (min-width: 100px) and (max-width: 766px) {
-    .text-right-bit {
-        text-align:inherit;
-    }
-}
-
 
 /*css end for bitdefender */
-
-
-
-
