@@ -1363,6 +1363,8 @@ a.aws.btn.btn--white.btn-one {
 
 .appointment-hero-bg-bit-2 {
     background-image: url(../images/bit/aditional-bg.jpg);
+	background-size: cover;
+    background-position: center;
 }
 
 
