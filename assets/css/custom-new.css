@@ -1495,3 +1495,376 @@ span.social-icon.fab.fa-line::before {
     float: right;
     line-height: 50px;
 }
+
+
+
+
+/*css for bitdefender */
+
+.appointment-hero-bg-bit {
+    background-image: url(../images/bit/hero-banner-bs-abs.jpg);
+}
+
+.appointment-hero-bg-bit-2 {
+    background-image: url(../images/bit/aditional-bg.jpg);
+	background-size: cover;
+    background-position: center;
+}
+
+
+.buyzone__container {
+    color: #000;
+    background: #fff;
+    padding: 20px 60px 30px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.buybussP {
+    color: #111;
+    font-weight: 800;
+    margin-right: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.buybussOrange span, .buyzone__discount__value.v2 {
+    color: #fc9f3f;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.buyzone__hr {
+    border-width: 1px 0 0;
+    border-style: dashed;
+    border-color: #ccc;
+    margin-bottom: 30px;
+}
+
+.smartb #prodSection hr, hr {
+    margin: .5em 0;
+}
+
+.buyzone__devices-count.v2 {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.buyzone__devices-count.v2 {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+
+.justRandom {
+    position: relative;
+    top: -30px;
+    right: -20px;
+}
+
+.devices__decrease {
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #444f5c;
+    font-size: 16px;
+    padding-left: 1px;
+    padding-top: 2px;
+    border: 1px solid #ddd;
+    width: 50px;
+    margin-right: -1px;
+    text-align: center;
+    vertical-align: middle;
+    height: 28px;
+}
+
+.devices__number {
+    border: 0;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    user-select: none;
+}
+
+.devices__increase {
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 2px;
+    border: 1px solid #ddd;
+    width: 50px;
+    margin-left: -5px;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 1px;
+    vertical-align: middle;
+    height: 28px;
+    color: #444f5c;
+}
+
+.devicesnr__error {
+    color: red;
+    font-size: 13px;
+    margin: -20px 0 25px 0;
+    font-weight: 400;
+    display: none;
+}
+
+.dvs20 {
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    background: #fff;
+    margin-top: -60px;
+    font-weight: 600;
+    display: block;
+}
+
+.serv20 {
+    font-size: 12px;
+    color: #333333;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-top: -30px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.buyzone__select-inputs {
+    position: relative;
+    z-index: 10;
+    margin-top: 25px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.buyzone__label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #111;
+    display: inline-block;
+}
+.buyzone__input:checked + .buyzone__label .buyzone__check.v2 {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+}
+.buyzone__input:checked + .buyzone__label .buyzone__check {
+    background: #21b6ac;
+}
+
+.buyzone__check {
+    width: 22px;
+    border-radius: 50%;
+    height: 22px;
+    background: #fff;
+    border: 2px solid #21b6ac;
+    display: inline-block;
+    position: relative;
+    vertical-align: -5px;
+    margin-right: 5px;
+    transition: background-color .2s;
+}
+
+.buyzone__input {
+    display: none;
+}
+
+.dvs20 {
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    background: #fff;
+    margin-top: -27px;
+    font-weight: 600;
+    display: block;
+}
+
+
+.buyzone__discount.v3 {
+    background: #fc9f3f;
+    top: -16px;
+    left: 12%;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    width: 12em;
+    height: 12em;
+    color: #fff;
+    font-size: 7px;
+}
+
+.buyzone__discount__value {
+    font-size: 4.8em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.buyzone__discount__text {
+    font-size: 1.8em;
+}
+
+.buyzone__old-price-value.v3 {
+    color: #777;
+    text-decoration: line-through;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.buyzone__total-value {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.buyzone__total-value {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.addUKInfoDevice {
+    font-size: 13px;
+    color: #333;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.buyzone__hr {
+    border-width: 1px 0 0;
+    border-style: dashed;
+    border-color: #ccc;
+    margin-bottom: 30px;
+}
+
+.button--orange {
+    background: #fca031;
+    border-color: #fca031;
+}
+
+#buy_partner {
+    display: none;
+    cursor: pointer;
+}
+
+.button--orange {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px;
+   
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+   border: 2px solid #fca031;
+    transition: background .2s,border .2s,color .2s;
+    line-height: 1;
+}
+
+.button--orange:hover {
+    width: 100%;
+    
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px;
+	color: #fca031;
+   border: 2px solid #fca031;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+   background: #fff;
+    transition: background .2s,border .2s,color .2s;
+    line-height: 1;
+}
+
+
+.custom-icon-bit {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+    background-image: url(../images/bit/business-security-1.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.custom-icon-bit-2 {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+    background-image: url(../images/bit/business-security-2.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.custom-icon-bit-3 {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+    background-image: url(../images/bit/business-security-3.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+
+.ht-tab-menu-bit li a.active {
+    color: #696969!important;
+    border-color: #ededed !important;
+}
+
+.ht-tab-menu-bit li a:hover{
+	color: #086ad8 !important;
+    border-color: #086ad8!important;
+	
+}
+.text-right-bit {
+        text-align:right !important;
+    }
+@media (min-width: 100px) and (max-width: 766px) {
+    .text-right-bit {
+        text-align:inherit;
+    }
+}
+
+
+/*css end for bitdefender */

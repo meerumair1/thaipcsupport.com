@@ -1,46 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
-
-
 .h1-th {
-   font-family: 'Sarabun', sans-serif !important;
-
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .h2-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .h3-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .h4-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .h5-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .h6-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
+	font-display: swap;
+			rel:preload;
 }
 .p-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
+	font-display: swap;
+			rel:preload;
 }
-
-
 .li-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
 }
 .a-th {
-   font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
     text-decoration: none !important;
     font-weight: 600 !important;
+	font-display: swap;
+			rel:preload;
 }
 .text-th {
-   font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
+	font-display: swap;
+			rel:preload;
 }
+
+
+
 .body-th,
 .body-th h1,
 .body-th h2,
@@ -48,9 +64,21 @@
 .body-th h4,
 .body-th h5,
 .body-th h6 {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+	font-display: swap;
+	rel:preload;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sukhumvit Tadmai', 'Noto Sans TC', sans-serif !important;
+	font-display: swap;
+	rel:preload;
+}
 .desc {
     color: #666 !important;
     line-height: 13px !important;
@@ -1824,6 +1852,4 @@ input[type=checkbox], input[type=radio] {
 
 /*css end for bitdefender */
 
-.header__logo>a img {
-    width: 230px!important;
-}
+
