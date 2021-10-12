@@ -226,14 +226,14 @@
     background-color: #ffd009;
     color: #000;
 }
-ul.list {
+.heading-slider ul.list {
     text-align: left;
     background-color: rgb(255 255 255 / 62%);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 1px 2px #00000024;
 }
-ul.list li {
+.heading-slider ul.list li {
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 0px;
@@ -242,7 +242,7 @@ ul.list li {
     border-bottom: dashed 1px #0000004a;
     color: #000;
 }
-ul.list li:before {
+.heading-slider ul.list li:before {
     content: '';
     display: block;
     width: 5px;
@@ -252,7 +252,7 @@ ul.list li:before {
     top: 13px;
     left: 0;
 }
-ul.list li:last-child {
+.heading-slider ul.list li:last-child {
     border: none;}
 
 /* Products List */
@@ -264,6 +264,9 @@ ul.list li:last-child {
     background-color: #fff;
     margin-bottom: 20px;
     border-radius: 5px;
+}
+.product-box:hover {
+    border: solid 2px #f7631d;
 }
 .product-box ul li {
     border-bottom: dashed 1px #e3e3e3;
@@ -293,6 +296,41 @@ a.btn.btn-primary.datasheet {
 a.btn.btn.btn-primary {
     background-color: #f7631d;
     border-color: #f7631d;
+}
+/* Gradation */
+.ht-gradation.renew  .circle-wrap {
+    margin-bottom: 20px;
+}
+.ht-gradation.renew .item:hover .circle {
+    color: #fff;
+    background: #f7631d;
+}
+.ht-gradation.renew .circle {
+    border: 2px solid #faa67e;
+    color: #faa67e;
+}
+.ht-gradation.renew .item .line {
+    background: #faa67e;
+}
+.ht-gradation.renew .active .circle {
+    background: #f7631d;
+    color: #fff;
+}
+@media (min-width: 992px) { 
+    .ht-gradation.renew .item {
+    width: 100%;
+    text-align: center;
+}
+.ht-gradation.renew .item:last-child .line {
+    display: inherit;
+    width: 50%;
+}
+.ht-gradation.renew .item:first-child .line {
+    display: inherit;
+    width: 50%;
+    right: -15px;
+    left: revert;
+}
 }
     </style>
 
@@ -1315,23 +1353,105 @@ a.btn.btn.btn-primary {
         </div>
         <br>
 
-
+        <!--============ ต่ออายุ =================-->
         <div class=" section-space--ptb_60">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 mb-15">
-                        <h3 class="heading text-center">บริการต่ออายุ MA FORTIGATE</h3>
-                        <ul>
-                            <li>แจ้งรุ่นที่ต้องการต่ออายุ MA Fortigate หรือ MA FortiAnalyzer</li>
-                            <li>แจ้ง Serial Number ของอุปกรณ์ เพื่อตรวจสอบวันหมดอายุของอุปกรณ์</li>
-                            <li>ขอทราบที่อยู่ผู่ติดต่อ แจ้งชื่อบริษัท,ที่อยู่,ผู้ติดต่อ,เบอร์โทรศัพท์และ Email</li>
-                            <li>ขอใบเสนอราคา</li>
+                    <div class="col-lg-12 mb-30">
+                        <h3 class="heading text-center mb-30">บริการต่ออายุ MA FORTIGATE</h3>
+                        <div class="ht-gradation style-01 renew ">
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate  wow fadeInRight active" data-wow-delay="0.1s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
 
-                        </ul>
-                        <p>E-mail: sales@thaipcsupport.com, Line@ : @thaipcsupport </p>
+                                    <h6 class="circle">1</h6>
+                                </div>
+
+                                <div class="content-wrap">
+                                    <h6 class="heading">แจ้งรุ่นที่ต้องการติดต่อ</h6>
+                                    <div class="text">MA Fortigate หรือ MA FortiAnalyzer</div>
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.15s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">2</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">แจ้ง Serial Number ของอุปกรณ์</h6>
+                                    <div class="text">เพื่อตรวจสอบวันหมดอายุของอุปกรณ์</div>
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.20s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">3</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">ขอทราบที่อยู่ผู่ติดต่อ</h6>
+
+                                    <div class="text">แจ้งชื่อบริษัท,ที่อยู่,ผู้ติดต่อ,เบอร์โทรศัพท์และ Email</div>
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+
+                            <!-- Single item gradation Start -->
+                            <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s">
+                                <div class="line"></div>
+                                <div class="circle-wrap">
+                                    <div class="mask">
+                                        <div class="wave-pulse wave-pulse-1"></div>
+                                        <div class="wave-pulse wave-pulse-2"></div>
+                                        <div class="wave-pulse wave-pulse-3"></div>
+                                    </div>
+
+                                    <h6 class="circle">4</h6>
+                                </div>
+
+                                <div class="content-wrap">
+
+                                    <h6 class="heading">ขอใบเสนอราคา</h6>
+
+                                    <div class="text">E-mail: sales@thaipcsupport.com, Line@ : @thaipcsupport  </div>
+
+                                </div>
+                            </div>
+                            <!-- Single item gradation End -->
+                        </div>
                     </div>
-                    
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn btn sm btn-primary">ต่ออายุ MA FORTIGATE</a>
+                    </div>
                 </div>
+
             </div>
         </div>
         <!--============ ติดต่อเรา Area Start =================-->
