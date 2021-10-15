@@ -368,6 +368,11 @@
         .overview-tab li a {
             min-width: auto;
         }
+        .overview-tab li a.active {
+        color: #ffffff;
+        border-color: #f7631d !important;
+        background-color: #f7631d;
+    }
 
     </style>
 </head>
@@ -1007,7 +1012,7 @@
                         <h5> Security Gateway for Distributed Branch Offices</h5>
                     </div>
                     <div class="col-lg-12 text-center mb-20">
-                        <img src="../assets/images/firewall/Fortigate-60F.png">
+                        <img class="img-fluid" loading="lazy"  src="../assets/images/firewall/Fortigate-60F.png">
                     </div>
                 </div>
 
@@ -1037,7 +1042,7 @@
                         </div>
                         <div class="tab-content ht-tab__content">
                             <div class="tab-pane fade show active" id="tab_list_01" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12 ">
                                             <h3 class="mb-3 text-color-primary">Overview</h3>
@@ -1080,7 +1085,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_02" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12 ">
                                             <h3 class="mb-3 text-color-primary">Hardware</h3>
@@ -1094,17 +1099,17 @@
                                                 <li>7x GE RJ45 Internal Ports </li>
                                             </ol>
                                             <h5 class="mb-2">Powered by FortiASIC SoC3</h5>
-                                            <ul class="mb-3">
-                                                <li> Combines a RISC-based CPU with Fortinet’s proprietary
+                                            <ul  class="check-list mb-20">
+                                                <li class="list-item"> Combines a RISC-based CPU with Fortinet’s proprietary
                                                   FortiASIC™ content and network processors for
                                                   unmatched performance</li>
-                                                <li> Simplifies appliance design and enables breakthrough
+                                                <li class="list-item"> Simplifies appliance design and enables breakthrough
                                                   performance for smaller networks </li>
-                                                <li>Supports firewall acceleration across all packet sizes for
+                                                <li class="list-item">Supports firewall acceleration across all packet sizes for
                                                   maximum throughput </li>
-                                                <li> Delivers accelerated UTM content processing for
+                                                <li class="list-item"> Delivers accelerated UTM content processing for
                                                   superior performance and protection</li>
-                                                <li>Accelerates VPN performance for high speed, secure
+                                                <li class="list-item">Accelerates VPN performance for high speed, secure
                                                   remote access </li>
                                               </ul>
                                               <h5 class="mb-2">3G/4G WAN Extensions</h5>
@@ -1121,34 +1126,307 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_03" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            tab3
+                                            <h3 class="mb-3 text-color-primary">Services</h3>
+                                            <h5 class="mb-2">FortiGuard Security Services</h5>
+                                            <p>FortiGuard Labs offers real-time intelligence on the threat landscape, delivering comprehensive security updates across the full range of Fortinet's solutions. Comprised of security threat researchers, engineers, and forensic specialists, the team collaborates with the world's leading threat monitoring organizations, other network and security vendors, as well as law enforcement agencies:</p>
+                                            <ul class="check-list mb-20">
+                                                <li class="list-item"><strong>Real-time Updates</strong> — 24x7x365 Global Operations research security intelligence, distributed via Fortinet Distributed Network to all Fortinet platforms.</li>
+                                                <li class="list-item"><strong>Security Research</strong> — FortiGuard Labs have discovered over 170 unique zero-day vulnerabilities to date, totaling millions of automated signature updates monthly</li>
+                                                <li class="list-item"><strong>Validated Security Intelligence</strong> — Based on FortiGuard intelligence, Fortinet's network security platform is tested and validated by the world's leading third-party testing labs and customers globally.</li>
+                                              </ul>
+
+                                              <h5 class="mb-2">FortiCare Support Services </h5> 
+                                              <p>Our FortiCare customer support team provides global technical support for all Fortinet products. With support staff in the Americas, Europe, Middle East and Asia, FortiCare offers services to meet the needs of enterprises of all sizes:</p>
+                                              <ul  class="check-list mb-20">
+                                                <li class="list-item"><strong> Enhanced Support</strong> — For customers who need support during local business hours only.</li>
+                                                <li class="list-item"><strong> Comprehensive Support </strong>— For customers who need around- the-clock mission critical support, including advanced exchange hardware replacement.</li>
+                                                <li class="list-item"><strong>Advanced Services</strong> — For global or regional customers who  need an assigned Technical Account Manager, enhanced  service level agreements, extended software support, priority  escalation, on-site visits and more.</li>
+                                                <li class="list-item"><strong> Professional Services</strong> — For customers with more complex security implementations that require architecture and design services, implementation and deployment services, operational services and more.</li>
+                                              </ul>
+                                              <h3 class="mb-3 text-color-primary">Enterprise Bundle</h3>
+                                              <p>FortiGuard Labs delivers a number of security intelligence services to augment the FortiGate firewall platform. You can easily optimize the protection capabilities of your FortiGate with the FortiGuard Enterprise Bundle. This bundle contains the full set of FortiGuard security services plus FortiCare service and support offering the most flexibility and broadest range of protection all in one package.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_04" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            tab4
+                                            <h3 class="mb-3 text-color-primary">Software</h3>
+                                            <h5 class="mb-2">FortiOS</h5>
+                                            <p>Control all the security and networking capabilities across the entire FortiGate platform with one intuitive operating system. Reduce operating expenses and save time with a truly consolidated next generation security platform.
+                                            </p>
+                                            <img width="1916" height="563" class="img-fluid mb-3" loading="lazy"  src="../assets/images/firewall/fortios.png">
+                                            <ul  class="check-list mb-20">
+                                                <li class="list-item"> A truly consolidated platform with one OS for all security and networking services for all FortiGate platforms.</li>
+                                                <li class="list-item"> Industry-leading protection: NSS Labs Recommended, VB100, AV Comparatives and ICSA validated security and performance.</li>
+                                                <li class="list-item">Control thousands of applications, block the latest exploits, and filter web traffic based on millions of real-time URL ratings.</li>
+                                                <li class="list-item"> Detect, contain and block advanced attacks automatically in minutes with integrated advanced threat protection framework.</li>
+                                                <li class="list-item">Solve your networking needs with extensive routing, switching, WiFi, LAN and WAN capabilities.</li>
+                                                <li class="list-item"> Activate all the ASIC-boosted capabilities you need on the fastest firewall platform available. </li>
+                                              </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_05" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            tab5
+                                            <h3 class="mb-3 text-color-primary">Specifications</h3>
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="thead-light">
+                                                  <tr>
+                                                    <th scope="col">&nbsp;</th>
+                                                    <th scope="col">FortiGate 60E	</th>
+                                                    <th scope="col">FortiWiFi 60E	</th>
+                                                    <th scope="col">FortiWiFi 60E	</th>
+                                                    <th scope="col">FortiWiFi 61E</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="row-header">
+                                                        <td colspan="5">Hardware Specifications</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>GE RJ45 WAN Ports</strong></td>
+                                                        <td>2</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>GE RJ45 Internal Ports</strong></td>
+                                                        <td>7</td>
+                                                        <td>7</td>
+                                                        <td>7</td>
+                                                        <td>7</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>GE RJ45 PoE Ports</strong></td>
+                                                        <td>–</td>
+                                                        <td>–</td>
+                                                        <td>–</td>
+                                                        <td>–</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>GE RJ45 DMZ Ports</strong></td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Wireless Interface</strong></td>
+                                                        <td>–</td>
+                                                        <td>802.11 a/b/g/n/ac</td>
+                                                        <td>–</td>
+                                                        <td>802.11 a/b/g/n/ac</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>USB Ports</strong></td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Console (RJ45)</strong></td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Internal Storage</strong></td>
+                                                        <td>–</td>
+                                                        <td>–</td>
+                                                        <td>128 GB</td>
+                                                        <td>128 GB</td>
+                                                      </tr>
+                                                      <tr class="row-header">
+                                                        <td colspan="5">System Performance</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Firewall Throughput (1518 / 512 / 64 byte UDP packets)</strong></td>
+                                                        <td colspan="4">3 / 3 / 3 Gbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Firewall Latency (64 byte UDP packets)</strong></td>
+                                                        <td colspan="4">3 μs</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Firewall Throughput (Packets Per Second)</strong></td>
+                                                        <td colspan="4">4.5 Mpps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Concurrent Sessions (TCP)</strong></td>
+                                                        <td colspan="4">1.3 Million</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>New Sessions/Second (TCP)</strong></td>
+                                                        <td colspan="4">30,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Firewall Policies</strong></td>
+                                                        <td colspan="4">5,000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>IPsec VPN Throughput (512 byte packets)</strong></td>
+                                                        <td colspan="4">2 Gbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Gateway-to-Gateway IPsec VPN Tunnels</strong></td>
+                                                        <td colspan="4">200</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Client-to-Gateway IPsec VPN Tunnels</strong></td>
+                                                        <td colspan="4">500</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>SSL-VPN Throughput</strong></td>
+                                                        <td colspan="4">150 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Concurrent SSL-VPN Users (Recommended Maximum)</strong></td>
+                                                        <td colspan="4">100</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>IPS Throughput (HTTP / Enterprise Mix) <sup>1</sup></strong></td>
+                                                        <td colspan="4">1,400 / 350 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>SSL Inspection Throughput <sup>2</sup></strong></td>
+                                                        <td colspan="4">340 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Application Control Throughput <sup>3</sup></strong></td>
+                                                        <td colspan="4">550 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>NGFW Throughput <sup>4</sup></strong></td>
+                                                        <td colspan="4">250 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Threat Protection Throughput <sup>5</sup></strong></td>
+                                                        <td colspan="4">180 Mbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>CAPWAP Throughput <sup>6</sup></strong></td>
+                                                        <td colspan="4">1.5 Gbps</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Virtual Domains (Default / Maximum)</strong></td>
+                                                        <td colspan="4">10 / 10</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Maximum Number of FortiAPs (Total / Tunnel Mode)</strong></td>
+                                                        <td colspan="4">10 / 5</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Maximum Number of FortiTokens</strong></td>
+                                                        <td colspan="4">100</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Maximum Number of Registered FortiClients</strong></td>
+                                                        <td colspan="4">200</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>High Availability Configurations</strong></td>
+                                                        <td colspan="4">Active / Active, Active / Passive, Clustering</td>
+                                                      </tr>
+                                                      <tr class="row-header">
+                                                        <td colspan="5">Dimensions</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Height x Width x Length (inches)</strong></td>
+                                                        <td colspan="4">1.5 x 8.5 x 6.3</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Height x Width x Length (mm)</strong></td>
+                                                        <td colspan="4">38 x 216 x 160</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Weight</strong></td>
+                                                        <td colspan="4">1.9 lbs (0.9 kg)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Form Factor</strong></td>
+                                                        <td colspan="4">Desktop</td>
+                                                      </tr>
+                                                      <tr class="row-header">
+                                                        <td colspan="5">Environment</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Power Required</strong></td>
+                                                        <td colspan="4">100–240V AC, 50–60 Hz</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Maximum Current</strong></td>
+                                                        <td>110 V / 1.5 A, 220 V / 0.75 A</td>
+                                                        <td>110 V / 1.5 A, 220 V / 0.75 A</td>
+                                                        <td>115V AC / 0.9A,<br>
+                                                          230V AC / 0.6A</td>
+                                                        <td>115V AC / 0.9A,<br>
+                                                          230V AC / 0.6A</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Power Consumption (Average / Maximum)</strong></td>
+                                                        <td>11.7 / 14 W</td>
+                                                        <td>12.6 / 15.2 W</td>
+                                                        <td>11.9 / 14.3 W</td>
+                                                        <td>13 / 16 W</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Heat Dissipation</strong></td>
+                                                        <td>40 BTU/h</td>
+                                                        <td>52 BTU/h</td>
+                                                        <td>49 BTU/h</td>
+                                                        <td>55 BTU/h</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Operating Temperature</strong></td>
+                                                        <td colspan="4">32–104°F (0–40°C)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Storage Temperature</strong></td>
+                                                        <td colspan="4">-31–158°F (-35–70°C)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Humidity</strong></td>
+                                                        <td colspan="4">20–90% non-condensing</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>Operating Altitude</strong></td>
+                                                        <td colspan="4">Up to 7,400 ft (2,250 m)</td>
+                                                      </tr>
+                                                      <tr class="row-header">
+                                                        <td colspan="5">Compliance</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td></td>
+                                                        <td colspan="4">FCC Part 15 Class B, C-Tick, VCCI, CE, UL/cUL, CB</td>
+                                                      </tr>
+                                                      <tr class="row-header">
+                                                        <td colspan="5">Certifications</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td></td>
+                                                        <td colspan="4">ICSA Labs: Firewall, IPsec, IPS, Antivirus, SSL-VPN</td>
+                                                      </tr>
+                                                 
+                                                </tbody>
+                                              </table>
                                         </div> 
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_06" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_40">
+                                <div class="tab-history-wrap section-space--mt_30">
                                     <div class="row">
                                         <div class="col-lg-12 ">
                                             tab6
