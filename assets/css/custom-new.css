@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     font-size: 16px;
-    line-height: initial;
+    line-height: 26px;
     font-weight: 300;
 }
 .body-th,
@@ -57,6 +57,7 @@ p {
     font-family: 'Prompt', sans-serif !important;
 }
 ,h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+b, strong {font-weight: 500;}
 .desc {
     color: #666 !important;
     line-height: 13px !important;

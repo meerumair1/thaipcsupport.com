@@ -129,8 +129,13 @@
         }
     </script>
     <style>
-        .text-color-primary {
+        /* Reset text color theme*/
+        .text-color-primary, .overview-tab tr.row-header td,.check-list .list-item::before,.price .right, a.link-color{
             color: #f7631d;
+        }
+        /* Reset bg color theme*/
+        .btn.btn.btn-primary,.ht-gradation.renew .item:hover .circle,.overview-tab li a.active,.overview-tab thead.thead-light tr th {
+            background-color: #f7631d;
         }
         .hero-bg-home {
             background: rgb(69, 180, 254);
@@ -279,7 +284,6 @@
         .price .right {
             float: right;
             font-weight: 500;
-            color: #f7631d;
         }
         .btn.btn-primary.datasheet {
             height: 35px;
@@ -289,7 +293,6 @@
             text-transform: uppercase;
         }
         .btn.btn.btn-primary {
-            background-color: #f7631d;
             border-color: #f7631d;
         }
         /* Gradation */
@@ -298,7 +301,6 @@
         }
         .ht-gradation.renew .item:hover .circle {
             color: #fff;
-            background: #f7631d;
         }
         .ht-gradation.renew .circle {
             border: 2px solid #faa67e;
@@ -343,16 +345,33 @@
             font-weight: 300;
         }
         /*overview-tab*/
+        .overview-tab li, .overview-tab .ht-tab-menu {
+            margin: 0;
+        }
         .overview-tab li a {
             min-width: auto;
+            border-radius: 0!important;
         }
         .overview-tab li a.active {
         color: #ffffff;
         border-color: #f7631d !important;
-        background-color: #f7631d;
-    }
-    .check-list .list-item::before {color: #f7631d;}
-    ul.check-list {padding-left: 10px;}
+        }
+        .overview-tab .tab-content.ht-tab__content {
+            border: 1px solid #ededed;
+            padding: 20px 25px;
+        }
+        .overview-tab thead.thead-light tr th {
+            color: #ffffff;
+            border-bottom: none;
+            border-left: 1px solid #fff;
+            text-align: center;
+            font-weight: 500;
+        }
+        .overview-tab tr.row-header td {
+            background-color: #f7f7f7;
+            font-weight: 500;
+        }
+        ul.check-list {padding-left: 10px;}
     </style>
 </head>
 <body class="body-th">
@@ -996,9 +1015,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12 ht-tab-wrap">
+                    <div class="col-lg-12 ht-tab-wrap overview-tab">
                         <div class="text-center ">
-                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two overview-tab" role="tablist">
+                            <ul class="nav justify-content-center ht-tab-menu ht-tab-menu_two" role="tablist">
                                 <li class="tab__item nav-item active">
                                     <a class="nav-link active" id="nav-tab1" data-toggle="tab" href="#tab_list_01" role="tab" aria-selected="true">Overview</a>
                                 </li>
@@ -1021,16 +1040,17 @@
                         </div>
                         <div class="tab-content ht-tab__content">
                             <div class="tab-pane fade show active" id="tab_list_01" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            <h3 class="mb-3 text-color-primary">Overview</h3>
+                                            <h3 class="mb-3 text-color-primary text-center">Overview</h3>
                                             <h5 class="mb-2">The Fortinet Enterprise Firewall Solution </h5>
                                             <p>The Fortinet Enterprise Firewall Solution delivers end-to-end network security with one platform, one network security operating system and unified policy management with a single pane of glass — for the industry’s best protection against the most advanced security threats and targeted attacks.</p>
                                             <h5 class="mb-2">One Enterprise Firewall Solution across the Extended Enterprise</h5>
                                             <p>The FortiGate family of network appliances represents the industry’s broadest range of enterprise firewall platforms. FortiGate is based on FortiASIC, a purpose-built integrated architecture that provides extremely high throughput and exceptionally low latency, while delivering industry-leading security effectiveness and consolidation which is routinely validated by independent real-world tests. Targeted for distributed enterprises, the FortiGate 60E series contains consolidated security and networking functionality, various connectivity options along with Industry’s best performance in a compact form factor.</p>
                                             <h5 class="mb-2">Highlights</h5>
-                                            <table class="table table-bordered table-responsive">
+                                            <div class="table-responsive">
+                                            <table class="table table-bordered">
                                                 <thead class="thead-light">
                                                   <tr>
                                                     <th scope="col">&nbsp;</th>
@@ -1058,16 +1078,16 @@
                                                  
                                                 </tbody>
                                               </table>
-                                        
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_02" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            <h3 class="mb-3 text-color-primary">Hardware</h3>
+                                            <h3 class="mb-3 text-color-primary text-center">Hardware</h3>
                                             <h5 class="mb-2">FortiGate/FortiWiFi 60E</h5>
                                             <img width="925" height="199" class="img-fluid" loading="lazy" src="../assets/images/firewall/FortiGate_FortiWiFi_60E.jpg">
                                             <h6 class="mb-1">Interfaces</h6>
@@ -1105,10 +1125,10 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_03" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            <h3 class="mb-3 text-color-primary">Services</h3>
+                                            <h3 class="mb-3 text-color-primary text-center">Services</h3>
                                             <h5 class="mb-2">FortiGuard Security Services</h5>
                                             <p>FortiGuard Labs offers real-time intelligence on the threat landscape, delivering comprehensive security updates across the full range of Fortinet's solutions. Comprised of security threat researchers, engineers, and forensic specialists, the team collaborates with the world's leading threat monitoring organizations, other network and security vendors, as well as law enforcement agencies:</p>
                                             <ul class="check-list mb-20">
@@ -1132,10 +1152,10 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_04" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
                                         <div class="col-lg-12 ">
-                                            <h3 class="mb-3 text-color-primary">Software</h3>
+                                            <h3 class="mb-3 text-color-primary text-center">Software</h3>
                                             <h5 class="mb-2">FortiOS</h5>
                                             <p>Control all the security and networking capabilities across the entire FortiGate platform with one intuitive operating system. Reduce operating expenses and save time with a truly consolidated next generation security platform.
                                             </p>
@@ -1153,11 +1173,12 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_05" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h3 class="mb-3 text-color-primary">Specifications</h3>
-                                            <table class="table table-bordered table-hover table-responsive">
+                                            <h3 class="mb-3 text-color-primary text-center">Specifications</h3>
+                                            <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
                                                 <thead class="thead-light">
                                                   <tr>
                                                     <th scope="col">&nbsp;</th>
@@ -1400,15 +1421,21 @@
                                                  
                                                 </tbody>
                                               </table>
+                                            </div>
                                         </div> 
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab_list_06" role="tabpanel">
-                                <div class="tab-history-wrap section-space--mt_30">
+                                <div class="tab-history-wrap section-space--mt_20">
                                     <div class="row">
-                                        <div class="col-lg-12 ">
-                                            tab6
+                                        <div class="col-lg-12 text-center">
+                                            <h3 class="mb-3 text-color-primary">Documentation</h3>
+                                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#f7631d" class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+                                                <path d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"/>
+                                                <path fill-rule="evenodd" d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"/>
+                                              </svg>
+                                              <p>Download the <a class="link-color" href="https://www.avfirewalls.com/datasheets/FortiGate/FortiGate_FortiWiFi_60E_Series.pdf" target="_blank">Fortinet FortiGate/FortiWiFi 60E</a> Data Sheet (PDF).</p>
                                         </div>
                                     </div>
                                 </div>
