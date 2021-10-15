@@ -39,6 +39,14 @@
     line-height: 23px !important;
     font-weight: 500 !important;
 }
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+    line-height: initial;
+    font-weight: 300;
+}
 .body-th,
 .body-th h1,
 .body-th h2,
@@ -101,6 +109,9 @@ h1.slide-header:after {
     min-height: 250px;
 }
 .body-th .check-list .list-item {padding-left: 25px!important; line-height: 23px; font-weight: 400;}
+ol li {
+    line-height: 28px;
+}
 @media only screen and (max-width: 1199px) {}
 body {
     line-height: inherit;
