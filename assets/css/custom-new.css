@@ -67,6 +67,26 @@ b, strong {font-weight: 500;}
 .lf-text-th {
     font-family: 'Prompt', sans-serif !important;
 }
+
+ul.check-list li {
+    position: relative;
+}
+.check-list li::before {
+    content: '\f00c';
+    top: 7px;
+    left: -22px;
+    font-size: 13px;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    position: absolute;
+}
+ul.check-list {
+    padding-left: 30px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
 .appointment-hero-bg-1 {
     background-image: url(../images/itsupport-thailand.jpg);
     background-repeat: no-repeat;
