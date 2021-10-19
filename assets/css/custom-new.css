@@ -1907,12 +1907,6 @@ input[type=checkbox], input[type=radio] {
 .hero-bg-home .carousel-indicators {
     bottom: -15px;
 }
-
-.heading-slider {
-    text-align: center;
-    font-family: 'Prompt', sans-serif !important;
-}
-
 .hero-bg-home .carousel-control-prev {
     padding: 0;
     width: auto;
