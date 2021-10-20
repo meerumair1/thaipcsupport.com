@@ -1737,15 +1737,9 @@
                                 <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
                                 <input type='text' style='display:none;' name='returnURL' value='https://www.thaipcsupport.com/thank-you.html'> </input>
                                 <div class="contact-form  renew-form">
-                                    <div class="contact-input">
-                                        <div class="contact-inner">
-                                            <input id='First_Name' name='First Name' maxlength="40" type="text" placeholder="ชื่อ *">
-                                            <div class='zcwf_col_help'></div>
-                                        </div>
-                                        <div class="contact-inner">
-                                            <input id='Last_Name' name='Last Name' maxlength="80" type="text" placeholder="นามสกุล *">
-                                            <div class='zcwf_col_help'></div>
-                                        </div>
+                                    <div class="contact-inner">
+                                        <input id='Last_Name' name='Last Name' maxlength="80" type="text" placeholder="ชื่อ นามสกุล *">
+                                        <div class='zcwf_col_help'></div>
                                     </div>
                                     <div class="contact-input">
                                         <div class="contact-inner">
@@ -1762,7 +1756,7 @@
                                     </div>
                                     <div class="contact-inner">
                                         <select id="LEADCF25" name="LEADCF25" class="form-control">
-                                            <option selected>Model Number  *</option>
+                                            <option value='-None-' selected>Model Number  *</option>
                                             <option value='Fortigate&#x20;40F'>Fortigate 40F</option>
                                             <option value='Fortigate&#x20;60F'>Fortigate 60F</option>
                                             <option value='Fortigate&#x20;61'>Fortigate 61</option>
@@ -1829,8 +1823,8 @@
                                         return true;
                                     }
                                     function checkMandatory2525354000021186021() {
-                                        var mndFileds = new Array('First Name', 'Last Name', 'Phone', 'LEADCF23', 'LEADCF25');
-                                        var fldLangVal = new Array('First\x20Name','Last\x20Name','Phone','FortiGate\x20Model');
+                                        var mndFileds = new Array('Last Name','Email','Phone','LEADCF25');
+                                        var fldLangVal = new Array('First\x20Name','Email','Phone','FortiGate\x20Model');
                                         for (i = 0; i < mndFileds.length; i++) {
                                             var fieldObj = document.forms['WebToLeads2525354000021186021'][mndFileds[i]];
                                             if (fieldObj) {
