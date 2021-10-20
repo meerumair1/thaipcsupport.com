@@ -130,6 +130,7 @@ h1.slide-header:after {
     min-height: 250px;
 }
 .body-th .check-list .list-item {padding-left: 25px!important; line-height: 23px; font-weight: 400;}
+.ht-box-images ul {padding-left: 0;}
 ol li {
     line-height: 28px;
 }
