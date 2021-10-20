@@ -1912,7 +1912,12 @@ input[type=checkbox], input[type=radio] {
     width: auto;
     left: -5px;
 }
-
+.heading-slider .free {
+    background-color: #ed2e27;
+    color: #fff;
+    padding: 0px 7px;
+    border-radius: 10px;
+}
 .hero-bg-home .carousel-control-next {
     padding: 0;
     width: auto;
