@@ -1,43 +1,43 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+
 .h1-th {
-   font-family: 'Prompt', sans-serif !important;
+   font-family: 'Sarabun', sans-serif !important;
 
 }
 .h2-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h3-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h4-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h5-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .h6-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .p-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
 }
 
 
 .li-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .a-th {
-   font-family: 'Prompt', sans-serif !important;
+   font-family: 'Sarabun', sans-serif !important;
     text-decoration: none !important;
     font-weight: 600 !important;
 }
 .text-th {
-   font-family: 'Prompt', sans-serif !important;
+   font-family: 'Sarabun', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
 }
@@ -48,7 +48,7 @@
 .body-th h4,
 .body-th h5,
 .body-th h6 {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sarabun', sans-serif !important;
 }
 .desc {
     color: #666 !important;
@@ -1458,7 +1458,7 @@ a.aws.btn.btn--white.btn-one {
 
 .hover-style-link{
 	
-	font-family: 'Prompt', sans-serif !important;
+	font-family: 'Sarabun', sans-serif !important;
 }
 
 .iILOR {
