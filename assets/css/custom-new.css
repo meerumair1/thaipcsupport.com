@@ -82,7 +82,7 @@ ul.check-list li {
     position: absolute;
 }
 ul.check-list {
-    padding-left: 25px;
+    padding-left: 30px;
     line-height: 27px;
     font-weight: 300;
     margin-bottom: 15px;
@@ -1393,9 +1393,6 @@ a.aws.btn.btn--white.btn-one {
     padding: 34px 30px 34px;
     min-height: 400px;
 }
-.ht-box-images.style-04.custom-home ul {
-    padding: 0;
-}
 .custom-icon {
     width: 100px;
     height: 100px;
@@ -1902,135 +1899,3 @@ input[type=checkbox], input[type=radio] {
 
 
 /*css end for bitdefender */
-
-/*Custom Fortigate */
-
-/* Renew Form */
-.renew-form .contact-inner input,
-.renew-form .contact-inner textarea,
-.renew-form .contact-inner select {
-    background-color: #f7631d0f;
-    padding: .375rem .75rem;
-    font-weight: 400;
-    line-height: 1.5;
-    height: 53px;
-    border: solid 2px #f5621d6b;
-}
-/*FAQ*/
-.faq-wrapper .card-header h5 button {
-    font-weight: 300;
-}
-/*overview-tab*/
-.overview-tab li, .overview-tab .ht-tab-menu {
-    margin: 0;
-}
-.overview-tab li a {
-    min-width: auto;
-    border-radius: 0!important;
-}
-.overview-tab li a.active {
-color: #ffffff;
-border-color: #f7631d !important;
-}
-.overview-tab .tab-content.ht-tab__content {
-    border: 1px solid #ededed;
-    padding: 20px 25px;
-}
-.overview-tab thead.thead-light tr th {
-    color: #ffffff;
-    border-bottom: none;
-    border-left: 1px solid #fff;
-    text-align: center;
-    font-weight: 500;
-}
-.overview-tab tr.row-header td {
-    background-color: #f7f7f7;
-    font-weight: 500;
-}
-/* Products List */
-.product-box {
-    font-size: 14px;
-    line-height: initial;
-    border: solid 2px #f7631d3b;
-    padding: 15px 15px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-.product-box:hover {
-    border: solid 2px #f7631d;
-}
-.product-box ul li {
-    border-bottom: dashed 1px #e3e3e3;
-    line-height: 27px;
-}
-.product-box ul li:last-child {
-    border: none;
-}
-.product-box img {
-    margin-bottom: 10px;
-}
-.product-box h6 {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-.product-box ul li .right,
-.price .right {
-    float: right;
-    font-weight: 500;
-}
-.btn.btn-primary.detail {
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.btn.btn-primary.datasheet {
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border-width: 2px;
-    color:#f7631d;
-    background-color: transparent!important;
-}
-.btn.btn.btn-primary {
-    background-color: #f7631d;
-    border-color: #f7631d;
-}
-/* Gradation */
-.ht-gradation.renew .circle-wrap {
-    margin-bottom: 20px;
-}
-.ht-gradation.renew .item:hover .circle {
-    color: #fff;
-}
-.ht-gradation.renew .circle {
-    border: 2px solid #faa67e;
-    color: #faa67e;
-}
-.ht-gradation.renew .item .line {
-    background: #faa67e;
-}
-.ht-gradation.renew .active .circle {
-    background: #f7631d;
-    color: #fff;
-}
-@media (min-width: 992px) {
-    .ht-gradation.renew .item {
-        width: 100%;
-        text-align: center;
-    }
-    .ht-gradation.renew .item:last-child .line {
-        display: inherit;
-        width: 50%;
-    }
-    .ht-gradation.renew .item:first-child .line {
-        display: inherit;
-        width: 50%;
-        right: -15px;
-        left: revert;
-    }
-}
