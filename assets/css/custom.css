@@ -1641,7 +1641,7 @@ a.aws.btn.btn--white.btn-one {
 
 .buyzone__select-inputs {
     position: relative;
-   
+    z-index: 10;
     margin-top: 25px;
 }
 
