@@ -24,7 +24,9 @@
 .p-th {
     font-family: 'Prompt', sans-serif !important;
     line-height: 23px !important;
+    font-weight: 500 !important;
 }
+
 
 .li-th {
     font-family: 'Prompt', sans-serif !important;
@@ -32,7 +34,7 @@
 .a-th {
    font-family: 'Prompt', sans-serif !important;
     text-decoration: none !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 .text-th {
    font-family: 'Prompt', sans-serif !important;
@@ -48,7 +50,6 @@
 .body-th h6 {
     font-family: 'Prompt', sans-serif !important;
 }
-,h1, h2, h3, h4, h5, h6 {font-weight: 600;}
 .desc {
     color: #666 !important;
     line-height: 13px !important;
@@ -56,7 +57,7 @@
     display: block !important;
 }
 .lf-text-th {
-    font-family: 'Prompt', sans-serif !important;
+    font-family: 'Sukhumvit Tadmai', sans-serif !important;
 }
 .appointment-hero-bg-1 {
     background-image: url(../images/itsupport-thailand.jpg);
@@ -100,7 +101,7 @@ h1.slide-header:after {
 .thank-tou-page .align-items-center {
     min-height: 250px;
 }
-.body-th .check-list .list-item {padding-left: 25px!important; line-height: 23px; font-weight: 400;}
+.body-th .check-list .list-item {padding-left: 25px!important; line-height: 23px;}
 @media only screen and (max-width: 1199px) {}
 body {
     line-height: inherit;
