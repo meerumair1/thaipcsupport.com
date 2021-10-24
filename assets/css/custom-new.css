@@ -1979,18 +1979,6 @@ border-color: #f7631d !important;
 .product-box:hover {
     border: solid 2px #f7631d;
 }
-.product-box .price {
-    background-color: #f8793d;
-    padding: 7px 10px;
-    border-radius: 5px;
-    color: #fff;
-}
-.product-box .price-list {
-    margin-top: 10px;
-}
-.product-box .price-list li:first-child {
-    text-align: center;
-}
 .product-box ul li {
     border-bottom: dashed 1px #e3e3e3;
     line-height: 27px;
