@@ -1,40 +1,83 @@
 @charset "utf-8";
 /* CSS Document */
+/* prompt-regular - thai_latin */
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-regular.svg#Prompt') format('svg'); /* Legacy iOS */
+  }
+  /* prompt-500 - thai_latin */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-500.svg#Prompt') format('svg'); /* Legacy iOS */
+  }
+  /* prompt-600 - thai_latin */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/prompt/prompt-v5-thai_latin-600.svg#Prompt') format('svg'); /* Legacy iOS */
+  }
+  body p {
+    line-height: 27px;
+    font-size: 16px;
+}
 .h1-th {
-   font-family: 'Sarabun', sans-serif !important;
+   font-family: 'Prompt', sans-serif !important;
 }
 .h2-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .h3-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .h4-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .h5-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .h6-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .p-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
 }
 
 
 .li-th {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .a-th {
-   font-family: 'Sarabun', sans-serif !important;
+   font-family: 'Prompt', sans-serif !important;
     text-decoration: none !important;
     font-weight: 600 !important;
 }
 .text-th {
-   font-family: 'Sarabun', sans-serif !important;
+   font-family: 'Prompt', sans-serif !important;
     line-height: 23px !important;
     font-weight: 500 !important;
 }
@@ -45,7 +88,7 @@
 .body-th h4,
 .body-th h5,
 .body-th h6 {
-    font-family: 'Sarabun', sans-serif !important;
+    font-family: 'Prompt', sans-serif !important;
 }
 .desc {
     color: #666 !important;
@@ -1371,7 +1414,7 @@ a.aws.btn.btn--white.btn-one {
 
 .hover-style-link{
 	
-	font-family: 'Sarabun', sans-serif !important;
+	font-family: 'Prompt', sans-serif !important;
 }
 
 .iILOR {
@@ -1586,6 +1629,21 @@ border-color: #f7631d !important;
 .overview-tab tr.row-header td {
     background-color: #f7f7f7;
     font-weight: 500;
+}
+ul.check-list {
+    margin-bottom: 15px;
+}
+ul.check-list li {
+    padding-left: 25px;
+    line-height: 26px;
+    position: relative;
+}
+ul.check-list li:before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
 }
 /* Products List */
 .product-box {
