@@ -1868,3 +1868,19 @@ input[type=checkbox], input[type=radio] {
 
 
 /*css end for bitdefender */
+
+
+
+.appointment-hero-bg-g {
+    background-color: transparent;
+    background-repeat: no-repeat;
+     background-image: url(../images/googleworkspace/bg5.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.g-suite-feature-item{
+
+margin-bottom:20px;
+
+}
